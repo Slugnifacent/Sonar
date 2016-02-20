@@ -1,0 +1,62 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3997893	DUMB_POSSESSION_BREATHING			\Default Work Unit\SPECTRE\DUMB\DUMB_POSSESSION_BREATHING	
+	113282288	DUMB_ROAR			\Default Work Unit\SPECTRE\DUMB\DUMB_ROAR	
+	185722928	PRIDE_HEAR_PLAYER			\Default Work Unit\SPECTRE\PRIDE\PRIDE_HEAR_PLAYER	
+	227685820	DUMB_HEAR_PLAYER			\Default Work Unit\SPECTRE\DUMB\DUMB_HEAR_PLAYER	
+	432956594	DUMB_GRUNT			\Default Work Unit\SPECTRE\DUMB\DUMB_GRUNT	
+	457472651	DUMB_EXCORCISED			\Default Work Unit\SPECTRE\DUMB\DUMB_EXCORCISED	
+	493235585	WRATH_GROWL			\Default Work Unit\SPECTRE\WRATH\WRATH_GROWL	
+	505685397	SIREN_HEAR_PLAYER			\Default Work Unit\SPECTRE\SIREN\SIREN_HEAR_PLAYER	
+	856530971	DUMB_GROWL			\Default Work Unit\SPECTRE\DUMB\DUMB_GROWL	
+	959506134	DUMB_ALERT			\Default Work Unit\SPECTRE\DUMB\DUMB_ALERT	
+	1117685795	WRATH_HIT_PLAYER			\Default Work Unit\SPECTRE\WRATH\WRATH_HIT_PLAYER	
+	1315215942	WRATH_PRE_SWING			\Default Work Unit\SPECTRE\WRATH\WRATH_PRE_SWING	
+	1547206381	SIREN_WARNING			\Default Work Unit\SPECTRE\SIREN\SIREN_WARNING	
+	1612486910	PRIDE_LAUGH_WHISTPER			\Default Work Unit\SPECTRE\PRIDE\PRIDE_LAUGH_WHISTPER	
+	1841509380	SIREN_SNORE			\Default Work Unit\SPECTRE\SIREN\SIREN_SNORE	
+	1864040956	WRATH_IDLE			\Default Work Unit\SPECTRE\WRATH\WRATH_IDLE	
+	2538998550	WRATH_ROAR			\Default Work Unit\SPECTRE\WRATH\WRATH_ROAR	
+	2626612930	STALKER_ROAR			\Default Work Unit\SPECTRE\STALKER\STALKER_ROAR	
+	2763594656	WRATH_FOOTSTEP			\Default Work Unit\SPECTRE\WRATH\WRATH_FOOTSTEP	
+	3293562430	STALKER_HEAR			\Default Work Unit\SPECTRE\STALKER\STALKER_HEAR	
+	3294007303	PRIDE_EXCORCISED			\Default Work Unit\SPECTRE\PRIDE\PRIDE_EXCORCISED	
+	3752585950	WRATH_HEAR_PLAYER			\Default Work Unit\SPECTRE\WRATH\WRATH_HEAR_PLAYER	
+	3759861166	DUMB_FOOTSTEP			\Default Work Unit\SPECTRE\DUMB\DUMB_FOOTSTEP	
+	3763537863	DUMB_POSSESSED			\Default Work Unit\SPECTRE\DUMB\DUMB_POSSESSED	
+	3858106140	SIREN_SCREAM			\Default Work Unit\SPECTRE\SIREN\SIREN_SCREAM	
+	3902526109	STALKER_EXCORCISED			\Default Work Unit\SPECTRE\STALKER\STALKER_EXCORCISED	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	3798444	pride_hear	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Pride\pride_hear_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Pride\PrideHear\pride_hear		227392
+	53095576	dumb_footstep	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Dumb\dumb_footstep_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Dumb\DumbFootstep\dumb_footstep		37120
+	78361063	dumb_possessionBreathing	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Dumb\dumb_possessionBreathing_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Dumb\DumbPossessionBreathing\dumb_possessionBreathing		620386
+	148585314	pride_laughwhisper	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Pride\pride_laughwhisper_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Pride\PrideLaughWhisper\pride_laughwhisper		1374468
+	195516606	dumb_hear	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Dumb\dumb_hear_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Dumb\DumbHear\dumb_hear		196672
+	313536917	siren_warning	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Siren\siren_warning_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Siren\SirenWarning\siren_warning		656008
+	378208703	sirenScream	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Siren\sirenScream_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Siren\SirenScream\sirenScream		729440
+	378571203	wrath_footstep1	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Wrath\wrath_footstep1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Wrath\WrathFootstep\wrath_footstep1		96066
+	431799063	wrath_preSwing	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Wrath\wrath_preSwing_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Wrath\WrathPreSwing\wrath_preSwing		88404
+	472978983	dumbRoar	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Dumb\dumbRoar_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Dumb\DumbRoar\dumbRoar		198056
+	474329070	dumb_grunt	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Dumb\dumb_grunt_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Dumb\DumbGrunt\dumb_grunt		86768
+	481650733	siren_screaaaam	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Siren\siren_screaaaam_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Siren\SirenScream\siren_screaaaam		626996
+	503211511	sirenSnore	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Siren\sirenSnore_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Siren\SirenSnore\sirenSnore		1056540
+	510833935	stalker_excorcised	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Stalker\stalker_excorcised_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Stalker\StalkerExcorcised\stalker_excorcised		136142
+	525795091	wrath_footstep2	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Wrath\wrath_footstep2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Wrath\WrathFootstep\wrath_footstep2		94144
+	547992398	wrath_idleGrowl	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Wrath\wrath_idleGrowl_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Wrath\WrathIdleGrowl\wrath_idleGrowl		2450904
+	595519645	dumb_growl1	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Dumb\dumb_growl1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Dumb\DumbGrowl\dumb_growl1		317504
+	614648301	newSiren	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Siren\newSiren_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Siren\SirenLoop\newSiren		1679424
+	615365346	dumb_growl2	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Dumb\dumb_growl2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Dumb\DumbGrowl\dumb_growl2		344128
+	635614998	dumb_gruntAlert	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Dumb\dumb_gruntAlert_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Dumb\DumbAlert\dumb_gruntAlert		55940
+	664180835	wrath_hear	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Wrath\wrath_hear_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Wrath\WrathHear\wrath_hear		261386
+	665871687	wrath_growl	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Wrath\wrath_growl_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Wrath\WrathGrowl\wrath_growl		230140
+	682595098	dumb_grunt3	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Dumb\dumbGrunt_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Dumb\DumbGrunt\dumb_grunt3		636192
+	697580250	pride_exorcism	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Pride\pride_exorcism_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Pride\Pride_Excorcism\pride_exorcism		776820
+	737730346	dumb_exorcism	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Dumb\dumb_exorcism_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Dumb\DumbExcorcism\dumb_exorcism		247104
+	752841733	newSiren-loop	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Siren\newSiren-loop_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Siren\SirenLoop\newSiren-loop		311668
+	833431127	dumb_possessed2	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Dumb\dumb_possessed2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Dumb\DumbPossessed\dumb_possessed2		107006
+	896997761	dumb_possessed	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Dumb\dumb_possessed_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Dumb\DumbPossessed\dumb_possessed		285224
+	945960214	wrath_hitPlayer	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Wrath\wrath_hitPlayer_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Wrath\WrathHitPlayer\wrath_hitPlayer		49670
+	972942520	wrath_roar	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Wrath\wrath_roar_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Wrath\WrathRoar\wrath_roar		447476
+	998499007	dumb_grunt2	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Dumb\dumb_grunt2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Dumb\DumbGrunt\dumb_grunt2		88694
+	1069437675	stalker_alert	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Spectres\Stalker\stalker_alert_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Spectres\Stalker\StalkerAlert\stalker_alert		89910
+

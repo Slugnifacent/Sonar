@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	765077262	THROWABLE_GLASS_BREAKING			\Default Work Unit\THROWABLE\THROWABLE_GLASS_BREAKING	
+	1255976185	THROWABLE_GLASS_PICKUP			\Default Work Unit\THROWABLE\THROWABLE_GLASS_PICKUP	
+	1348421559	THROWABLE_GLASS_COLLISION			\Default Work Unit\THROWABLE\THROWABLE_GLASS_COLLISION	
+	4189646358	THROWABLE_GLASS_CRUNCHING			\Default Work Unit\THROWABLE\THROWABLE_GLASS_CRUNCHING	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	845479213	glassCrunch	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Objects\Entity\Throwable\glassCrunch_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Throwable\glassCrunch		51904
+

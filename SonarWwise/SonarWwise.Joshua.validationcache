@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="70">
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3883671437" DateHigh="30501411"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="751421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="751421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Attenuations\Default Work Unit.wwu" DateLow="3861309064" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="3861478832" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Conversion Settings\Default Work Unit.wwu" DateLow="3861256360" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Conversion Settings\Factory Conversion Settings.wwu" DateLow="751421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="3861326171" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Effects\Default Work Unit.wwu" DateLow="3861293951" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Effects\Factory Altiverb - Outdoor and More.wwu" DateLow="211421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Effects\Factory Auro Headphone.wwu" DateLow="751421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Effects\Factory Convolution Reverb Effects.wwu" DateLow="259431168" DateHigh="30450692"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Effects\Factory Effects.wwu" DateLow="751421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Effects\Factory iZotope Box Modeler.wwu" DateLow="259431168" DateHigh="30450692"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Effects\Factory iZotope Delay.wwu" DateLow="711421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Effects\Factory iZotope Dynamics.wwu" DateLow="711421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Effects\Factory iZotope Filters.wwu" DateLow="711421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Effects\Factory iZotope Hybrid Reverb Effects.wwu" DateLow="711421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="711421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="711421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Effects\Factory McDSP Effects.wwu" DateLow="751421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Events\Default Work Unit.wwu" DateLow="3883113571" DateHigh="30501411"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Game Parameters\Default Work Unit.wwu" DateLow="2355591027" DateHigh="30501377"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="751421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1397612521" DateHigh="30501370"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3861508933" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Mixing Sessions\Default Work Unit.wwu" DateLow="3861405250" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Modulators\Default Work Unit.wwu" DateLow="3861423894" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Presets\Default Work Unit.wwu" DateLow="3861208970" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Queries\Default Work Unit.wwu" DateLow="3861346198" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Queries\Factory Queries.wwu" DateLow="751421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\SonarWwise.Joshua.wsettings" DateLow="2979368225" DateHigh="30501424"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\SonarWwise.wproj" DateLow="603759658" DateHigh="30501424"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\SoundBanks\Default Work Unit.wwu" DateLow="3259224159" DateHigh="30501423"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3861438804" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\States\Default Work Unit.wwu" DateLow="3861498944" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Switches\Default Work Unit.wwu" DateLow="3861569006" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\Sonar\SonarWwise\Triggers\Default Work Unit.wwu" DateLow="3861231445" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1159185798" DateHigh="30501620"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Attenuations\Default Work Unit.wwu" DateLow="3861309064" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="3861478832" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Conversion Settings\Default Work Unit.wwu" DateLow="3861256360" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Conversion Settings\Factory Conversion Settings.wwu" DateLow="751421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="3861326171" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Effects\Default Work Unit.wwu" DateLow="3861293951" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Effects\Factory Altiverb - Outdoor and More.wwu" DateLow="211421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Effects\Factory Auro Headphone.wwu" DateLow="751421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Effects\Factory Convolution Reverb Effects.wwu" DateLow="259431168" DateHigh="30450692"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Effects\Factory Effects.wwu" DateLow="751421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Effects\Factory iZotope Box Modeler.wwu" DateLow="259431168" DateHigh="30450692"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Effects\Factory iZotope Delay.wwu" DateLow="711421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Effects\Factory iZotope Dynamics.wwu" DateLow="711421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Effects\Factory iZotope Filters.wwu" DateLow="711421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Effects\Factory iZotope Hybrid Reverb Effects.wwu" DateLow="711421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="711421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="711421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Effects\Factory McDSP Effects.wwu" DateLow="751421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Events\Default Work Unit.wwu" DateLow="3335091131" DateHigh="30501620"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Game Parameters\Default Work Unit.wwu" DateLow="1247050231" DateHigh="30501605"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1397612521" DateHigh="30501370"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3861508933" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Mixing Sessions\Default Work Unit.wwu" DateLow="3861405250" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Modulators\Default Work Unit.wwu" DateLow="3861423894" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Presets\Default Work Unit.wwu" DateLow="3861208970" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Queries\Default Work Unit.wwu" DateLow="3861346198" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Queries\Factory Queries.wwu" DateLow="751421696" DateHigh="30449224"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\SonarWwise.Joshua.wsettings" DateLow="2224043676" DateHigh="30501621"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\SonarWwise.wproj" DateLow="603759658" DateHigh="30501424"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\SoundBanks\Default Work Unit.wwu" DateLow="3108940762" DateHigh="30501430"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3861438804" DateHigh="30501335"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\States\Default Work Unit.wwu" DateLow="2823993898" DateHigh="30501608"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Switches\Default Work Unit.wwu" DateLow="1353314637" DateHigh="30501614"/>
+	<ValidationCacheItem File="D:\Sonar\Unity\SonarV2\SonarWwise\Triggers\Default Work Unit.wwu" DateLow="3861231445" DateHigh="30501335"/>
+</ValidationCache>

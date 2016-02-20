@@ -1,0 +1,1146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f9e9b9e891e28459906d45637086ad, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  CurrentPluginConfig: Debug
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{EA7F7804-4F23-4F15-815C-8489D59838EB}'
+    m_lastTimePsrt1: -381652037
+    m_lastTimePart2: -1999423221
+    List:
+    - Name: AMBIANT_PLAYER_SEEN
+      Path: Default Work Unit\AMBIENT\AMBIANT_PLAYER_SEEN
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMBIENT
+        ObjectType: 4
+      - ElementName: AMBIANT_PLAYER_SEEN
+        ObjectType: 3
+      ID: -203601387
+      Guid: 35d61c8dccb8894e8261d15dea5f2b6a
+      maxAttenuation: 0
+    - Name: AMBIANT_SPECTRE_INVESTIGATE
+      Path: Default Work Unit\AMBIENT\AMBIANT_SPECTRE_INVESTIGATE
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMBIENT
+        ObjectType: 4
+      - ElementName: AMBIANT_SPECTRE_INVESTIGATE
+        ObjectType: 3
+      ID: -2079573102
+      Guid: 384b34ce37c18649ac7a93f35ba3a5ea
+      maxAttenuation: 0
+    - Name: AMBIANT_TENSION_RESOLVE
+      Path: Default Work Unit\AMBIENT\AMBIANT_TENSION_RESOLVE
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AMBIENT
+        ObjectType: 4
+      - ElementName: AMBIANT_TENSION_RESOLVE
+        ObjectType: 3
+      ID: -1879467611
+      Guid: 50c76b457fdb7e4393f14f8ede007540
+      maxAttenuation: 0
+    - Name: DUMB_ALERT
+      Path: Default Work Unit\SPECTRE\DUMB\DUMB_ALERT
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: DUMB
+        ObjectType: 4
+      - ElementName: DUMB_ALERT
+        ObjectType: 3
+      ID: 959506134
+      Guid: aabc5c6262ac4f44b9381ad7409b9499
+      maxAttenuation: 0
+    - Name: DUMB_EXCORCISED
+      Path: Default Work Unit\SPECTRE\DUMB\DUMB_EXCORCISED
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: DUMB
+        ObjectType: 4
+      - ElementName: DUMB_EXCORCISED
+        ObjectType: 3
+      ID: 457472651
+      Guid: d008f91affccf04d90cf6af45620db03
+      maxAttenuation: 0
+    - Name: DUMB_FOOTSTEP
+      Path: Default Work Unit\SPECTRE\DUMB\DUMB_FOOTSTEP
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: DUMB
+        ObjectType: 4
+      - ElementName: DUMB_FOOTSTEP
+        ObjectType: 3
+      ID: -535106130
+      Guid: 3932cfe2e5daac44b6bd3858f9dbf304
+      maxAttenuation: 0
+    - Name: DUMB_GROWL
+      Path: Default Work Unit\SPECTRE\DUMB\DUMB_GROWL
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: DUMB
+        ObjectType: 4
+      - ElementName: DUMB_GROWL
+        ObjectType: 3
+      ID: 856530971
+      Guid: 1af18b9ba5c46942a083253d250700e9
+      maxAttenuation: 0
+    - Name: DUMB_GRUNT
+      Path: Default Work Unit\SPECTRE\DUMB\DUMB_GRUNT
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: DUMB
+        ObjectType: 4
+      - ElementName: DUMB_GRUNT
+        ObjectType: 3
+      ID: 432956594
+      Guid: 8ebc55ecedc10a4082f57717e1829331
+      maxAttenuation: 0
+    - Name: DUMB_HEAR_PLAYER
+      Path: Default Work Unit\SPECTRE\DUMB\DUMB_HEAR_PLAYER
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: DUMB
+        ObjectType: 4
+      - ElementName: DUMB_HEAR_PLAYER
+        ObjectType: 3
+      ID: 227685820
+      Guid: 4b15ed0de745674ea319810908be4283
+      maxAttenuation: 0
+    - Name: DUMB_POSSESSED
+      Path: Default Work Unit\SPECTRE\DUMB\DUMB_POSSESSED
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: DUMB
+        ObjectType: 4
+      - ElementName: DUMB_POSSESSED
+        ObjectType: 3
+      ID: -531429433
+      Guid: aed1175493043a4c9183848cfd5f8161
+      maxAttenuation: 0
+    - Name: DUMB_POSSESSION_BREATHING
+      Path: Default Work Unit\SPECTRE\DUMB\DUMB_POSSESSION_BREATHING
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: DUMB
+        ObjectType: 4
+      - ElementName: DUMB_POSSESSION_BREATHING
+        ObjectType: 3
+      ID: 3997893
+      Guid: 4faae2124730c7409d329ec8701978d6
+      maxAttenuation: 0
+    - Name: DUMB_ROAR
+      Path: Default Work Unit\SPECTRE\DUMB\DUMB_ROAR
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: DUMB
+        ObjectType: 4
+      - ElementName: DUMB_ROAR
+        ObjectType: 3
+      ID: 113282288
+      Guid: ffc4228b91339f42986b0a7d3ddb37d5
+      maxAttenuation: 0
+    - Name: ELEVATOR_BEEP
+      Path: Default Work Unit\ELEVATOR\ELEVATOR_BEEP
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ELEVATOR
+        ObjectType: 4
+      - ElementName: ELEVATOR_BEEP
+        ObjectType: 3
+      ID: 2009732986
+      Guid: ab137e21ac1f9f4e99665bd804bab95a
+      maxAttenuation: 0
+    - Name: ELEVATOR_CLOSE
+      Path: Default Work Unit\ELEVATOR\ELEVATOR_CLOSE
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ELEVATOR
+        ObjectType: 4
+      - ElementName: ELEVATOR_CLOSE
+        ObjectType: 3
+      ID: -480205898
+      Guid: aa638176cf37b94892affdf0330e150b
+      maxAttenuation: 0
+    - Name: ELEVATOR_DING
+      Path: Default Work Unit\ELEVATOR\ELEVATOR_DING
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ELEVATOR
+        ObjectType: 4
+      - ElementName: ELEVATOR_DING
+        ObjectType: 3
+      ID: -1246118706
+      Guid: 7ee2fa4b3800954e8b8d4871ee1d3424
+      maxAttenuation: 0
+    - Name: ELEVATOR_MUSIC
+      Path: Default Work Unit\ELEVATOR\ELEVATOR_MUSIC
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ELEVATOR
+        ObjectType: 4
+      - ElementName: ELEVATOR_MUSIC
+        ObjectType: 3
+      ID: -765997777
+      Guid: dc845f5d5aa3ea448d4522dec84c44e2
+      maxAttenuation: 0
+    - Name: ELEVATOR_OPEN
+      Path: Default Work Unit\ELEVATOR\ELEVATOR_OPEN
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ELEVATOR
+        ObjectType: 4
+      - ElementName: ELEVATOR_OPEN
+        ObjectType: 3
+      ID: -2061889182
+      Guid: 6749c0e56d6ff848a29745aa653619b5
+      maxAttenuation: 0
+    - Name: ENVIRONMENT_COMPUTER_HUM
+      Path: Default Work Unit\ENVIRONMENT\ENVIRONMENT_COMPUTER_HUM
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ENVIRONMENT
+        ObjectType: 4
+      - ElementName: ENVIRONMENT_COMPUTER_HUM
+        ObjectType: 3
+      ID: 1877045979
+      Guid: 5a7835336e1bff4da940745972aa809f
+      maxAttenuation: 0
+    - Name: ENVIRONMENT_COMPUTER_TYPING
+      Path: Default Work Unit\ENVIRONMENT\ENVIRONMENT_COMPUTER_TYPING
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ENVIRONMENT
+        ObjectType: 4
+      - ElementName: ENVIRONMENT_COMPUTER_TYPING
+        ObjectType: 3
+      ID: 721601394
+      Guid: 45bfb7f8b4727a498492a98b7220f203
+      maxAttenuation: 0
+    - Name: ENVIRONMENT_DOOR_CLOSE
+      Path: Default Work Unit\ENVIRONMENT\ENVIRONMENT_DOOR_CLOSE
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ENVIRONMENT
+        ObjectType: 4
+      - ElementName: ENVIRONMENT_DOOR_CLOSE
+        ObjectType: 3
+      ID: -294396518
+      Guid: 4503d81b00cb7643a87325300f7f5449
+      maxAttenuation: 0
+    - Name: ENVIRONMENT_DOOR_CRASH
+      Path: Default Work Unit\ENVIRONMENT\ENVIRONMENT_DOOR_CRASH
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ENVIRONMENT
+        ObjectType: 4
+      - ElementName: ENVIRONMENT_DOOR_CRASH
+        ObjectType: 3
+      ID: -954423897
+      Guid: f23f9ed40b928d439957adcd13fd742b
+      maxAttenuation: 0
+    - Name: ENVIRONMENT_DOOR_OPEN
+      Path: Default Work Unit\ENVIRONMENT\ENVIRONMENT_DOOR_OPEN
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ENVIRONMENT
+        ObjectType: 4
+      - ElementName: ENVIRONMENT_DOOR_OPEN
+        ObjectType: 3
+      ID: 1216458910
+      Guid: 13c42ad9dd824642a6b3c27c22bf4ed7
+      maxAttenuation: 0
+    - Name: ENVIRONMENT_DYING_PERSON
+      Path: Default Work Unit\ENVIRONMENT\ENVIRONMENT_DYING_PERSON
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ENVIRONMENT
+        ObjectType: 4
+      - ElementName: ENVIRONMENT_DYING_PERSON
+        ObjectType: 3
+      ID: 2086226094
+      Guid: d713a5549a09554ba3930fdd0cb4f02b
+      maxAttenuation: 0
+    - Name: ENVIRONMENT_MOANING_PERSON
+      Path: Default Work Unit\ENVIRONMENT\ENVIRONMENT_MOANING_PERSON
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ENVIRONMENT
+        ObjectType: 4
+      - ElementName: ENVIRONMENT_MOANING_PERSON
+        ObjectType: 3
+      ID: -1433583642
+      Guid: 9ed82e35e4f0114ca339a3d9ad4f75f7
+      maxAttenuation: 0
+    - Name: ENVIRONMENT_STATIC_MONITOR
+      Path: Default Work Unit\ENVIRONMENT\ENVIRONMENT_STATIC_MONITOR
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ENVIRONMENT
+        ObjectType: 4
+      - ElementName: ENVIRONMENT_STATIC_MONITOR
+        ObjectType: 3
+      ID: 1009371334
+      Guid: 125f2bbe75c0bc4bb48c85c601282945
+      maxAttenuation: 0
+    - Name: ENVIRONMENT_WATER_DROPLET
+      Path: Default Work Unit\ENVIRONMENT\ENVIRONMENT_WATER_DROPLET
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ENVIRONMENT
+        ObjectType: 4
+      - ElementName: ENVIRONMENT_WATER_DROPLET
+        ObjectType: 3
+      ID: -810967469
+      Guid: 405cada99889b94f8892b024df8dd4c7
+      maxAttenuation: 0
+    - Name: LOCKDOWN_LEVEL_ACCESSIBLE
+      Path: Default Work Unit\LOCKDOWN\LOCKDOWN_LEVEL_ACCESSIBLE
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LOCKDOWN
+        ObjectType: 4
+      - ElementName: LOCKDOWN_LEVEL_ACCESSIBLE
+        ObjectType: 3
+      ID: 566272348
+      Guid: 0b5c4a819d58bb49b96193e1f4c0c5ca
+      maxAttenuation: 0
+    - Name: LOCKDOWN_LEVEL_NUMBER
+      Path: Default Work Unit\LOCKDOWN\LOCKDOWN_LEVEL_NUMBER
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LOCKDOWN
+        ObjectType: 4
+      - ElementName: LOCKDOWN_LEVEL_NUMBER
+        ObjectType: 3
+      ID: 762222293
+      Guid: 3612c2ad74ea4c4caeebffed822756a1
+      maxAttenuation: 0
+    - Name: MISC_AMBIENCE_MACHINERY
+      Path: Default Work Unit\MISC\MISC_AMBIENCE_MACHINERY
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MISC
+        ObjectType: 4
+      - ElementName: MISC_AMBIENCE_MACHINERY
+        ObjectType: 3
+      ID: -1439106567
+      Guid: f3f12c5b0b483d47bcf5c089022898e0
+      maxAttenuation: 0
+    - Name: MISC_MENU_OPENING
+      Path: Default Work Unit\MISC\MISC_MENU_OPENING
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MISC
+        ObjectType: 4
+      - ElementName: MISC_MENU_OPENING
+        ObjectType: 3
+      ID: -1168802196
+      Guid: 7ca7aeeb3310ab4faa8764fff6b0de0d
+      maxAttenuation: 0
+    - Name: MISC_STUFF_CRASHING
+      Path: Default Work Unit\MISC\MISC_STUFF_CRASHING
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MISC
+        ObjectType: 4
+      - ElementName: MISC_STUFF_CRASHING
+        ObjectType: 3
+      ID: 555115694
+      Guid: 9f1ca9d873a8cc48a5c0d66461987aad
+      maxAttenuation: 0
+    - Name: PLAYER_BODY_FALL
+      Path: Default Work Unit\PLAYER\PLAYER_BODY_FALL
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PLAYER
+        ObjectType: 4
+      - ElementName: PLAYER_BODY_FALL
+        ObjectType: 3
+      ID: -1489572513
+      Guid: bbfb3babc9693a40b7610c95dc88386c
+      maxAttenuation: 0
+    - Name: PLAYER_BREATHING
+      Path: Default Work Unit\PLAYER\PLAYER_BREATHING
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PLAYER
+        ObjectType: 4
+      - ElementName: PLAYER_BREATHING
+        ObjectType: 3
+      ID: -855781071
+      Guid: 960e43cd7045be4bb094d13633c48a85
+      maxAttenuation: 0
+    - Name: PLAYER_DEATH
+      Path: Default Work Unit\PLAYER\PLAYER_DEATH
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PLAYER
+        ObjectType: 4
+      - ElementName: PLAYER_DEATH
+        ObjectType: 3
+      ID: -1211879651
+      Guid: 5b04981fa615e341ad0342d8ed7adcbe
+      maxAttenuation: 0
+    - Name: PLAYER_FOOTSTEP_CARPET
+      Path: Default Work Unit\PLAYER\PLAYER_FOOTSTEP_CARPET
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PLAYER
+        ObjectType: 4
+      - ElementName: PLAYER_FOOTSTEP_CARPET
+        ObjectType: 3
+      ID: -743030281
+      Guid: 528651c2a7756a4e8d47513435e66255
+      maxAttenuation: 0
+    - Name: PLAYER_FOOTSTEP_CONCRETE
+      Path: Default Work Unit\PLAYER\PLAYER_FOOTSTEP_CONCRETE
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PLAYER
+        ObjectType: 4
+      - ElementName: PLAYER_FOOTSTEP_CONCRETE
+        ObjectType: 3
+      ID: -1542692693
+      Guid: cccca184b90f4c4dbb579c823be5bf01
+      maxAttenuation: 0
+    - Name: PLAYER_FOOTSTEP_HARDWOOD
+      Path: Default Work Unit\PLAYER\PLAYER_FOOTSTEP_HARDWOOD
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PLAYER
+        ObjectType: 4
+      - ElementName: PLAYER_FOOTSTEP_HARDWOOD
+        ObjectType: 3
+      ID: 1174985646
+      Guid: 64c4bfd6733c324188617fbfdb422bb0
+      maxAttenuation: 0
+    - Name: PLAYER_FOOTSTEP_TILE
+      Path: Default Work Unit\PLAYER\PLAYER_FOOTSTEP_TILE
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PLAYER
+        ObjectType: 4
+      - ElementName: PLAYER_FOOTSTEP_TILE
+        ObjectType: 3
+      ID: 1214254818
+      Guid: 1de7e208d06dac49b47aaf9203988558
+      maxAttenuation: 0
+    - Name: PLAYER_HEARTBEAT
+      Path: Default Work Unit\PLAYER\PLAYER_HEARTBEAT
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PLAYER
+        ObjectType: 4
+      - ElementName: PLAYER_HEARTBEAT
+        ObjectType: 3
+      ID: -810645365
+      Guid: fa9586cdf3abd24289b55bc8bacb7b5d
+      maxAttenuation: 0
+    - Name: PLAYER_PLAYER_HIT
+      Path: Default Work Unit\PLAYER\PLAYER_PLAYER_HIT
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PLAYER
+        ObjectType: 4
+      - ElementName: PLAYER_PLAYER_HIT
+        ObjectType: 3
+      ID: 417685736
+      Guid: 862e713819ad3b47a3bf5d3cdee107de
+      maxAttenuation: 0
+    - Name: PRIDE_EXCORCISED
+      Path: Default Work Unit\SPECTRE\PRIDE\PRIDE_EXCORCISED
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: PRIDE
+        ObjectType: 4
+      - ElementName: PRIDE_EXCORCISED
+        ObjectType: 3
+      ID: -1000959993
+      Guid: 6ca14a0fc1462b4bae2e003480547fee
+      maxAttenuation: 0
+    - Name: PRIDE_HEAR_PLAYER
+      Path: Default Work Unit\SPECTRE\PRIDE\PRIDE_HEAR_PLAYER
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: PRIDE
+        ObjectType: 4
+      - ElementName: PRIDE_HEAR_PLAYER
+        ObjectType: 3
+      ID: 185722928
+      Guid: c6317515f6b1184793b3e3299efc45ec
+      maxAttenuation: 0
+    - Name: PRIDE_LAUGH_WHISTPER
+      Path: Default Work Unit\SPECTRE\PRIDE\PRIDE_LAUGH_WHISTPER
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: PRIDE
+        ObjectType: 4
+      - ElementName: PRIDE_LAUGH_WHISTPER
+        ObjectType: 3
+      ID: 1612486910
+      Guid: f23ec89636943f4ba9c5016b9a0216c3
+      maxAttenuation: 0
+    - Name: RADIO
+      Path: Default Work Unit\RADIO\RADIO
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RADIO
+        ObjectType: 4
+      - ElementName: RADIO
+        ObjectType: 3
+      ID: -1746728946
+      Guid: a1386f78d915e34a995f0e19e2b770ef
+      maxAttenuation: 0
+    - Name: SIREN_HEAR_PLAYER
+      Path: Default Work Unit\SPECTRE\SIREN\SIREN_HEAR_PLAYER
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: SIREN
+        ObjectType: 4
+      - ElementName: SIREN_HEAR_PLAYER
+        ObjectType: 3
+      ID: 505685397
+      Guid: fdf0b196c0ab944dadf190984e0ad6ae
+      maxAttenuation: 0
+    - Name: SIREN_SCREAM
+      Path: Default Work Unit\SPECTRE\SIREN\SIREN_SCREAM
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: SIREN
+        ObjectType: 4
+      - ElementName: SIREN_SCREAM
+        ObjectType: 3
+      ID: -436861156
+      Guid: e9e829fadd716d4c99f23a6c4a3d1819
+      maxAttenuation: 0
+    - Name: SIREN_SNORE
+      Path: Default Work Unit\SPECTRE\SIREN\SIREN_SNORE
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: SIREN
+        ObjectType: 4
+      - ElementName: SIREN_SNORE
+        ObjectType: 3
+      ID: 1841509380
+      Guid: 5c2daf56bce1704581585558c27c5fe7
+      maxAttenuation: 0
+    - Name: SIREN_WARNING
+      Path: Default Work Unit\SPECTRE\SIREN\SIREN_WARNING
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: SIREN
+        ObjectType: 4
+      - ElementName: SIREN_WARNING
+        ObjectType: 3
+      ID: 1547206381
+      Guid: d4643638d2a33b40a6f9bc178a48a1a6
+      maxAttenuation: 0
+    - Name: STALKER_EXCORCISED
+      Path: Default Work Unit\SPECTRE\STALKER\STALKER_EXCORCISED
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: STALKER
+        ObjectType: 4
+      - ElementName: STALKER_EXCORCISED
+        ObjectType: 3
+      ID: -392441187
+      Guid: ae647411b7d2554d9c1b3a9904b6089f
+      maxAttenuation: 0
+    - Name: STALKER_HEAR
+      Path: Default Work Unit\SPECTRE\STALKER\STALKER_HEAR
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: STALKER
+        ObjectType: 4
+      - ElementName: STALKER_HEAR
+        ObjectType: 3
+      ID: -1001404866
+      Guid: b6334b54e9c33b40a922e65e2450ec5f
+      maxAttenuation: 0
+    - Name: STALKER_ROAR
+      Path: Default Work Unit\SPECTRE\STALKER\STALKER_ROAR
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: STALKER
+        ObjectType: 4
+      - ElementName: STALKER_ROAR
+        ObjectType: 3
+      ID: -1668354366
+      Guid: 5635eece620ddc45a3eb4a6af481fd80
+      maxAttenuation: 0
+    - Name: THROWABLE_GLASS_BREAKING
+      Path: Default Work Unit\THROWABLE\THROWABLE_GLASS_BREAKING
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: THROWABLE
+        ObjectType: 4
+      - ElementName: THROWABLE_GLASS_BREAKING
+        ObjectType: 3
+      ID: 765077262
+      Guid: b403aa198bdb124e99f7055da7c3186d
+      maxAttenuation: 0
+    - Name: THROWABLE_GLASS_COLLISION
+      Path: Default Work Unit\THROWABLE\THROWABLE_GLASS_COLLISION
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: THROWABLE
+        ObjectType: 4
+      - ElementName: THROWABLE_GLASS_COLLISION
+        ObjectType: 3
+      ID: 1348421559
+      Guid: 7cda6c61f2002e4da36373f0eeec7ba7
+      maxAttenuation: 0
+    - Name: THROWABLE_GLASS_CRUNCHING
+      Path: Default Work Unit\THROWABLE\THROWABLE_GLASS_CRUNCHING
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: THROWABLE
+        ObjectType: 4
+      - ElementName: THROWABLE_GLASS_CRUNCHING
+        ObjectType: 3
+      ID: -105320938
+      Guid: d8cd4ef404fe07409ae80ce8a9a13def
+      maxAttenuation: 0
+    - Name: THROWABLE_GLASS_PICKUP
+      Path: Default Work Unit\THROWABLE\THROWABLE_GLASS_PICKUP
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: THROWABLE
+        ObjectType: 4
+      - ElementName: THROWABLE_GLASS_PICKUP
+        ObjectType: 3
+      ID: 1255976185
+      Guid: 952aba7ea7348a4b8fbc69e9ccb81c9a
+      maxAttenuation: 0
+    - Name: WRATH_FOOTSTEP
+      Path: Default Work Unit\SPECTRE\WRATH\WRATH_FOOTSTEP
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: WRATH
+        ObjectType: 4
+      - ElementName: WRATH_FOOTSTEP
+        ObjectType: 3
+      ID: -1531372640
+      Guid: e6ede5ef5f5da341b66a9f3b075a258d
+      maxAttenuation: 0
+    - Name: WRATH_GROWL
+      Path: Default Work Unit\SPECTRE\WRATH\WRATH_GROWL
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: WRATH
+        ObjectType: 4
+      - ElementName: WRATH_GROWL
+        ObjectType: 3
+      ID: 493235585
+      Guid: 83a085436ae7254082268b730f9ea388
+      maxAttenuation: 0
+    - Name: WRATH_HEAR_PLAYER
+      Path: Default Work Unit\SPECTRE\WRATH\WRATH_HEAR_PLAYER
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: WRATH
+        ObjectType: 4
+      - ElementName: WRATH_HEAR_PLAYER
+        ObjectType: 3
+      ID: -542381346
+      Guid: b1b4b90d94ccc0409ebddfab3367b9ae
+      maxAttenuation: 0
+    - Name: WRATH_HIT_PLAYER
+      Path: Default Work Unit\SPECTRE\WRATH\WRATH_HIT_PLAYER
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: WRATH
+        ObjectType: 4
+      - ElementName: WRATH_HIT_PLAYER
+        ObjectType: 3
+      ID: 1117685795
+      Guid: e0cabe6ad48bc04aa4df6ed121545ae0
+      maxAttenuation: 0
+    - Name: WRATH_IDLE
+      Path: Default Work Unit\SPECTRE\WRATH\WRATH_IDLE
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: WRATH
+        ObjectType: 4
+      - ElementName: WRATH_IDLE
+        ObjectType: 3
+      ID: 1864040956
+      Guid: 8593914aa22ddc4cb4030a6099eefbc6
+      maxAttenuation: 0
+    - Name: WRATH_PRE_SWING
+      Path: Default Work Unit\SPECTRE\WRATH\WRATH_PRE_SWING
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: WRATH
+        ObjectType: 4
+      - ElementName: WRATH_PRE_SWING
+        ObjectType: 3
+      ID: 1315215942
+      Guid: d4cef95c5b7edb45a8a150451f113e96
+      maxAttenuation: 0
+    - Name: WRATH_ROAR
+      Path: Default Work Unit\SPECTRE\WRATH\WRATH_ROAR
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SPECTRE
+        ObjectType: 4
+      - ElementName: WRATH
+        ObjectType: 4
+      - ElementName: WRATH_ROAR
+        ObjectType: 3
+      ID: -1755968746
+      Guid: d09bf9c3bdd5d3458ccf4a9786f16138
+      maxAttenuation: 0
+    - Name: XENIA_WHISPER
+      Path: Default Work Unit\XENIA\XENIA_WHISPER
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: XENIA
+        ObjectType: 4
+      - ElementName: XENIA_WHISPER
+        ObjectType: 3
+      ID: 1775766255
+      Guid: ae908aeac745f741ad23a9f3020a5cbf
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{62AEDD2C-64BF-4530-A0E0-318B1A07B1EC}'
+    m_lastTimePsrt1: 144765765
+    m_lastTimePart2: -1999423505
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{5D7685F8-8C29-4A1C-BEA1-1307E3B2D21F}'
+    m_lastTimePsrt1: -892749270
+    m_lastTimePart2: -1999423233
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{4D3FFA53-9040-4702-9B0B-21C08EEC2BC6}'
+    m_lastTimePsrt1: 1931538765
+    m_lastTimePart2: -1999423227
+    List:
+    - Name: Floor
+      Path: Default Work Unit\Floor
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Floor
+        ObjectType: 11
+      ID: 1088209313
+      Guid: 7a1fca2385fd424299543f7bf2165b91
+      values:
+      - Floor_Eight
+      - Floor_Eighteen
+      - Floor_Eleven
+      - Floor_Fifteen
+      - Floor_Five
+      - Floor_Four
+      - Floor_Fourteen
+      - Floor_Nine
+      - Floor_Nineteen
+      - Floor_One
+      - Floor_Seven
+      - Floor_Seventeen
+      - Floor_Six
+      - Floor_Sixteen
+      - Floor_Ten
+      - Floor_Thirteen
+      - Floor_Thirty
+      - Floor_Three
+      - Floor_Twelve
+      - Floor_Twenty
+      - Floor_TwentyEight
+      - Floor_TwentyFive
+      - Floor_TwentyFour
+      - Floor_TwentyNine
+      - Floor_TwentyOne
+      - Floor_TwentySeven
+      - Floor_TwentySix
+      - Floor_TwentyThree
+      - Floor_TwentyTwo
+      - Floor_Two
+      ValueIcons:
+      - ElementName: Floor_Eight
+        ObjectType: 10
+      - ElementName: Floor_Eighteen
+        ObjectType: 10
+      - ElementName: Floor_Eleven
+        ObjectType: 10
+      - ElementName: Floor_Fifteen
+        ObjectType: 10
+      - ElementName: Floor_Five
+        ObjectType: 10
+      - ElementName: Floor_Four
+        ObjectType: 10
+      - ElementName: Floor_Fourteen
+        ObjectType: 10
+      - ElementName: Floor_Nine
+        ObjectType: 10
+      - ElementName: Floor_Nineteen
+        ObjectType: 10
+      - ElementName: Floor_One
+        ObjectType: 10
+      - ElementName: Floor_Seven
+        ObjectType: 10
+      - ElementName: Floor_Seventeen
+        ObjectType: 10
+      - ElementName: Floor_Six
+        ObjectType: 10
+      - ElementName: Floor_Sixteen
+        ObjectType: 10
+      - ElementName: Floor_Ten
+        ObjectType: 10
+      - ElementName: Floor_Thirteen
+        ObjectType: 10
+      - ElementName: Floor_Thirty
+        ObjectType: 10
+      - ElementName: Floor_Three
+        ObjectType: 10
+      - ElementName: Floor_Twelve
+        ObjectType: 10
+      - ElementName: Floor_Twenty
+        ObjectType: 10
+      - ElementName: Floor_TwentyEight
+        ObjectType: 10
+      - ElementName: Floor_TwentyFive
+        ObjectType: 10
+      - ElementName: Floor_TwentyFour
+        ObjectType: 10
+      - ElementName: Floor_TwentyNine
+        ObjectType: 10
+      - ElementName: Floor_TwentyOne
+        ObjectType: 10
+      - ElementName: Floor_TwentySeven
+        ObjectType: 10
+      - ElementName: Floor_TwentySix
+        ObjectType: 10
+      - ElementName: Floor_TwentyThree
+        ObjectType: 10
+      - ElementName: Floor_TwentyTwo
+        ObjectType: 10
+      - ElementName: Floor_Two
+        ObjectType: 10
+      valueIDs: 0dab5f8827b1548a5373e389af493aa77422fd056819ee066cfa3d0784d60a75f894883e6815c23ffb0df5354fff5b60cc2be04030f97f68c1cfce3431bc23f0bc3a7c57b4c61c96d3febf424398c4546c00db47cb3e8a187bad850bab731aba41604cc93e4e8af90d882ef0bdcb94526f1535d2cab9ce26
+      ValueGuids:
+      - bytes: 369d92a798782648a95892aeadc8c477
+      - bytes: d42a385cbca60a46a2e420ccfcf4f65b
+      - bytes: 066cea025d83b242baa76e04969a37ba
+      - bytes: bb24b2b5ef3b2a4fac547fcdde7a712f
+      - bytes: 1f4bb6621d8733478683230815fcef32
+      - bytes: d29b90754295aa4483c1794f1cc50d6b
+      - bytes: 8f9900cf7d6bcc439b0928582941a926
+      - bytes: c47e05f21d366545b4d860cf275ac3ab
+      - bytes: 3a1a94452d86ab4b97525b5aed3630c9
+      - bytes: 4de41de2cda351438cec2eec1d5a62a2
+      - bytes: f0231233308dc342af1ff442ad188a35
+      - bytes: 2f57d0528fdbe545bbda387a486f3ab4
+      - bytes: 18085c2e7deeda4391bd7315df59f6d7
+      - bytes: 5123dc415883dc4fbc3b64f0ae8ecc3e
+      - bytes: 4d407287d5ee714d9f742e3630291107
+      - bytes: fae16ca1ec3b144ca200c979e36485b7
+      - bytes: ed718774a9221940a150080be4a5a7f4
+      - bytes: 4be89c72c418c44c97dbf261b110bc38
+      - bytes: 30477f8b810602488aaf04765cb68db8
+      - bytes: 220a5299ba6a154989f1182b0b79286f
+      - bytes: 8e5f9d50a97f454c988bd531af5b84f9
+      - bytes: aae5c3a99f8f2b4793fd509d7887cf09
+      - bytes: 50894db4dc31a649b7fee895fe0c8b34
+      - bytes: 5e44087f0b686f47bc2491109ce039d9
+      - bytes: 3053f2ce5c4ad046a99a149ab8cdd352
+      - bytes: 18a5db9957d64740a4a53895a7c8fda7
+      - bytes: 95445ae1e6330c4880383342dd361cd6
+      - bytes: 8234dc0664b69f4c95afa7cdf90ba045
+      - bytes: f5c869342aaddc4ba6b3a4b8b856f16b
+      - bytes: 102ad11e185ada4cbd6bb5f3c601fee7
+    - Name: Player_Surface
+      Path: Default Work Unit\Player_Surface
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player_Surface
+        ObjectType: 11
+      ID: -1574926582
+      Guid: a81b1de5bb4b9d4d9dc36c9b14209087
+      values:
+      - Carpet
+      - Concrete
+      - Hardwood
+      - Tile
+      ValueIcons:
+      - ElementName: Carpet
+        ObjectType: 10
+      - ElementName: Concrete
+        ObjectType: 10
+      - ElementName: Hardwood
+        ObjectType: 10
+      - ElementName: Tile
+        ObjectType: 10
+      valueIDs: 6473cd8fec1b2a32d10084d64968369d
+      ValueGuids:
+      - bytes: feda7ece0d6f2e41bc537289656014f3
+      - bytes: 6dbbd49ef64cce4fb4da3de6eb58463a
+      - bytes: d6b440703ddf36448a91c0563ba1c47e
+      - bytes: 615df84e368b234aa5d559865d482496
+    - Name: Tutorial
+      Path: Default Work Unit\Tutorial
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Tutorial
+        ObjectType: 11
+      ID: -532011869
+      Guid: 298855dd75b27245854c9335570d9480
+      values:
+      - InTutorial
+      - OutOfTutorial
+      ValueIcons:
+      - ElementName: InTutorial
+        ObjectType: 10
+      - ElementName: OutOfTutorial
+        ObjectType: 10
+      valueIDs: 2a14fb833a6881e7
+      ValueGuids:
+      - bytes: cf39f950ada0624f992f5d345bb30f8f
+      - bytes: 1f82cd2d9eaeda478e61800caefac65b
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{B76ED186-FC50-43FB-B6D9-FF55288E31AF}'
+    m_lastTimePsrt1: 658331965
+    m_lastTimePart2: -1999423219
+    List:
+    - Name: Ambient
+      Path: Default Work Unit\Ambient
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 7
+      ID: 77978275
+      Guid: 73f2d6422049f242b0ea56d504022e3d
+    - Name: Elevator
+      Path: Default Work Unit\Elevator
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Elevator
+        ObjectType: 7
+      ID: -589589009
+      Guid: a50524d27f861143b370144093e4d84a
+    - Name: Environment
+      Path: Default Work Unit\Environment
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 7
+      ID: 1229948536
+      Guid: bcc085ed97a2654abea4c6d6e3a1aa5a
+    - Name: Lockdown
+      Path: Default Work Unit\Lockdown
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Lockdown
+        ObjectType: 7
+      ID: 2096553452
+      Guid: 82c826283be3ce4ab80698965419b2e5
+    - Name: Misc
+      Path: Default Work Unit\Misc
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Misc
+        ObjectType: 7
+      ID: -1232444039
+      Guid: b51ba94643eb264fb28a325eb155f242
+    - Name: Player
+      Path: Default Work Unit\Player
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 7
+      ID: 1069431850
+      Guid: 154fee0e64922e4e8cbc99a2ee0f4fbc
+    - Name: Radio
+      Path: Default Work Unit\Radio
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Radio
+        ObjectType: 7
+      ID: -1746728946
+      Guid: 3940a41ab31ff9429f361fb6852199e3
+    - Name: Spectre
+      Path: Default Work Unit\Spectre
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Spectre
+        ObjectType: 7
+      ID: -1410162665
+      Guid: 1da6cec7731bb940b0b1a11318746e06
+    - Name: Throwable
+      Path: Default Work Unit\Throwable
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Throwable
+        ObjectType: 7
+      ID: 1975751515
+      Guid: 2d671fcabdeeed4abb7bda47d1ed21b5
+    - Name: Xenia
+      Path: Default Work Unit\Xenia
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Xenia
+        ObjectType: 7
+      ID: 766130264
+      Guid: 4c4796c12055c64db28fd582ead67b39
+  ExpandedItems:
+  - /SonarWwise
+  - /SonarWwise/Events
+  - /SonarWwise/Events/Default Work Unit
+  - /SonarWwise/Events/Default Work Unit/AMBIENT
+  - /SonarWwise/Events/Default Work Unit/RADIO
+  m_lastPopulateTimePsrt1: 0
+  m_lastPopulateTimePart2: 0
+  autoPopulateEnabled: 1
+  basePath: GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 4096
+  lowerPoolSize: 2048
+  streamingPoolSize: 1024
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0.95

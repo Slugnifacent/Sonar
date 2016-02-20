@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4D3FFA53-9040-4702-9B0B-21C08EEC2BC6}" SchemaVersion="70">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{4D3FFA53-9040-4702-9B0B-21C08EEC2BC6}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Floor" ID="{23CA1F7A-FD85-4242-9954-3F7BF2165B91}">
+					<ChildrenList>
+						<Switch Name="Floor_One" ID="{E21DE44D-A3CD-4351-8CEC-2EEC1D5A62A2}"/>
+						<Switch Name="Floor_Two" ID="{1ED12A10-5A18-4CDA-BD6B-B5F3C601FEE7}"/>
+						<Switch Name="Floor_Three" ID="{729CE84B-18C4-4CC4-97DB-F261B110BC38}"/>
+						<Switch Name="Floor_Four" ID="{75909BD2-9542-44AA-83C1-794F1CC50D6B}"/>
+						<Switch Name="Floor_Five" ID="{62B64B1F-871D-4733-8683-230815FCEF32}"/>
+						<Switch Name="Floor_Six" ID="{2E5C0818-EE7D-43DA-91BD-7315DF59F6D7}"/>
+						<Switch Name="Floor_Seven" ID="{331223F0-8D30-42C3-AF1F-F442AD188A35}"/>
+						<Switch Name="Floor_Eight" ID="{A7929D36-7898-4826-A958-92AEADC8C477}"/>
+						<Switch Name="Floor_Nine" ID="{F2057EC4-361D-4565-B4D8-60CF275AC3AB}"/>
+						<Switch Name="Floor_Ten" ID="{8772404D-EED5-4D71-9F74-2E3630291107}"/>
+						<Switch Name="Floor_Eleven" ID="{02EA6C06-835D-42B2-BAA7-6E04969A37BA}"/>
+						<Switch Name="Floor_Twelve" ID="{8B7F4730-0681-4802-8AAF-04765CB68DB8}"/>
+						<Switch Name="Floor_Thirteen" ID="{A16CE1FA-3BEC-4C14-A200-C979E36485B7}">
+							<Comment>Notes
+	</Comment>
+						</Switch>
+						<Switch Name="Floor_Fourteen" ID="{CF00998F-6B7D-43CC-9B09-28582941A926}"/>
+						<Switch Name="Floor_Fifteen" ID="{B5B224BB-3BEF-4F2A-AC54-7FCDDE7A712F}"/>
+						<Switch Name="Floor_Sixteen" ID="{41DC2351-8358-4FDC-BC3B-64F0AE8ECC3E}"/>
+						<Switch Name="Floor_Seventeen" ID="{52D0572F-DB8F-45E5-BBDA-387A486F3AB4}"/>
+						<Switch Name="Floor_Eighteen" ID="{5C382AD4-A6BC-460A-A2E4-20CCFCF4F65B}"/>
+						<Switch Name="Floor_Nineteen" ID="{45941A3A-862D-4BAB-9752-5B5AED3630C9}"/>
+						<Switch Name="Floor_Twenty" ID="{99520A22-6ABA-4915-89F1-182B0B79286F}"/>
+						<Switch Name="Floor_TwentyOne" ID="{CEF25330-4A5C-46D0-A99A-149AB8CDD352}"/>
+						<Switch Name="Floor_TwentyTwo" ID="{3469C8F5-AD2A-4BDC-A6B3-A4B8B856F16B}"/>
+						<Switch Name="Floor_TwentyThree" ID="{06DC3482-B664-4C9F-95AF-A7CDF90BA045}"/>
+						<Switch Name="Floor_TwentyFour" ID="{B44D8950-31DC-49A6-B7FE-E895FE0C8B34}"/>
+						<Switch Name="Floor_TwentyFive" ID="{A9C3E5AA-8F9F-472B-93FD-509D7887CF09}"/>
+						<Switch Name="Floor_TwentySix" ID="{E15A4495-33E6-480C-8038-3342DD361CD6}"/>
+						<Switch Name="Floor_TwentySeven" ID="{99DBA518-D657-4047-A4A5-3895A7C8FDA7}"/>
+						<Switch Name="Floor_TwentyEight" ID="{509D5F8E-7FA9-4C45-988B-D531AF5B84F9}"/>
+						<Switch Name="Floor_TwentyNine" ID="{7F08445E-680B-476F-BC24-91109CE039D9}"/>
+						<Switch Name="Floor_Thirty" ID="{748771ED-22A9-4019-A150-080BE4A5A7F4}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="CurrentLevel" ID="{A88F8E9D-36D8-4BD8-B4C5-5C2088826AAF}"/>
+						<Curve Name="" ID="{76A66C4C-1237-4B73-B3A3-E3F0ECF74D5B}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>0</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>10.08446</XPos>
+									<YPos>0</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>30</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Tutorial" ID="{DD558829-B275-4572-854C-9335570D9480}">
+					<ChildrenList>
+						<Switch Name="InTutorial" ID="{50F939CF-A0AD-4F62-992F-5D345BB30F8F}"/>
+						<Switch Name="OutOfTutorial" ID="{2DCD821F-AE9E-47DA-8E61-800CAEFAC65B}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Player_Surface" ID="{E51D1BA8-4BBB-4D9D-9DC3-6C9B14209087}">
+					<ChildrenList>
+						<Switch Name="Carpet" ID="{CE7EDAFE-6F0D-412E-BC53-7289656014F3}"/>
+						<Switch Name="Concrete" ID="{9ED4BB6D-4CF6-4FCE-B4DA-3DE6EB58463A}"/>
+						<Switch Name="Hardwood" ID="{7040B4D6-DF3D-4436-8A91-C0563BA1C47E}"/>
+						<Switch Name="Tile" ID="{4EF85D61-8B36-4A23-A5D5-59865D482496}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7235D93B-1EFD-40EC-BBEA-371C76157493}" SchemaVersion="70">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{7235D93B-1EFD-40EC-BBEA-371C76157493}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Player_Running_Time" ID="{82B1E51B-717A-4FD1-83BF-57D422C9CCA8}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="CurrentLevel" ID="{A88F8E9D-36D8-4BD8-B4C5-5C2088826AAF}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="30"/>
+						<Property Name="Max" Type="Real64" Value="30"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="InTutorial" ID="{9E485E3C-1536-4F57-89ED-5DAD6B17C136}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

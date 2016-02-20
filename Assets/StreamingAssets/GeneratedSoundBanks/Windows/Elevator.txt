@@ -1,0 +1,15 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2009732986	ELEVATOR_BEEP			\Default Work Unit\ELEVATOR\ELEVATOR_BEEP	
+	2233078114	ELEVATOR_OPEN			\Default Work Unit\ELEVATOR\ELEVATOR_OPEN	
+	3048848590	ELEVATOR_DING			\Default Work Unit\ELEVATOR\ELEVATOR_DING	
+	3528969519	ELEVATOR_MUSIC			\Default Work Unit\ELEVATOR\ELEVATOR_MUSIC	
+	3814761398	ELEVATOR_CLOSE			\Default Work Unit\ELEVATOR\ELEVATOR_CLOSE	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	265339942	ElevatorMusic	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Objects\Environment\Exit\Elevator_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\Exit\ElevatorMusic		7068736
+	366405039	elevatorBeep	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Objects\Environment\Exit\elevatorBeep_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\Exit\elevatorBeep		176544
+	564707105	elevatorClose	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Objects\Environment\Exit\elevatorClose_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\Exit\elevatorClose		87964
+	627792151	elevatorDing	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Objects\Environment\Exit\elevatorDing_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\Exit\Ding\elevatorDing		484288
+	946577582	elevatorDing2	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Objects\Environment\Exit\elevatorDing2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\Exit\Ding\elevatorDing2		24202
+	1019878123	elevatorOpen	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Objects\Environment\Exit\elevatorOpen_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\Exit\elevatorOpen		75348
+

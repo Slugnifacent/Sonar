@@ -1,0 +1,49 @@
+Event	ID	Name			Wwise Object Path	Notes
+	417685736	PLAYER_PLAYER_HIT			\Default Work Unit\PLAYER\PLAYER_PLAYER_HIT	
+	1174985646	PLAYER_FOOTSTEP_HARDWOOD			\Default Work Unit\PLAYER\PLAYER_FOOTSTEP_HARDWOOD	
+	1214254818	PLAYER_FOOTSTEP_TILE			\Default Work Unit\PLAYER\PLAYER_FOOTSTEP_TILE	
+	2752274603	PLAYER_FOOTSTEP_CONCRETE			\Default Work Unit\PLAYER\PLAYER_FOOTSTEP_CONCRETE	
+	2805394783	PLAYER_BODY_FALL			\Default Work Unit\PLAYER\PLAYER_BODY_FALL	
+	3083087645	PLAYER_DEATH			\Default Work Unit\PLAYER\PLAYER_DEATH	
+	3439186225	PLAYER_BREATHING			\Default Work Unit\PLAYER\PLAYER_BREATHING	
+	3484321931	PLAYER_HEARTBEAT			\Default Work Unit\PLAYER\PLAYER_HEARTBEAT	
+	3551937015	PLAYER_FOOTSTEP_CARPET			\Default Work Unit\PLAYER\PLAYER_FOOTSTEP_CARPET	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2720040714	Player_Surface			\Default Work Unit\Player_Surface	
+
+Switch	ID	Name	Switch Group			Notes
+	841620460	Concrete	Player_Surface			
+	2412606308	Carpet	Player_Surface			
+	2637588553	Tile	Player_Surface			
+	3598975185	Hardwood	Player_Surface			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1682774834	Player_Running_Time			\Default Work Unit\Player_Running_Time	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	82993447	dying4	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Dying\dying4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Dying\dying4		325696
+	160389294	heartBeat_normal	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\heartBeat_normal_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Heartbeat\heartBeat_normal		1728576
+	166176911	player_hit2	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\player_hit2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\PlayerHit\player_hit2		31868
+	183934692	normalBreathing	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Breathing\normalBreathing_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Breathing\normalBreathing		201792
+	202378672	footsteps_hardwood2	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Footsteps\footsteps_hardwood2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Footsteps\Footsteps_Hardwood\footsteps_hardwood2		31262
+	265504439	footsteps_tile2	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Footsteps\footsteps_tile2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Footsteps\Footsteps_tile\footsteps_tile2		51006
+	269308791	player_hit	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\player_hit_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\PlayerHit\player_hit		39392
+	333431400	dying5	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Dying\dying5_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Dying\dying5		734272
+	383476048	heartBeat_faster	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\heartBeat_faster_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Heartbeat\heartBeat_faster		1728576
+	386543738	footsteps_carpet1	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Footsteps\footsteps_carpet1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Footsteps\Footsteps_Carpet\footsteps_carpet1		37812
+	387735548	Heartbeat_normal_01	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Heartbeat\heartBeat_normal_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Heartbeat\Heartbeat_normal_01		287004
+	430351441	footsteps_concrete2	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Footsteps\footsteps_concrete2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Footsteps\Footsteps_Concrete\footsteps_concrete2		25116
+	510969552	footsteps_hardwood1	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Footsteps\footsteps_hardwood1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Footsteps\Footsteps_Hardwood\footsteps_hardwood1		34728
+	573805514	dying3	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Dying\dying3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Dying\dying3		327744
+	603236404	footsteps_tile1	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Footsteps\footsteps_tile1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Footsteps\Footsteps_tile\footsteps_tile1		50082
+	634335301	heavyBreathing2	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Breathing\heavyBreathing2_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Breathing\heavyBreathing2		206912
+	642325328	dying1	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Dying\dying1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Dying\dying1		489536
+	642473939	dying2	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Dying\dying2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Dying\dying2		521280
+	726116431	footsteps_carpet2	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Footsteps\footsteps_carpet2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Footsteps\Footsteps_Carpet\footsteps_carpet2		26280
+	784676547	heavyBreathing	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Breathing\heavyBreathing_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Breathing\heavyBreathing		132160
+	802982387	bodyFallDown	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\bodyFallDown_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\PlayerBodyFallDown\bodyFallDown		106412
+	825750199	nervousBreathing	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Breathing\nervousBreathing_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Breathing\nervousBreathing		110656
+	876686371	footsteps_concrete1	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\Footsteps\footsteps_concrete1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Footsteps\Footsteps_Concrete\footsteps_concrete1		26462
+	904791094	heartBeat_fastest	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Player\heartBeat_fastest_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Player\Heartbeat\heartBeat_fastest		1728576
+

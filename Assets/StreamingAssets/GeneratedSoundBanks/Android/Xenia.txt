@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1775766255	XENIA_WHISPER			\Default Work Unit\XENIA\XENIA_WHISPER	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	801489697	whisper	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Xenia\whisper_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Xenia\whisper		5808024
+

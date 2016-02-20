@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementalBankBuild Version="4" Flags="878078161">
+	<Platform GUID="{3BB53F27-9A1E-4C9A-A6B3-5FC63369B88B}">
+		<Language ID="0">
+			<Bank Name="Ambient" Hash="2928519683" StreamHash="157587662" Timestamp="131003478629361214"/>
+			<Bank Name="Elevator" Hash="1624673541" StreamHash="157587662" Timestamp="131003478630277657"/>
+			<Bank Name="Environment" Hash="2813364012" StreamHash="157587662" Timestamp="131003478631021459"/>
+			<Bank Name="Init" Hash="2284669337" StreamHash="157587662" Timestamp="131003469261910169"/>
+			<Bank Name="JoshuaSoundBank" Hash="3945275674" StreamHash="157587662" Timestamp="131003464367505152"/>
+			<Bank Name="Lockdown" Hash="4131185813" StreamHash="157587662" Timestamp="131003478632560903"/>
+			<Bank Name="Misc" Hash="4252741729" StreamHash="157587662" Timestamp="131003478639337154"/>
+			<Bank Name="Player" Hash="835940546" StreamHash="157587662" Timestamp="131003478640726628"/>
+			<Bank Name="Radio" Hash="2780611866" StreamHash="157587662" Timestamp="131003478641505745"/>
+			<Bank Name="Soundbank" Hash="4125860849" StreamHash="157587662" Timestamp="131002597410802961"/>
+			<Bank Name="Spectre" Hash="917539508" StreamHash="157587662" Timestamp="131003478643761184"/>
+			<Bank Name="Throwable" Hash="2921848270" StreamHash="157587662" Timestamp="131003478643960263"/>
+			<Bank Name="Xenia" Hash="3039332191" StreamHash="157587662" Timestamp="131003478644266472"/>
+		</Language>
+	</Platform>
+	<Platform GUID="{2D76FAFA-C99F-452B-AA77-14EABDBFFDA8}">
+		<Language ID="0">
+			<Bank Name="Ambient" Hash="2928519683" StreamHash="157587662" Timestamp="131003478618909793"/>
+			<Bank Name="Elevator" Hash="1624673541" StreamHash="157587662" Timestamp="131003478619372027"/>
+			<Bank Name="Environment" Hash="2813364012" StreamHash="157587662" Timestamp="131003478620375926"/>
+			<Bank Name="Init" Hash="3543101766" StreamHash="157587662" Timestamp="131003469258852863"/>
+			<Bank Name="JoshuaSoundBank" Hash="2101250276" StreamHash="157587662" Timestamp="131003464329548847"/>
+			<Bank Name="Lockdown" Hash="4131185813" StreamHash="157587662" Timestamp="131003478621736177"/>
+			<Bank Name="Misc" Hash="4252741729" StreamHash="157587662" Timestamp="131003478623999286"/>
+			<Bank Name="Player" Hash="2039083836" StreamHash="157587662" Timestamp="131003478625518967"/>
+			<Bank Name="Radio" Hash="2780611866" StreamHash="157587662" Timestamp="131003478626232753"/>
+			<Bank Name="Soundbank" Hash="4125860849" StreamHash="157587662" Timestamp="131002597409925123"/>
+			<Bank Name="Spectre" Hash="917539508" StreamHash="157587662" Timestamp="131003478628181861"/>
+			<Bank Name="Throwable" Hash="2921848270" StreamHash="157587662" Timestamp="131003478628480952"/>
+			<Bank Name="Xenia" Hash="3039332191" StreamHash="157587662" Timestamp="131003478628714016"/>
+		</Language>
+	</Platform>
+</IncrementalBankBuild>

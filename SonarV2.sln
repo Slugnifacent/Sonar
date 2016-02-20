@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarV2.CSharp", "SonarV2.CSharp.csproj", "{55FAB90C-43BB-0EE7-AD51-06260CB93A99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarV2.CSharp.Editor", "SonarV2.CSharp.Editor.csproj", "{46894BDC-039A-5DE0-A0D3-6A1C5DBE8888}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55FAB90C-43BB-0EE7-AD51-06260CB93A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55FAB90C-43BB-0EE7-AD51-06260CB93A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55FAB90C-43BB-0EE7-AD51-06260CB93A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55FAB90C-43BB-0EE7-AD51-06260CB93A99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46894BDC-039A-5DE0-A0D3-6A1C5DBE8888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46894BDC-039A-5DE0-A0D3-6A1C5DBE8888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46894BDC-039A-5DE0-A0D3-6A1C5DBE8888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46894BDC-039A-5DE0-A0D3-6A1C5DBE8888}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

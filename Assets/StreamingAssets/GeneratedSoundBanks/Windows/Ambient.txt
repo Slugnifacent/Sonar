@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2215394194	AMBIANT_SPECTRE_INVESTIGATE			\Default Work Unit\AMBIENT\AMBIANT_SPECTRE_INVESTIGATE	
+	2415499685	AMBIANT_TENSION_RESOLVE			\Default Work Unit\AMBIENT\AMBIANT_TENSION_RESOLVE	
+	4091365909	AMBIANT_PLAYER_SEEN			\Default Work Unit\AMBIENT\AMBIANT_PLAYER_SEEN	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	254854695	Spectre Investigate Resolve	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Ambient\Spectre Investigate_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Spectre Investigate Resolve		1433152
+	319816187	Spectre Sees	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Ambient\Spectre Sees_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Spectre Sees		1658944
+	502636457	sonar_investigate	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Ambient\sonar_investigate_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\sonar_investigate		2822544
+

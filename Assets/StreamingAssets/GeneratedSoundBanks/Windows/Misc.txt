@@ -1,0 +1,17 @@
+Event	ID	Name			Wwise Object Path	Notes
+	555115694	MISC_STUFF_CRASHING			\Default Work Unit\MISC\MISC_STUFF_CRASHING	
+	2855860729	MISC_AMBIENCE_MACHINERY			\Default Work Unit\MISC\MISC_AMBIENCE_MACHINERY	
+	3126165100	MISC_MENU_OPENING			\Default Work Unit\MISC\MISC_MENU_OPENING	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	38812152	stuffCrashing5	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Misc\stuffCrashing5_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Misc\StuffCrashing\stuffCrashing5		305540
+	292212071	env_ambientHumLoop	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Ambient\env_ambientHumLoop_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\env_ambientHumLoop		660916
+	298917556	stuffCrashing6	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Misc\stuffCrashing6_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Misc\StuffCrashing\stuffCrashing6		198948
+	366141309	stuffCrashing7	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Misc\stuffCrashing7_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Misc\StuffCrashing\stuffCrashing7		413418
+	539475770	stuffCrashing1	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Misc\stuffCrashing1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Misc\StuffCrashing\stuffCrashing1		319552
+	632139790	stuffCrashing3	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Misc\stuffCrashing3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Misc\StuffCrashing\stuffCrashing3		210458
+	809445577	Sonar_menu	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Ambient\Sonar_menu_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Misc\MainMenu\Sonar_menu		24192144
+	856559644	stuffCrashing4	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Misc\stuffCrashing4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Misc\StuffCrashing\stuffCrashing4		203840
+	883657020	stuffCrashing8	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Misc\stuffCrashing8_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Misc\StuffCrashing\stuffCrashing8		288920
+	1056072224	stuffCrashing2	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Windows\SFX\Misc\stuffCrashing2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Misc\StuffCrashing\stuffCrashing2		251468
+

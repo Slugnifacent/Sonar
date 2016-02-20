@@ -1,0 +1,77 @@
+Event	ID	Name			Wwise Object Path	Notes
+	566272348	LOCKDOWN_LEVEL_ACCESSIBLE			\Default Work Unit\LOCKDOWN\LOCKDOWN_LEVEL_ACCESSIBLE	
+	762222293	LOCKDOWN_LEVEL_NUMBER			\Default Work Unit\LOCKDOWN\LOCKDOWN_LEVEL_NUMBER	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1088209313	Floor			\Default Work Unit\Floor	
+	3762955427	Tutorial			\Default Work Unit\Tutorial	
+
+Switch	ID	Name	Switch Group			Notes
+	100475508	Floor_Five	Floor			
+	116267368	Floor_Four	Floor			
+	121502316	Floor_Fourteen	Floor			
+	193310075	Floor_TwentyFour	Floor			
+	411713227	Floor_TwentyFive	Floor			
+	651082186	Floor_Two	Floor			
+	885968833	Floor_Ten	Floor			
+	905252347	Floor_Seven	Floor			
+	1049138424	Floor_Nineteen	Floor			
+	1069684072	Floor_One	Floor			
+	1088433100	Floor_Six	Floor			
+	1119878867	Floor_Twelve	Floor			
+	1205534828	Floor_TwentyEight	Floor			
+	1385483197	Floor_TwentyThree	Floor			
+	1422170179	Floor_Twenty	Floor			
+	1467759292	Floor_Thirty	Floor			
+	1616641871	Floor_Seventeen	Floor			
+	1753217328	Floor_Sixteen	Floor			
+	1963644548	Floor_Nine	Floor			
+	2287971085	Floor_Eight	Floor			
+	2313384787	Floor_Eleven	Floor			
+	2320806183	Floor_Eighteen	Floor			
+	2518468276	Floor_Three	Floor			
+	2805615023	Floor_Fifteen	Floor			
+	3122295723	Floor_TwentyNine	Floor			
+	3377225793	Floor_TwentyOne	Floor			
+	3526694255	Floor_TwentyTwo	Floor			
+	4028873777	Floor_Thirteen	Floor			Notes  
+	4029581325	Floor_TwentySix	Floor			
+	4186590782	Floor_TwentySeven	Floor			
+	2214269994	InTutorial	Tutorial			
+	3884017722	OutOfTutorial	Tutorial			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	9081206	vox-floor3	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor3		154492
+	63891877	vox-floor12	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor12_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor12		154492
+	94408495	vox-floor5	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor5_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor5		154492
+	112571551	vox-floor28	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor28_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor28		220644
+	120015221	vox-floor4	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor4		154496
+	133894971	vox-floor16	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor16_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor16		176544
+	136652934	vox-floor18	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor18_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor18		176544
+	190737179	vox-floor19	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor19_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor19		176544
+	299969114	vox-floor25	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor25_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor25		176544
+	335600092	vox-floor24	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor24_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor24		176544
+	366724637	vox-floor14	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor14_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor14		176544
+	413266031	vox-floor26	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor26_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor26		220644
+	493242876	vox-floor11	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor11_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor11		154492
+	527365395	vox-floor6	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor6_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor6		154496
+	539292033	vox-floor29	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor29_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor29		220644
+	562618853	vox-floor30	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor30_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor30		220644
+	577137841	vox-floor27	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor27_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor27		220644
+	579530256	vox-lockdown-Tutorial	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-lockdown-Tutorial_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\Lockdown\vox-lockdown-Tutorial		310380
+	625814155	vox-floor17	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor17_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor17		176544
+	642822828	vox-floor10	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor10_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor10		154496
+	664807937	vox-floor22	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor22_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor22		176544
+	680799912	vox-floor21	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor21_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor21		176544
+	690150026	vox-floor1	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor1		176544
+	747062778	vox-floor13	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor13_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor13		176544
+	786737947	vox-lockdown	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-lockdown_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\Lockdown\vox-lockdown		439920
+	804006735	vox-floor7	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor7_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor7		154496
+	822678078	vox-floor23	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor23_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor23		176544
+	827395945	vox-floor2	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor2		176544
+	871273877	vox-accessible	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-accessible_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\vox-accessible		705744
+	928236446	vox-floor20	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor20_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor20		176544
+	1046337438	vox-floor15	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor15_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor15		176544
+	1060308820	vox-floor9	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor9_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor9		154496
+	1070411800	vox-floor8	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Elevator\Robotic\vox-floor8_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Elevator\LockdownDeactivated\ActivatedFloor\Sequence\Floor\vox-floor8		154492
+

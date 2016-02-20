@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2548238350	RADIO			\Default Work Unit\RADIO\RADIO	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	242400213	Headphones five	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Radio\Headphones five_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Radio\RadioOnSequence\Music\Headphones five		6239296
+	332354621	whiteNoise	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Radio\whiteNoise_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Radio\RadioOnSequence\whiteNoise		1693584
+	493181677	radioButton	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Radio\radioButton_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Radio\RadioOnSequence\radioButton		69244
+	577041869	Headphones one	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Radio\Headphones one_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Radio\RadioOnSequence\Music\Headphones one		4783168
+	683938059	Headphones four	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Radio\Headphones four_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Radio\RadioOnSequence\Music\Headphones four		12358720
+	844111998	Headphones three	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Radio\Headphones three_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Radio\RadioOnSequence\Music\Headphones three		11298880
+

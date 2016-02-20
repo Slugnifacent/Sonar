@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B76ED186-FC50-43FB-B6D9-FF55288E31AF}" SchemaVersion="70">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{B76ED186-FC50-43FB-B6D9-FF55288E31AF}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Ambient" ID="{42D6F273-4920-42F2-B0EA-56D504022E3D}">
+					<ObjectInclusionList>
+						<ObjectRef Name="AMBIENT" ID="{BBE97219-66C0-4D1A-B191-82ADD064D761}" WorkUnitID="{EA7F7804-4F23-4F15-815C-8489D59838EB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Elevator" ID="{D22405A5-867F-4311-B370-144093E4D84A}">
+					<ObjectInclusionList>
+						<ObjectRef Name="ELEVATOR" ID="{953BC646-83B3-48B0-A392-FE13C3E6A5D5}" WorkUnitID="{EA7F7804-4F23-4F15-815C-8489D59838EB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Environment" ID="{ED85C0BC-A297-4A65-BEA4-C6D6E3A1AA5A}">
+					<ObjectInclusionList>
+						<ObjectRef Name="ENVIRONMENT" ID="{EACD5620-8C18-42A2-ADB4-B878D1560C3B}" WorkUnitID="{EA7F7804-4F23-4F15-815C-8489D59838EB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Player" ID="{0EEE4F15-9264-4E2E-8CBC-99A2EE0F4FBC}">
+					<ObjectInclusionList>
+						<ObjectRef Name="PLAYER" ID="{23A8105E-B776-4A73-9F10-0240008E7C2B}" WorkUnitID="{EA7F7804-4F23-4F15-815C-8489D59838EB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Lockdown" ID="{2826C882-E33B-4ACE-B806-98965419B2E5}">
+					<ObjectInclusionList>
+						<ObjectRef Name="LOCKDOWN" ID="{BBB53ACF-D95F-49F7-87A7-36A76070E1F9}" WorkUnitID="{EA7F7804-4F23-4F15-815C-8489D59838EB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Misc" ID="{46A91BB5-EB43-4F26-B28A-325EB155F242}">
+					<ObjectInclusionList>
+						<ObjectRef Name="MISC" ID="{1BB36600-F068-471B-8022-28CEEEF527FF}" WorkUnitID="{EA7F7804-4F23-4F15-815C-8489D59838EB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Radio" ID="{1AA44039-1FB3-42F9-9F36-1FB6852199E3}">
+					<ObjectInclusionList>
+						<ObjectRef Name="RADIO" ID="{5AEBF775-0020-43D9-94B7-191B5DEEAEEC}" WorkUnitID="{EA7F7804-4F23-4F15-815C-8489D59838EB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Spectre" ID="{C7CEA61D-1B73-40B9-B0B1-A11318746E06}">
+					<ObjectInclusionList>
+						<ObjectRef Name="SPECTRE" ID="{AF8D5A5D-41F7-418B-8EEB-9AB8BB8D8E5A}" WorkUnitID="{EA7F7804-4F23-4F15-815C-8489D59838EB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Throwable" ID="{CA1F672D-EEBD-4AED-BB7B-DA47D1ED21B5}">
+					<ObjectInclusionList>
+						<ObjectRef Name="THROWABLE" ID="{0392B9DA-FA30-46D2-81A8-1EA59639E516}" WorkUnitID="{EA7F7804-4F23-4F15-815C-8489D59838EB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Xenia" ID="{C196474C-5520-4DC6-B28F-D582EAD67B39}">
+					<ObjectInclusionList>
+						<ObjectRef Name="XENIA" ID="{D6BD39D3-7D71-469B-9BA8-BAB63014B813}" WorkUnitID="{EA7F7804-4F23-4F15-815C-8489D59838EB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

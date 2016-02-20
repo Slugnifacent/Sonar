@@ -1,0 +1,22 @@
+Event	ID	Name			Wwise Object Path	Notes
+	721601394	ENVIRONMENT_COMPUTER_TYPING			\Default Work Unit\ENVIRONMENT\ENVIRONMENT_COMPUTER_TYPING	
+	1009371334	ENVIRONMENT_STATIC_MONITOR			\Default Work Unit\ENVIRONMENT\ENVIRONMENT_STATIC_MONITOR	
+	1216458910	ENVIRONMENT_DOOR_OPEN			\Default Work Unit\ENVIRONMENT\ENVIRONMENT_DOOR_OPEN	
+	1877045979	ENVIRONMENT_COMPUTER_HUM			\Default Work Unit\ENVIRONMENT\ENVIRONMENT_COMPUTER_HUM	
+	2086226094	ENVIRONMENT_DYING_PERSON			\Default Work Unit\ENVIRONMENT\ENVIRONMENT_DYING_PERSON	
+	2861383654	ENVIRONMENT_MOANING_PERSON			\Default Work Unit\ENVIRONMENT\ENVIRONMENT_MOANING_PERSON	
+	3340543399	ENVIRONMENT_DOOR_CRASH			\Default Work Unit\ENVIRONMENT\ENVIRONMENT_DOOR_CRASH	
+	3483999827	ENVIRONMENT_WATER_DROPLET			\Default Work Unit\ENVIRONMENT\ENVIRONMENT_WATER_DROPLET	
+	4000570778	ENVIRONMENT_DOOR_CLOSE			\Default Work Unit\ENVIRONMENT\ENVIRONMENT_DOOR_CLOSE	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	2024346	computerHum	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Computer\computerHum_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Computer\computerHum		739684
+	372251379	door_close	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Door\door_close_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Door\MechanicalDoorClose\door_close		183124
+	397584449	computerTyping	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Computer\computerTyping_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Computer\computerTyping		663616
+	470577044	moaningHelp	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Entity\Janitor\moaningHelp_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Entity\Janitor\moaningHelp		314432
+	565092498	door_open	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Door\door_open_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Door\MechanicalDoorOpen\door_open		148072
+	672601335	door_crash1	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Door\door_crash1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Door\DoorCrash\door_crash1		379480
+	673474077	door_open2	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Door\door_open2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Door\MechanicalDoorOpen\door_open2		379480
+	816432652	waterDroplet	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\WaterDroplet\waterDroplet_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\WaterDroplet\waterDroplet		281512
+	996807249	door_crash2	D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\SFX\Objects\Environment\Door\door_crash2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Door\DoorCrash\door_crash2		379480
+

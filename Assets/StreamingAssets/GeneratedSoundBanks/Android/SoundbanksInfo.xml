@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>D:\Sonar\Unity\SonarV2\SonarWwise\</ProjectRoot>
+		<SourceFilesRoot>D:\Sonar\Unity\SonarV2\SonarWwise\.cache\Android\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Sonar\Unity\SonarV2\Assets\StreamingAssets\GeneratedSoundBanks\Android\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Sonar\Unity\SonarV2\SonarWwise\GeneratedSoundBanks\Android\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="77978275" Language="SFX">
+			<ShortName>Ambient</ShortName>
+			<Path>Ambient.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4091365909" Name="AMBIANT_PLAYER_SEEN"/>
+				<Event Id="2215394194" Name="AMBIANT_SPECTRE_INVESTIGATE"/>
+				<Event Id="2415499685" Name="AMBIANT_TENSION_RESOLVE"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="254854695" Language="SFX">
+					<ShortName>Ambient\Spectre Investigate.wav</ShortName>
+					<Path>SFX\Ambient\Spectre Investigate_9E69E797.wem</Path>
+				</File>
+				<File Id="319816187" Language="SFX">
+					<ShortName>Ambient\Spectre Sees.wav</ShortName>
+					<Path>SFX\Ambient\Spectre Sees_9E69E797.wem</Path>
+				</File>
+				<File Id="502636457" Language="SFX">
+					<ShortName>Ambient\sonar_investigate.wav</ShortName>
+					<Path>SFX\Ambient\sonar_investigate_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="766130264" Language="SFX">
+			<ShortName>Xenia</ShortName>
+			<Path>Xenia.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1775766255" Name="XENIA_WHISPER"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="801489697" Language="SFX">
+					<ShortName>Objects\Entity\Xenia\whisper.wav</ShortName>
+					<Path>SFX\Objects\Entity\Xenia\whisper_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1069431850" Language="SFX">
+			<ShortName>Player</ShortName>
+			<Path>Player.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2805394783" Name="PLAYER_BODY_FALL"/>
+				<Event Id="3439186225" Name="PLAYER_BREATHING"/>
+				<Event Id="3083087645" Name="PLAYER_DEATH"/>
+				<Event Id="3551937015" Name="PLAYER_FOOTSTEP_CARPET"/>
+				<Event Id="2752274603" Name="PLAYER_FOOTSTEP_CONCRETE"/>
+				<Event Id="1174985646" Name="PLAYER_FOOTSTEP_HARDWOOD"/>
+				<Event Id="1214254818" Name="PLAYER_FOOTSTEP_TILE"/>
+				<Event Id="3484321931" Name="PLAYER_HEARTBEAT"/>
+				<Event Id="417685736" Name="PLAYER_PLAYER_HIT"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="82993447" Language="SFX">
+					<ShortName>Objects\Entity\Player\Dying\dying4.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Dying\dying4_9E69E797.wem</Path>
+				</File>
+				<File Id="160389294" Language="SFX">
+					<ShortName>Objects\Entity\Player\heartBeat_normal.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\heartBeat_normal_9E69E797.wem</Path>
+				</File>
+				<File Id="166176911" Language="SFX">
+					<ShortName>Objects\Entity\Player\player_hit2.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\player_hit2_9E69E797.wem</Path>
+				</File>
+				<File Id="183934692" Language="SFX">
+					<ShortName>Objects\Entity\Player\Breathing\normalBreathing.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Breathing\normalBreathing_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="202378672" Language="SFX">
+					<ShortName>Objects\Entity\Player\Footsteps\footsteps_hardwood2.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Footsteps\footsteps_hardwood2_9E69E797.wem</Path>
+				</File>
+				<File Id="265504439" Language="SFX">
+					<ShortName>Objects\Entity\Player\Footsteps\footsteps_tile2.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Footsteps\footsteps_tile2_9E69E797.wem</Path>
+				</File>
+				<File Id="269308791" Language="SFX">
+					<ShortName>Objects\Entity\Player\player_hit.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\player_hit_9E69E797.wem</Path>
+				</File>
+				<File Id="333431400" Language="SFX">
+					<ShortName>Objects\Entity\Player\Dying\dying5.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Dying\dying5_9E69E797.wem</Path>
+				</File>
+				<File Id="383476048" Language="SFX">
+					<ShortName>Objects\Entity\Player\heartBeat_faster.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\heartBeat_faster_9E69E797.wem</Path>
+				</File>
+				<File Id="386543738" Language="SFX">
+					<ShortName>Objects\Entity\Player\Footsteps\footsteps_carpet1.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Footsteps\footsteps_carpet1_9E69E797.wem</Path>
+				</File>
+				<File Id="387735548" Language="SFX">
+					<ShortName>Objects\Entity\Player\Heartbeat\heartBeat_normal.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Heartbeat\heartBeat_normal_9E69E797.wem</Path>
+				</File>
+				<File Id="430351441" Language="SFX">
+					<ShortName>Objects\Entity\Player\Footsteps\footsteps_concrete2.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Footsteps\footsteps_concrete2_9E69E797.wem</Path>
+				</File>
+				<File Id="510969552" Language="SFX">
+					<ShortName>Objects\Entity\Player\Footsteps\footsteps_hardwood1.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Footsteps\footsteps_hardwood1_9E69E797.wem</Path>
+				</File>
+				<File Id="573805514" Language="SFX">
+					<ShortName>Objects\Entity\Player\Dying\dying3.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Dying\dying3_9E69E797.wem</Path>
+				</File>
+				<File Id="603236404" Language="SFX">
+					<ShortName>Objects\Entity\Player\Footsteps\footsteps_tile1.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Footsteps\footsteps_tile1_9E69E797.wem</Path>
+				</File>
+				<File Id="634335301" Language="SFX">
+					<ShortName>Objects\Entity\Player\Breathing\heavyBreathing2.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Breathing\heavyBreathing2_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="642325328" Language="SFX">
+					<ShortName>Objects\Entity\Player\Dying\dying1.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Dying\dying1_9E69E797.wem</Path>
+				</File>
+				<File Id="642473939" Language="SFX">
+					<ShortName>Objects\Entity\Player\Dying\dying2.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Dying\dying2_9E69E797.wem</Path>
+				</File>
+				<File Id="726116431" Language="SFX">
+					<ShortName>Objects\Entity\Player\Footsteps\footsteps_carpet2.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Footsteps\footsteps_carpet2_9E69E797.wem</Path>
+				</File>
+				<File Id="784676547" Language="SFX">
+					<ShortName>Objects\Entity\Player\Breathing\heavyBreathing.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Breathing\heavyBreathing_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="802982387" Language="SFX">
+					<ShortName>Objects\Entity\Player\bodyFallDown.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\bodyFallDown_9E69E797.wem</Path>
+				</File>
+				<File Id="825750199" Language="SFX">
+					<ShortName>Objects\Entity\Player\Breathing\nervousBreathing.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Breathing\nervousBreathing_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="876686371" Language="SFX">
+					<ShortName>Objects\Entity\Player\Footsteps\footsteps_concrete1.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\Footsteps\footsteps_concrete1_9E69E797.wem</Path>
+				</File>
+				<File Id="904791094" Language="SFX">
+					<ShortName>Objects\Entity\Player\heartBeat_fastest.wav</ShortName>
+					<Path>SFX\Objects\Entity\Player\heartBeat_fastest_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1229948536" Language="SFX">
+			<ShortName>Environment</ShortName>
+			<Path>Environment.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1877045979" Name="ENVIRONMENT_COMPUTER_HUM"/>
+				<Event Id="721601394" Name="ENVIRONMENT_COMPUTER_TYPING"/>
+				<Event Id="4000570778" Name="ENVIRONMENT_DOOR_CLOSE"/>
+				<Event Id="3340543399" Name="ENVIRONMENT_DOOR_CRASH"/>
+				<Event Id="1216458910" Name="ENVIRONMENT_DOOR_OPEN"/>
+				<Event Id="2086226094" Name="ENVIRONMENT_DYING_PERSON"/>
+				<Event Id="2861383654" Name="ENVIRONMENT_MOANING_PERSON"/>
+				<Event Id="1009371334" Name="ENVIRONMENT_STATIC_MONITOR" MaxAttenuation="0.000000"/>
+				<Event Id="3483999827" Name="ENVIRONMENT_WATER_DROPLET"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="2024346" Language="SFX">
+					<ShortName>Objects\Environment\Computer\computerHum.wav</ShortName>
+					<Path>SFX\Objects\Environment\Computer\computerHum_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="372251379" Language="SFX">
+					<ShortName>Objects\Environment\Door\door_close.wav</ShortName>
+					<Path>SFX\Objects\Environment\Door\door_close_9E69E797.wem</Path>
+				</File>
+				<File Id="397584449" Language="SFX">
+					<ShortName>Objects\Environment\Computer\computerTyping.wav</ShortName>
+					<Path>SFX\Objects\Environment\Computer\computerTyping_9E69E797.wem</Path>
+				</File>
+				<File Id="470577044" Language="SFX">
+					<ShortName>Objects\Entity\Janitor\moaningHelp.wav</ShortName>
+					<Path>SFX\Objects\Entity\Janitor\moaningHelp_9E69E797.wem</Path>
+				</File>
+				<File Id="565092498" Language="SFX">
+					<ShortName>Objects\Environment\Door\door_open.wav</ShortName>
+					<Path>SFX\Objects\Environment\Door\door_open_9E69E797.wem</Path>
+				</File>
+				<File Id="672601335" Language="SFX">
+					<ShortName>Objects\Environment\Door\door_crash1.wav</ShortName>
+					<Path>SFX\Objects\Environment\Door\door_crash1_9E69E797.wem</Path>
+				</File>
+				<File Id="673474077" Language="SFX">
+					<ShortName>Objects\Environment\Door\door_open2.wav</ShortName>
+					<Path>SFX\Objects\Environment\Door\door_open2_9E69E797.wem</Path>
+				</File>
+				<File Id="816432652" Language="SFX">
+					<ShortName>Objects\Environment\WaterDroplet\waterDroplet.wav</ShortName>
+					<Path>SFX\Objects\Environment\WaterDroplet\waterDroplet_9E69E797.wem</Path>
+				</File>
+				<File Id="996807249" Language="SFX">
+					<ShortName>Objects\Environment\Door\door_crash2.wav</ShortName>
+					<Path>SFX\Objects\Environment\Door\door_crash2_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1975751515" Language="SFX">
+			<ShortName>Throwable</ShortName>
+			<Path>Throwable.bnk</Path>
+			<IncludedEvents>
+				<Event Id="765077262" Name="THROWABLE_GLASS_BREAKING" MaxAttenuation="0.000000"/>
+				<Event Id="1348421559" Name="THROWABLE_GLASS_COLLISION" MaxAttenuation="0.000000"/>
+				<Event Id="4189646358" Name="THROWABLE_GLASS_CRUNCHING"/>
+				<Event Id="1255976185" Name="THROWABLE_GLASS_PICKUP" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="845479213" Language="SFX">
+					<ShortName>Objects\Entity\Throwable\glassCrunch.wav</ShortName>
+					<Path>SFX\Objects\Entity\Throwable\glassCrunch_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2096553452" Language="SFX">
+			<ShortName>Lockdown</ShortName>
+			<Path>Lockdown.bnk</Path>
+			<IncludedEvents>
+				<Event Id="566272348" Name="LOCKDOWN_LEVEL_ACCESSIBLE"/>
+				<Event Id="762222293" Name="LOCKDOWN_LEVEL_NUMBER" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="9081206" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor3.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor3_9E69E797.wem</Path>
+				</File>
+				<File Id="63891877" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor12.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor12_9E69E797.wem</Path>
+				</File>
+				<File Id="94408495" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor5.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor5_9E69E797.wem</Path>
+				</File>
+				<File Id="112571551" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor28.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor28_9E69E797.wem</Path>
+				</File>
+				<File Id="120015221" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor4.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor4_9E69E797.wem</Path>
+				</File>
+				<File Id="133894971" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor16.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor16_9E69E797.wem</Path>
+				</File>
+				<File Id="136652934" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor18.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor18_9E69E797.wem</Path>
+				</File>
+				<File Id="190737179" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor19.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor19_9E69E797.wem</Path>
+				</File>
+				<File Id="299969114" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor25.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor25_9E69E797.wem</Path>
+				</File>
+				<File Id="335600092" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor24.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor24_9E69E797.wem</Path>
+				</File>
+				<File Id="366724637" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor14.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor14_9E69E797.wem</Path>
+				</File>
+				<File Id="413266031" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor26.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor26_9E69E797.wem</Path>
+				</File>
+				<File Id="493242876" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor11.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor11_9E69E797.wem</Path>
+				</File>
+				<File Id="527365395" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor6.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor6_9E69E797.wem</Path>
+				</File>
+				<File Id="539292033" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor29.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor29_9E69E797.wem</Path>
+				</File>
+				<File Id="562618853" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor30.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor30_9E69E797.wem</Path>
+				</File>
+				<File Id="577137841" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor27.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor27_9E69E797.wem</Path>
+				</File>
+				<File Id="579530256" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-lockdown-Tutorial.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-lockdown-Tutorial_9E69E797.wem</Path>
+				</File>
+				<File Id="625814155" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor17.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor17_9E69E797.wem</Path>
+				</File>
+				<File Id="642822828" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor10.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor10_9E69E797.wem</Path>
+				</File>
+				<File Id="664807937" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor22.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor22_9E69E797.wem</Path>
+				</File>
+				<File Id="680799912" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor21.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor21_9E69E797.wem</Path>
+				</File>
+				<File Id="690150026" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor1.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor1_9E69E797.wem</Path>
+				</File>
+				<File Id="747062778" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor13.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor13_9E69E797.wem</Path>
+				</File>
+				<File Id="786737947" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-lockdown.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-lockdown_9E69E797.wem</Path>
+				</File>
+				<File Id="804006735" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor7.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor7_9E69E797.wem</Path>
+				</File>
+				<File Id="822678078" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor23.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor23_9E69E797.wem</Path>
+				</File>
+				<File Id="827395945" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor2.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor2_9E69E797.wem</Path>
+				</File>
+				<File Id="871273877" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-accessible.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-accessible_9E69E797.wem</Path>
+				</File>
+				<File Id="928236446" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor20.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor20_9E69E797.wem</Path>
+				</File>
+				<File Id="1046337438" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor15.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor15_9E69E797.wem</Path>
+				</File>
+				<File Id="1060308820" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor9.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor9_9E69E797.wem</Path>
+				</File>
+				<File Id="1070411800" Language="SFX">
+					<ShortName>Objects\Environment\Elevator\Robotic\vox-floor8.wav</ShortName>
+					<Path>SFX\Objects\Environment\Elevator\Robotic\vox-floor8_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2548238350" Language="SFX">
+			<ShortName>Radio</ShortName>
+			<Path>Radio.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2548238350" Name="RADIO"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="242400213" Language="SFX">
+					<ShortName>Objects\Entity\Radio\Headphones five.wav</ShortName>
+					<Path>SFX\Objects\Entity\Radio\Headphones five_9E69E797.wem</Path>
+				</File>
+				<File Id="332354621" Language="SFX">
+					<ShortName>Objects\Entity\Radio\whiteNoise.wav</ShortName>
+					<Path>SFX\Objects\Entity\Radio\whiteNoise_9E69E797.wem</Path>
+				</File>
+				<File Id="493181677" Language="SFX">
+					<ShortName>Objects\Entity\Radio\radioButton.wav</ShortName>
+					<Path>SFX\Objects\Entity\Radio\radioButton_9E69E797.wem</Path>
+				</File>
+				<File Id="577041869" Language="SFX">
+					<ShortName>Objects\Entity\Radio\Headphones one.wav</ShortName>
+					<Path>SFX\Objects\Entity\Radio\Headphones one_9E69E797.wem</Path>
+				</File>
+				<File Id="683938059" Language="SFX">
+					<ShortName>Objects\Entity\Radio\Headphones four.wav</ShortName>
+					<Path>SFX\Objects\Entity\Radio\Headphones four_9E69E797.wem</Path>
+				</File>
+				<File Id="844111998" Language="SFX">
+					<ShortName>Objects\Entity\Radio\Headphones three.wav</ShortName>
+					<Path>SFX\Objects\Entity\Radio\Headphones three_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2884804631" Language="SFX">
+			<ShortName>Spectre</ShortName>
+			<Path>Spectre.bnk</Path>
+			<IncludedEvents>
+				<Event Id="959506134" Name="DUMB_ALERT"/>
+				<Event Id="457472651" Name="DUMB_EXCORCISED"/>
+				<Event Id="3759861166" Name="DUMB_FOOTSTEP"/>
+				<Event Id="856530971" Name="DUMB_GROWL"/>
+				<Event Id="432956594" Name="DUMB_GRUNT"/>
+				<Event Id="227685820" Name="DUMB_HEAR_PLAYER"/>
+				<Event Id="3763537863" Name="DUMB_POSSESSED"/>
+				<Event Id="3997893" Name="DUMB_POSSESSION_BREATHING"/>
+				<Event Id="113282288" Name="DUMB_ROAR"/>
+				<Event Id="3294007303" Name="PRIDE_EXCORCISED"/>
+				<Event Id="185722928" Name="PRIDE_HEAR_PLAYER"/>
+				<Event Id="1612486910" Name="PRIDE_LAUGH_WHISTPER"/>
+				<Event Id="505685397" Name="SIREN_HEAR_PLAYER"/>
+				<Event Id="3858106140" Name="SIREN_SCREAM"/>
+				<Event Id="1841509380" Name="SIREN_SNORE"/>
+				<Event Id="1547206381" Name="SIREN_WARNING"/>
+				<Event Id="3902526109" Name="STALKER_EXCORCISED"/>
+				<Event Id="3293562430" Name="STALKER_HEAR" MaxAttenuation="0.000000"/>
+				<Event Id="2626612930" Name="STALKER_ROAR"/>
+				<Event Id="2763594656" Name="WRATH_FOOTSTEP"/>
+				<Event Id="493235585" Name="WRATH_GROWL"/>
+				<Event Id="3752585950" Name="WRATH_HEAR_PLAYER"/>
+				<Event Id="1117685795" Name="WRATH_HIT_PLAYER"/>
+				<Event Id="1864040956" Name="WRATH_IDLE"/>
+				<Event Id="1315215942" Name="WRATH_PRE_SWING"/>
+				<Event Id="2538998550" Name="WRATH_ROAR"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="3798444" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Pride\pride_hear.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Pride\pride_hear_9E69E797.wem</Path>
+				</File>
+				<File Id="53095576" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Dumb\dumb_footstep.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Dumb\dumb_footstep_9E69E797.wem</Path>
+				</File>
+				<File Id="78361063" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Dumb\dumb_possessionBreathing.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Dumb\dumb_possessionBreathing_9E69E797.wem</Path>
+				</File>
+				<File Id="148585314" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Pride\pride_laughwhisper.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Pride\pride_laughwhisper_9E69E797.wem</Path>
+				</File>
+				<File Id="195516606" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Dumb\dumb_hear.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Dumb\dumb_hear_9E69E797.wem</Path>
+				</File>
+				<File Id="313536917" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Siren\siren_warning.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Siren\siren_warning_9E69E797.wem</Path>
+				</File>
+				<File Id="378208703" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Siren\sirenScream.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Siren\sirenScream_9E69E797.wem</Path>
+				</File>
+				<File Id="378571203" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Wrath\wrath_footstep1.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Wrath\wrath_footstep1_9E69E797.wem</Path>
+				</File>
+				<File Id="431799063" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Wrath\wrath_preSwing.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Wrath\wrath_preSwing_9E69E797.wem</Path>
+				</File>
+				<File Id="472978983" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Dumb\dumbRoar.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Dumb\dumbRoar_9E69E797.wem</Path>
+				</File>
+				<File Id="474329070" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Dumb\dumb_grunt.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Dumb\dumb_grunt_9E69E797.wem</Path>
+				</File>
+				<File Id="481650733" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Siren\siren_screaaaam.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Siren\siren_screaaaam_9E69E797.wem</Path>
+				</File>
+				<File Id="503211511" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Siren\sirenSnore.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Siren\sirenSnore_9E69E797.wem</Path>
+				</File>
+				<File Id="510833935" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Stalker\stalker_excorcised.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Stalker\stalker_excorcised_9E69E797.wem</Path>
+				</File>
+				<File Id="525795091" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Wrath\wrath_footstep2.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Wrath\wrath_footstep2_9E69E797.wem</Path>
+				</File>
+				<File Id="547992398" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Wrath\wrath_idleGrowl.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Wrath\wrath_idleGrowl_9E69E797.wem</Path>
+				</File>
+				<File Id="595519645" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Dumb\dumb_growl1.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Dumb\dumb_growl1_9E69E797.wem</Path>
+				</File>
+				<File Id="614648301" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Siren\newSiren.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Siren\newSiren_9E69E797.wem</Path>
+				</File>
+				<File Id="615365346" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Dumb\dumb_growl2.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Dumb\dumb_growl2_9E69E797.wem</Path>
+				</File>
+				<File Id="635614998" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Dumb\dumb_gruntAlert.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Dumb\dumb_gruntAlert_9E69E797.wem</Path>
+				</File>
+				<File Id="664180835" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Wrath\wrath_hear.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Wrath\wrath_hear_9E69E797.wem</Path>
+				</File>
+				<File Id="665871687" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Wrath\wrath_growl.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Wrath\wrath_growl_9E69E797.wem</Path>
+				</File>
+				<File Id="682595098" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Dumb\dumbGrunt.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Dumb\dumbGrunt_9E69E797.wem</Path>
+				</File>
+				<File Id="697580250" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Pride\pride_exorcism.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Pride\pride_exorcism_9E69E797.wem</Path>
+				</File>
+				<File Id="737730346" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Dumb\dumb_exorcism.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Dumb\dumb_exorcism_9E69E797.wem</Path>
+				</File>
+				<File Id="752841733" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Siren\newSiren-loop.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Siren\newSiren-loop_9E69E797.wem</Path>
+				</File>
+				<File Id="833431127" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Dumb\dumb_possessed2.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Dumb\dumb_possessed2_9E69E797.wem</Path>
+				</File>
+				<File Id="896997761" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Dumb\dumb_possessed.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Dumb\dumb_possessed_9E69E797.wem</Path>
+				</File>
+				<File Id="945960214" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Wrath\wrath_hitPlayer.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Wrath\wrath_hitPlayer_9E69E797.wem</Path>
+				</File>
+				<File Id="972942520" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Wrath\wrath_roar.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Wrath\wrath_roar_9E69E797.wem</Path>
+				</File>
+				<File Id="998499007" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Dumb\dumb_grunt2.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Dumb\dumb_grunt2_9E69E797.wem</Path>
+				</File>
+				<File Id="1069437675" Language="SFX">
+					<ShortName>Objects\Entity\Spectres\Stalker\stalker_alert.wav</ShortName>
+					<Path>SFX\Objects\Entity\Spectres\Stalker\stalker_alert_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3062523257" Language="SFX">
+			<ShortName>Misc</ShortName>
+			<Path>Misc.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2855860729" Name="MISC_AMBIENCE_MACHINERY"/>
+				<Event Id="3126165100" Name="MISC_MENU_OPENING"/>
+				<Event Id="555115694" Name="MISC_STUFF_CRASHING"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="38812152" Language="SFX">
+					<ShortName>Misc\stuffCrashing5.wav</ShortName>
+					<Path>SFX\Misc\stuffCrashing5_9E69E797.wem</Path>
+				</File>
+				<File Id="292212071" Language="SFX">
+					<ShortName>Ambient\env_ambientHumLoop.wav</ShortName>
+					<Path>SFX\Ambient\env_ambientHumLoop_9E69E797.wem</Path>
+				</File>
+				<File Id="298917556" Language="SFX">
+					<ShortName>Misc\stuffCrashing6.wav</ShortName>
+					<Path>SFX\Misc\stuffCrashing6_9E69E797.wem</Path>
+				</File>
+				<File Id="366141309" Language="SFX">
+					<ShortName>Misc\stuffCrashing7.wav</ShortName>
+					<Path>SFX\Misc\stuffCrashing7_9E69E797.wem</Path>
+				</File>
+				<File Id="539475770" Language="SFX">
+					<ShortName>Misc\stuffCrashing1.wav</ShortName>
+					<Path>SFX\Misc\stuffCrashing1_9E69E797.wem</Path>
+				</File>
+				<File Id="632139790" Language="SFX">
+					<ShortName>Misc\stuffCrashing3.wav</ShortName>
+					<Path>SFX\Misc\stuffCrashing3_9E69E797.wem</Path>
+				</File>
+				<File Id="809445577" Language="SFX">
+					<ShortName>Ambient\Sonar_menu.wav</ShortName>
+					<Path>SFX\Ambient\Sonar_menu_9E69E797.wem</Path>
+				</File>
+				<File Id="856559644" Language="SFX">
+					<ShortName>Misc\stuffCrashing4.wav</ShortName>
+					<Path>SFX\Misc\stuffCrashing4_9E69E797.wem</Path>
+				</File>
+				<File Id="883657020" Language="SFX">
+					<ShortName>Misc\stuffCrashing8.wav</ShortName>
+					<Path>SFX\Misc\stuffCrashing8_9E69E797.wem</Path>
+				</File>
+				<File Id="1056072224" Language="SFX">
+					<ShortName>Misc\stuffCrashing2.wav</ShortName>
+					<Path>SFX\Misc\stuffCrashing2_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3705378287" Language="SFX">
+			<ShortName>Elevator</ShortName>
+			<Path>Elevator.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2009732986" Name="ELEVATOR_BEEP"/>
+				<Event Id="3814761398" Name="ELEVATOR_CLOSE"/>
+				<Event Id="3048848590" Name="ELEVATOR_DING"/>
+				<Event Id="3528969519" Name="ELEVATOR_MUSIC"/>
+				<Event Id="2233078114" Name="ELEVATOR_OPEN"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="265339942" Language="SFX">
+					<ShortName>Objects\Environment\Exit\Elevator.wav</ShortName>
+					<Path>SFX\Objects\Environment\Exit\Elevator_9E69E797.wem</Path>
+				</File>
+				<File Id="366405039" Language="SFX">
+					<ShortName>Objects\Environment\Exit\elevatorBeep.wav</ShortName>
+					<Path>SFX\Objects\Environment\Exit\elevatorBeep_9E69E797.wem</Path>
+				</File>
+				<File Id="564707105" Language="SFX">
+					<ShortName>Objects\Environment\Exit\elevatorClose.wav</ShortName>
+					<Path>SFX\Objects\Environment\Exit\elevatorClose_9E69E797.wem</Path>
+				</File>
+				<File Id="627792151" Language="SFX">
+					<ShortName>Objects\Environment\Exit\elevatorDing.wav</ShortName>
+					<Path>SFX\Objects\Environment\Exit\elevatorDing_9E69E797.wem</Path>
+				</File>
+				<File Id="946577582" Language="SFX">
+					<ShortName>Objects\Environment\Exit\elevatorDing2.wav</ShortName>
+					<Path>SFX\Objects\Environment\Exit\elevatorDing2_9E69E797.wem</Path>
+				</File>
+				<File Id="1019878123" Language="SFX">
+					<ShortName>Objects\Environment\Exit\elevatorOpen.wav</ShortName>
+					<Path>SFX\Objects\Environment\Exit\elevatorOpen_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
