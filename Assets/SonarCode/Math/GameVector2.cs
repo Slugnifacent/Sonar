@@ -4,7 +4,7 @@ using System.Collections;
 public class GameVector2 : MonoBehaviour {
     
     Vector2 vector;
-    public readonly static GameVector2 ZERO = new GameVector2(0,0);
+    public readonly static GameVector2 Zero = new GameVector2(0,0);
 
     public GameVector2()
     {

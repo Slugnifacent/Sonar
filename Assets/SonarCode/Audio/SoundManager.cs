@@ -14,8 +14,8 @@ namespace Sonar
 
         #region Fields
         static SoundManager soundManager;
-        
-        List<Sound> sounds;
+
+        static List<Sound> sounds;
         List<Sound> soundless;
         List<ElevatorAccess> elevatorAccess;
         Dictionary<Type, Func<string, object>> cueDictionary;
@@ -45,10 +45,10 @@ namespace Sonar
         #region GetCue
 
         /// <summary>
-        /// Grabs and returns the specified/*Cue*/object from sound bank
+        /// Grabs and returns the specified/*Sound*/object from sound bank
         /// </summary>
         /// <param name="sound">Sound Enumeration to play</param>
-        /// <returns>Cue from the THROWABLE sound bank</returns>
+        /// <returns>Sound from the THROWABLE sound bank</returns>
         public static Sound getCue(object gObject, string item)
         {
             Sound sound = Audio.CreateAudio(gObject, item) as Sound;
@@ -62,19 +62,19 @@ namespace Sonar
         /// <summary>
         /// Creates a General Sound.
         /// </summary>
-        /// <param name="Sound">Cue to be played</param>
-        public void createSound(object gObject, string Sound)
+        /// <param name="Sound">Sound to be played</param>
+        public static void createSound(object gObject, string Sound)
         {
             createSound(gObject, 0, 0, 0, Sound, false);
         }
 
-        #region Play   <Safely plays a given/*Cue*/object until it is stopped or ends with/without 3D Effects. Useful for when cues need to be reused.>
+        #region Play   <Safely plays a given/*Sound*/object until it is stopped or ends with/without 3D Effects. Useful for when cues need to be reused.>
         /// <summary>
-        /// Safely plays a given/*Cue*/object until it is stopped or ends without 3D Effects. 
+        /// Safely plays a given/*Sound*/object until it is stopped or ends without 3D Effects. 
         /// Then replaces it with a SoundManager Enumeration.* sound. Useful for when 
         /// cues need to be reused.
         /// </summary>
-        /// <param name="SoundCue">Cue to be played</param>
+        /// <param name="SoundCue">Sound to be played</param>
         /// <param name="Enumeration">The next sound to play</param>
         public static void Play(ref Sound sound, object SoundManagerEnumeration)
         {
@@ -82,12 +82,12 @@ namespace Sonar
         }
    
         /// <summary>
-        /// Safely plays a given/*Cue*/object until it is stopped or ends with 3D Effects. 
+        /// Safely plays a given/*Sound*/object until it is stopped or ends with 3D Effects. 
         /// Then replaces it with a SoundManager Enumeration.* sound. Useful for when 
         /// cues need to be reused.
         /// </summary>
-        /// <param name="SoundCue">Cue to played</param>
-        /// <param name="Emmitter">Emmitter associated with the given Cue</param>
+        /// <param name="SoundCue">Sound to played</param>
+        /// <param name="Emmitter">Emmitter associated with the given Sound</param>
         /// <param name="Enumeration">The next sound to play</param>
         public void Play3D(ref Sound sound, object Emmitter, object SoundManagerEnumeration)
         {
@@ -122,7 +122,7 @@ namespace Sonar
         /// <param name="Range">How far (in pixel space) can this sound be heard</param>
         /// <param name="sound">The sound to be played</param>
         /// <param name="Suspicious">If true, Spectres will go to the source of the sound if heard. If false, spectres will ignore this sound completely</param>
-        public void createSound(object gObject, float Radius, float health, float minimizeSpeed, string sound, bool Suspicious)
+        public static void createSound(object gObject, float Radius, float health, float minimizeSpeed, string sound, bool Suspicious)
         {
             createSound(gObject, Radius, health, minimizeSpeed, sound, Suspicious, null);
         }
@@ -139,7 +139,7 @@ namespace Sonar
         /// <param name="sound">The sound to be played</param>
         /// <param name="Suspicious">If true, Spectres will go to the source of the sound if heard. If false, spectres will ignore this sound completely</param>
         /// <param name="source">Spectre that is the source of the sound, used to prevent spectres from alerting themselves</param>
-        public void createSound(object gObject, float Radius, float health, float minimizeSpeed, string sound, bool Suspicious, Object source)
+        public static void createSound(object gObject, float Radius, float health, float minimizeSpeed, string sound, bool Suspicious, Object source)
         {
             //if (source == null || (source != null && source.GetType() != typeof(Radio)))
             //    VisionManager.addVisionPoint(Position, health, false);
@@ -154,38 +154,38 @@ namespace Sonar
         #region CueCommands
 
         /// <summary>
-        /// The manual/*Cue*/object Update that Updates a given Cue's 3D sound.
+        /// The manual/*Sound*/object Update that Updates a given Sound's 3D sound.
         /// </summary>
-        /// <param name="SoundCue">Cue to be updated</param>
-        /// <param name="Emmitter">Emmitter Associated with the given Cue</param>
+        /// <param name="SoundCue">Sound to be updated</param>
+        /// <param name="Emmitter">Emmitter Associated with the given Sound</param>
         //public void cueUpdate(ref object SoundCue, Object Emmitter)
         //{
         //}
 
         /// <summary>
-        /// Puases a Given Cue
+        /// Puases a Given Sound
         /// </summary>
-        /// <param name="SoundCue">Cue to Puase</param>
+        /// <param name="SoundCue">Sound to Puase</param>
         public static void Puase(ref Sound sound)
         {
             sound.PUASE();
         }
 
         /// <summary>
-        /// Stops a Given Cue
+        /// Stops a Given Sound
         /// </summary>
-        /// <param name="SoundCue">Cue to stop</param>
+        /// <param name="SoundCue">Sound to stop</param>
         public static void Stop(ref Sound sound) 
         {
             sound.STOP();
         }
 
         /// <summary>
-        /// Toggles a given/*Cue*/object On if off and off if on
+        /// Toggles a given/*Sound*/object On if off and off if on
         /// </summary>
-        /// <param name="SoundCue">Cue to be toggle on or off</param>
-        /// <param name="Emmitter">AudioEmitter used for the Cue</param>
-        /// <param name="Enumeration">Sound that is to replace the given/*Cue*/object when the given/*Cue*/object stops</param>
+        /// <param name="SoundCue">Sound to be toggle on or off</param>
+        /// <param name="Emmitter">AudioEmitter used for the Sound</param>
+        /// <param name="Enumeration">Sound that is to replace the given/*Sound*/object when the given/*Sound*/object stops</param>
         public void Toggle(ref Sound sound, object Emmitter)
         {
             if (sound.IsPlaying()) sound.STOP();

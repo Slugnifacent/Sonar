@@ -27,11 +27,11 @@ namespace Sonar
             whisper = SoundManager.getCue(null,SoundType.XENIA.XENIA_WHISPER.ToString());
         }
 
-        public void initialize(string Phrase, /*GameVector2*/object Position,/*Cue*/object cue)
+        public void initialize(string Phrase, /*GameVector2*/object Position,/*Sound*/object cue)
         {
             //phrase = new Text(Phrase);
             //spoken = false;
-            //phrase.color = Color.White;
+            //phrase.color = GameColor.White;
             //phrase.color.A = 1;
             //fadeValue = 5;
             //phrase.position = Position;
@@ -45,7 +45,7 @@ namespace Sonar
             //if (!active) return;
             //if (!whisper.IsPaused)
             //{
-            //    SoundManager.GetInstance().Play(ref whisper, SoundManager.XENIA.WHISPER);
+            //    SoundManager.Play(ref whisper, SoundManager.XENIA.WHISPER);
             //    Fade(fadeValue);
             //}
             //phrase.position.X = Player.getInstance().position.X;
@@ -137,7 +137,7 @@ namespace Sonar
             //if (whisper != null)
             //{
             //    if (whisper.IsPaused)
-            //        SoundManager.GetInstance().Play(ref whisper, SoundManager.XENIA.WHISPER);
+            //        SoundManager.Play(ref whisper, SoundManager.XENIA.WHISPER);
             //}
         }
 

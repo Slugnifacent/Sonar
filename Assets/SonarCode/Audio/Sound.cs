@@ -32,7 +32,7 @@ namespace Sonar
         object source;
         object audio;
         GameVector2 position;
-        /*Texture2D*/
+        /*GameTexture*/
         object tex;
 
         #endregion Fields

@@ -75,7 +75,7 @@ namespace Sonar
             //{
             //    player.setNoise(851);
             //    player.setSlowDown(false);
-            //    VisionManager.setVisionColor(Color.CornflowerBlue);
+            //    VisionManager.setVisionColor(GameColor.CornflowerBlue);
             //}
 
             //#region Cardinal Movement

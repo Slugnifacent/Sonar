@@ -52,7 +52,7 @@ namespace Sonar
         #endregion Fields
 
         #region Dictionary
-        Dictionary<string, /*Cue*/object> shout = new Dictionary<string,/*Cue*/object >()
+        Dictionary<string, /*Sound*/object> shout = new Dictionary<string,/*Sound*/object >()
         {
             {" ",null},
             /*
@@ -263,7 +263,7 @@ namespace Sonar
             return timeSinceSpoken;
         }
 
-        public/*Cue*/object excorcismAudio(string Phrase)
+        public/*Sound*/object excorcismAudio(string Phrase)
         {
             return shout[Phrase]; 
         }
