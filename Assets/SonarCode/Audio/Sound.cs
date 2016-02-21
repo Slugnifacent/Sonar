@@ -31,7 +31,7 @@ namespace Sonar
 
         object source;
         object audio;
-        object position;
+        GameVector2 position;
         /*Texture2D*/
         object tex;
 
@@ -167,6 +167,11 @@ namespace Sonar
             return false;
         }
 
+        public bool IsPaused()
+        {
+            return false;
+        }
+
         /// <summary>
         /// Returns True if Alive and False if Dead
         /// Created by Joshua Ray
@@ -218,7 +223,7 @@ namespace Sonar
         /// 3/5/2012
         /// </summary>
         /// <returns>Returns origin of the Sound</returns>
-        public object POSITION
+        public GameVector2 POSITION
         {
             get {return position;}
             set { position = value; }

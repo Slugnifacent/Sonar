@@ -27,7 +27,7 @@ namespace Sonar
             whisper = SoundManager.getCue(null,SoundType.XENIA.XENIA_WHISPER.ToString());
         }
 
-        public void initialize(string Phrase, /*Vector2*/object Position,/*Cue*/object cue)
+        public void initialize(string Phrase, /*GameVector2*/object Position,/*Cue*/object cue)
         {
             //phrase = new Text(Phrase);
             //spoken = false;

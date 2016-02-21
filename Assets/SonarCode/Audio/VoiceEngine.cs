@@ -137,7 +137,7 @@ namespace Sonar
             loadGenericMicrophone();
             //spokenWords = new List<Text>();
             //spokenWords.Add(new Text("Test"));
-            //Volume = new Bar(100, new /*Vector2*/object(50, 300), 400, 20, true);
+            //Volume = new Bar(100, new /*GameVector2*/object(50, 300), 400, 20, true);
 
             spokenWords = null;
             spokenWords.Add(null);
@@ -355,7 +355,7 @@ namespace Sonar
             //    //Console.WriteLine("\nSpeech Recognized: \t{0}", e.Result.Text);
             //    //Console.WriteLine("\nSpeech Recognized: \t{0}", shout[e.Result.Text]);
             //    spokenWord = e.Result.Text;
-            //    spokenWords.Add(new Text(spokenWord, new /*Vector2*/object(Game1.random.Next(20, 250), Game1.random.Next(0, 400))));
+            //    spokenWords.Add(new Text(spokenWord, new /*GameVector2*/object(Game1.random.Next(20, 250), Game1.random.Next(0, 400))));
             //    startTimer();
             //    return;
             //}
