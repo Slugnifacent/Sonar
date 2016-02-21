@@ -1,9 +1,25 @@
 fileFormatVersion: 2
 guid: f6030d03652a478448a32bcf48cb8537
-timeCreated: 1455761592
+timeCreated: 1456031272
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: dumbSheet_0
+    21300002: dumbSheet_1
+    21300004: dumbSheet_2
+    21300006: dumbSheet_3
+    21300008: dumbSheet_4
+    21300010: dumbSheet_5
+    21300012: dumbSheet_6
+    21300014: dumbSheet_7
+    21300016: dumbSheet_8
+    21300018: dumbSheet_9
+    21300020: dumbSheet_10
+    21300022: dumbSheet_11
+    21300024: dumbSheet_12
+    21300026: dumbSheet_13
+    21300028: dumbSheet_14
+    21300030: dumbSheet_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +54,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +65,247 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: dumbSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 45}
+        - {x: -45, y: -45}
+        - {x: 45, y: -45}
+        - {x: 45, y: 45}
+    - name: dumbSheet_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 270
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 45}
+        - {x: -45, y: -45}
+        - {x: 45, y: -45}
+        - {x: 45, y: 45}
+    - name: dumbSheet_2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 270
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 45}
+        - {x: -45, y: -45}
+        - {x: 45, y: -45}
+        - {x: 45, y: 45}
+    - name: dumbSheet_3
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 270
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 45}
+        - {x: -45, y: -45}
+        - {x: 45, y: -45}
+        - {x: 45, y: 45}
+    - name: dumbSheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 45}
+        - {x: -45, y: -45}
+        - {x: 45, y: -45}
+        - {x: 45, y: 45}
+    - name: dumbSheet_5
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 180
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 45}
+        - {x: -45, y: -45}
+        - {x: 45, y: -45}
+        - {x: 45, y: 45}
+    - name: dumbSheet_6
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 180
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 45}
+        - {x: -45, y: -45}
+        - {x: 45, y: -45}
+        - {x: 45, y: 45}
+    - name: dumbSheet_7
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 180
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 45}
+        - {x: -45, y: -45}
+        - {x: 45, y: -45}
+        - {x: 45, y: 45}
+    - name: dumbSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 45}
+        - {x: -45, y: -45}
+        - {x: 45, y: -45}
+        - {x: 45, y: 45}
+    - name: dumbSheet_9
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 90
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 45}
+        - {x: -45, y: -45}
+        - {x: 45, y: -45}
+        - {x: 45, y: 45}
+    - name: dumbSheet_10
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 90
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 45}
+        - {x: -45, y: -45}
+        - {x: 45, y: -45}
+        - {x: 45, y: 45}
+    - name: dumbSheet_11
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 90
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 45}
+        - {x: -45, y: -45}
+        - {x: 45, y: -45}
+        - {x: 45, y: 45}
+    - name: dumbSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 45}
+        - {x: -45, y: -45}
+        - {x: 45, y: -45}
+        - {x: 45, y: 45}
+    - name: dumbSheet_13
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 0
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 45}
+        - {x: -45, y: -45}
+        - {x: 45, y: -45}
+        - {x: 45, y: 45}
+    - name: dumbSheet_14
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 45}
+        - {x: -45, y: -45}
+        - {x: 45, y: -45}
+        - {x: 45, y: 45}
+    - name: dumbSheet_15
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 45}
+        - {x: -45, y: -45}
+        - {x: 45, y: -45}
+        - {x: 45, y: 45}
     outline: []
   spritePackingTag: 
   userData: 

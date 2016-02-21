@@ -17,7 +17,7 @@ public class UnitySoundManager : MonoBehaviour {
 
     public void PlaySound()
     {
-        soundManager.createSound(this.gameObject,SoundType.AMBIENT.AMBIANT_SPECTRE_INVESTIGATE.ToString());
+        SoundManager.createSound(this.gameObject,SoundType.AMBIENT.AMBIANT_SPECTRE_INVESTIGATE.ToString());
     }
 
 	// Update is called once per frame

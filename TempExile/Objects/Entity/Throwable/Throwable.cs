@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
+
+
+
+
+
+
+
 
 namespace Sonar {
     public class Throwable : Entity {
@@ -18,21 +18,21 @@ namespace Sonar {
         public bool collideWithWall;
         public bool readyForPickUp;
         protected int weight;
-        private Texture2D spriteVile;
+        private GameTexture spriteVile;
 
         protected Throwable()
         {
         }
 
-        public Throwable(ContentManager Content, Vector2 Position, float health, int weight, Texture2D sprite) {
+        public Throwable(ContentManager Content, GameVector2 Position, float health, int weight, GameTexture sprite) {
             if (sprite == null) {
                 string vial = "Textures/Objects/Entity/Glass/vial"; // Variation of glass vial to display
                 Random rand = Game1.random;
                 int vialNum = rand.Next(1, 3);
                 vial += vialNum;
-                spriteVile = Content.Load<Texture2D>(@"" + vial);
+                spriteVile = Content.Load<GameTexture>(@"" + vial);
 
-                sprite = Content.Load<Texture2D>(@"Textures/Objects/Environment/Lab/desk_lab");
+                sprite = Content.Load<GameTexture>(@"Textures/Objects/Environment/Lab/desk_lab");
             }
             else { texture = sprite; }
 
@@ -40,14 +40,14 @@ namespace Sonar {
             position = Position;
             //orientation = Orientation;
             orientation.Normalize();
-            boundingBox = new Rectangle((int)(position.X - MapUnit.MAX_SIZE / 2-1), (int)(position.Y - MapUnit.MAX_SIZE / 2 - 1), (int)(MapUnit.MAX_SIZE), (int)(MapUnit.MAX_SIZE));
+            boundingBox = new GameRectangle((int)(position.X - MapUnit.MAX_SIZE / 2-1), (int)(position.Y - MapUnit.MAX_SIZE / 2 - 1), (int)(MapUnit.MAX_SIZE), (int)(MapUnit.MAX_SIZE));
             InitializeAnimations();
             speed = 45/weight;
             this.health = health;
             this.weight = weight;
             texture = sprite;
             readyForPickUp = true;
-            color = Color.Blue;
+            color = GameColor.Blue;
             color.A = 0;
         }
 
@@ -55,8 +55,8 @@ namespace Sonar {
         {
             animationInterval = 200;
             animation = new AnimationCollection(texture, boundingBox);
-            animation.add("Intact", 0, spriteColNum, Vector2.Zero, animationInterval, false);
-            animation.add("Break", 0, spriteColNum, new Vector2(0, spriteHeight), animationInterval, false);
+            animation.add("Intact", 0, spriteColNum, GameVector2.Zero, animationInterval, false);
+            animation.add("Break", 0, spriteColNum, new GameVector2(0, spriteHeight), animationInterval, false);
             animation.RUN("Intact");
         }
 
@@ -77,7 +77,7 @@ namespace Sonar {
             texture = spriteVile;
         }
 
-        public void setPos(Vector2 v) {
+        public void setPos(GameVector2 v) {
             position = v;
             updateBoundingBox(position);
         }
@@ -120,10 +120,10 @@ namespace Sonar {
         /// </summary>
         /// <param name="rect"></param>
         /// <returns></returns>
-        public bool Collide(Rectangle rect) {
+        public bool Collide(GameRectangle rect) {
             //if ((((rect.Bottom > boundingBox.Top) && (rect.Bottom < boundingBox.Bottom)) || ((rect.Top > boundingBox.Top) && (rect.Top < boundingBox.Bottom))) &&
             //    (((rect.Left > boundingBox.Left) && (rect.Left < boundingBox.Right)) || ((rect.Right > boundingBox.Left) && (rect.Right < boundingBox.Right)))) {
-                if (boundingBox.Intersects(new Rectangle(rect.X - rect.Width / 4,
+                if (boundingBox.Intersects(new GameRectangle(rect.X - rect.Width / 4,
                                                          rect.Y - rect.Height / 4,
                                                    (int)(rect.Width + rect.Width / 2),
                                                    (int)(rect.Height + rect.Height / 2)))) {
@@ -134,7 +134,7 @@ namespace Sonar {
             return false;
         }
 
-        public Texture2D getTexture()
+        public GameTexture getTexture()
         {
             return texture;
         }
@@ -144,7 +144,7 @@ namespace Sonar {
         /// Basic Draw override. Just shows the bounding box and the texture. Colored blue to differentiate for now.
         /// </summary>
         /// <param name="spriteBatch"></param>
-        public override void Draw(SpriteBatch spriteBatch) {
+        public override void Draw(object spriteBatch) {
             spriteBatch.Draw(texture, boundingBox, color);
             //animation.Draw(spriteBatch);
         }
@@ -154,7 +154,7 @@ namespace Sonar {
         /// Override to fix collision detection for throwables. No longer goes through walls or gets stuck.
         /// </summary>
         /// <param name="spriteBatch"></param>
-        public override void updateBoundingBox(Vector2 position)
+        public override void updateBoundingBox(GameVector2 position)
         {
             if (texture != null)
             {
@@ -218,7 +218,7 @@ namespace Sonar {
                         VisionManager.addVisionPoint(position, 100, false);
                 }
             }
-            //animation.Update(gameTime, new Vector2(boundingBox.Center.X, boundingBox.Center.Y));
+            //animation.Update(gameTime, new GameVector2(boundingBox.Center.X, boundingBox.Center.Y));
         }
     }
 }

@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
+
+
+
+
+
+
+
 
 namespace Sonar
 {
@@ -17,7 +17,7 @@ namespace Sonar
         public Pride(MapUnit[,] map, List<MapUnit> path, List<Door> doors, Player player, int id)
             : base(map, path, doors, player)
         {
-            texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Spectres/Pride/pride_spritesheet2");
+            texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Spectres/Pride/pride_spritesheet2");
             hearingRange = 500;
             hearingSphere = new BoundingSphere(new Vector3(position, 0), hearingRange);
 
@@ -32,11 +32,11 @@ namespace Sonar
             scale = 1f;
 
 
-            grunt = SoundManager.GetInstance().getCue(SoundManager.DUMB.GRUNT);
-            roar = SoundManager.GetInstance().getCue(SoundManager.WRATH.ROAR);
-            walk = SoundManager.GetInstance().getCue(SoundManager.DUMB.FOOTSTEP);
-            excorcismCue = SoundManager.GetInstance().getCue(SoundManager.DUMB.EXCORCISED);
-            InvestigateCue = SoundManager.GetInstance().getCue(SoundManager.DUMB.ALERT);
+            grunt = SoundManager.getCue(SoundManager.DUMB.GRUNT);
+            roar = SoundManager.getCue(SoundManager.WRATH.ROAR);
+            walk = SoundManager.getCue(SoundManager.DUMB.FOOTSTEP);
+            excorcismCue = SoundManager.getCue(SoundManager.DUMB.EXCORCISED);
+            InvestigateCue = SoundManager.getCue(SoundManager.DUMB.ALERT);
 
 
             this.id = id;

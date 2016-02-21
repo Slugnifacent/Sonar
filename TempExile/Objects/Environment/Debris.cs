@@ -11,7 +11,7 @@ namespace Sonar {
 
         public Debris(GameVector2 Position, int weight, GameTexture sprite) {
             //if (sprite == null) {
-            //    sprite = Content.Load<Texture2D>(@"Textures/Objects/Entity/Glass/broken_glass1");
+            //    sprite = Content.Load<GameTexture>(@"Textures/Objects/Entity/Glass/broken_glass1");
             //}
             //else { texture = sprite; }
 
@@ -19,7 +19,7 @@ namespace Sonar {
             //position = Position;
             //orientation.Normalize();
             //this.weight = weight;
-            //boundingBox = new Rectangle((int)(position.X - MapUnit.MAX_SIZE / 2 - 1), (int)(position.Y - MapUnit.MAX_SIZE / 2 - 1), (int)(MapUnit.MAX_SIZE), (int)(MapUnit.MAX_SIZE));
+            //boundingBox = new GameRectangle((int)(position.X - MapUnit.MAX_SIZE / 2 - 1), (int)(position.Y - MapUnit.MAX_SIZE / 2 - 1), (int)(MapUnit.MAX_SIZE), (int)(MapUnit.MAX_SIZE));
             //texture = sprite;
             //soundCD = 0;
         }
@@ -54,8 +54,8 @@ namespace Sonar {
             return weight;
         }
 
-        public override void Draw(SpriteBatch spriteBatch) {
-            //spriteBatch.Draw(texture, boundingBox, Color.Red);
+        public override void Draw(object spriteBatch) {
+            //spriteBatch.Draw(texture, boundingBox, GameColor.Red);
         }
 
         public override void Update(object gameTime) {

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.Graphics;
+
+
+
 
 namespace Sonar
 {
@@ -17,12 +17,12 @@ namespace Sonar
         public WalkieTalkie()
         {
         }
-        public WalkieTalkie(Vector2 pos, ContentManager content)
+        public WalkieTalkie(GameVector2 pos, ContentManager content)
         {
-            color = Color.White;
+            color = GameColor.White;
             position = pos;
-            texture = content.Load<Texture2D>(@"Textures/Objects/Entity/WalkieTalkie/idle");
-            boundingBox = new Rectangle((int)position.X , (int)position.Y , (int)(MapUnit.MAX_SIZE), (int)(MapUnit.MAX_SIZE));
+            texture = content.Load<GameTexture>(@"Textures/Objects/Entity/WalkieTalkie/idle");
+            boundingBox = new GameRectangle((int)position.X , (int)position.Y , (int)(MapUnit.MAX_SIZE), (int)(MapUnit.MAX_SIZE));
             readyForPickUp = true;
             health = 8;
             speed = 4;
@@ -30,12 +30,12 @@ namespace Sonar
             orientation.Normalize();
             on = true;
         }
-        public WalkieTalkie(Vector2 pos, ContentManager content,bool Collected)
+        public WalkieTalkie(GameVector2 pos, ContentManager content,bool Collected)
         {
-            color = Color.White;
+            color = GameColor.White;
             position = pos;
-            texture = content.Load<Texture2D>(@"Textures/Objects/Entity/WalkieTalkie/idle");
-            boundingBox = new Rectangle((int)position.X , (int)position.Y , (int)(MapUnit.MAX_SIZE) + 2, (int)(MapUnit.MAX_SIZE) + 2);
+            texture = content.Load<GameTexture>(@"Textures/Objects/Entity/WalkieTalkie/idle");
+            boundingBox = new GameRectangle((int)position.X , (int)position.Y , (int)(MapUnit.MAX_SIZE) + 2, (int)(MapUnit.MAX_SIZE) + 2);
             readyForPickUp = true;
             health = 8;
             speed = 4;
@@ -44,13 +44,13 @@ namespace Sonar
             collected = Collected;
             on = true;
         }
-        public WalkieTalkie(Vector2 pos, ContentManager content, bool Collected, float Health)
+        public WalkieTalkie(GameVector2 pos, ContentManager content, bool Collected, float Health)
         {
-            color = Color.White;
+            color = GameColor.White;
             position = pos;
-            texture = content.Load<Texture2D>(@"Textures/Objects/Entity/WalkieTalkie/idle");
-            //boundingBox = new Rectangle((int)(position.X - MapUnit.MAX_SIZE / 2 - 1), (int)(position.Y - MapUnit.MAX_SIZE / 2 - 1), (int)(MapUnit.MAX_SIZE), (int)(MapUnit.MAX_SIZE));
-            boundingBox = new Rectangle((int)position.X, (int)position.Y, (int)(MapUnit.MAX_SIZE) + 2, (int)(MapUnit.MAX_SIZE) + 2);
+            texture = content.Load<GameTexture>(@"Textures/Objects/Entity/WalkieTalkie/idle");
+            //boundingBox = new GameRectangle((int)(position.X - MapUnit.MAX_SIZE / 2 - 1), (int)(position.Y - MapUnit.MAX_SIZE / 2 - 1), (int)(MapUnit.MAX_SIZE), (int)(MapUnit.MAX_SIZE));
+            boundingBox = new GameRectangle((int)position.X, (int)position.Y, (int)(MapUnit.MAX_SIZE) + 2, (int)(MapUnit.MAX_SIZE) + 2);
             readyForPickUp = true;
             health = Health;
             speed = 4;
@@ -60,7 +60,7 @@ namespace Sonar
             on = true;
         }
 
-        public override void Draw(SpriteBatch spriteBatch)
+        public override void Draw(object spriteBatch)
         {
             spriteBatch.Draw(texture, boundingBox, color);
             //Console.Out.WriteLine("Walkie BoundingBox: " + boundingBox);
@@ -68,7 +68,7 @@ namespace Sonar
 
         public void createSound(float volume) {
             color.G = 0;
-            // SoundManager.GetInstance().playSoundFX(position, volume, volume,1,1,500,null);
+            // SoundManager.playSoundFX(position, volume, volume,1,1,500,null);
             makingNoise = true;
         }
 

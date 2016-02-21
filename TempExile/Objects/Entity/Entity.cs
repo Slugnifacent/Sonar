@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
+
+
+
+
+
+
+
 
 namespace Sonar
 {
     abstract public class Entity : Object
     {
-        //protected Vector2 rootPos;
+        //protected GameVector2 rootPos;
         //public float speed;
         protected float health;
         protected int footstepTimer = 0;
@@ -517,7 +517,7 @@ namespace Sonar
         }
 
         // Animate the sprites
-        public virtual void updateSprite(Vector2 prepos, Vector2 pos)
+        public virtual void updateSprite(GameVector2 prepos, GameVector2 pos)
         {
             float dir_x = pos.X - prepos.X;
             float dir_y = pos.Y - prepos.Y;

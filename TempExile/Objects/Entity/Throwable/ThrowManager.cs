@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
+
+
+
+
+
+
+
 
 namespace Sonar {
     public class ThrowManager {
@@ -38,7 +38,7 @@ namespace Sonar {
                     d.soundCD = 25;
                     //GameScreen.shaders[GameScreen.visionShaderIndex].addPoint(d.position, d.getWeight() * 100, 1000f, 5f);
                     //VisionManager.visionPoints.Add(new Vector3(d.position.X, d.position.Y, d.getWeight() * 100));
-                    SoundManager.GetInstance().createSound(d.position, 700f, 1000f, 5f, SoundManager.THROWABLE.GLASS_BREAKING, true);
+                    SoundManager.createSound(d.position, 700f, 1000f, 5f, SoundManager.THROWABLE.GLASS_BREAKING, true);
                 }
             }
 
@@ -55,7 +55,7 @@ namespace Sonar {
                             }
                         }
                         else {
-                            SoundManager.GetInstance().playSoundFX(SoundManager.THROWABLE.GLASS_PICKUP);
+                            SoundManager.playSoundFX(SoundManager.THROWABLE.GLASS_PICKUP);
                         }                        
 
                         throwingObjects.RemoveAt(i);
@@ -72,9 +72,9 @@ namespace Sonar {
                     }
                     debris.Add(new Debris(Game1.contentManager, map.getPlayer().throwing[i].position, map.getPlayer().throwing[i].getWeight(), null));
                     // GameScreen.shaders[0].addPoint(player.throwing[i].position, (float)player.throwing[i].getWeight() * 100, 1000f, 5f);
-                    // SoundManager.GetInstance().playSoundFX(player.throwing[i].position, (float)player.throwing[i].getWeight() * 300);
-                    // SoundManager.GetInstance().playSoundFX(player.throwing[i].position, (float)player.throwing[i].getWeight() *300, 1000f, 5f, 1, 2000, glassBreak.CreateInstance(), true);
-                    SoundManager.GetInstance().createSound(map.getPlayer().throwing[i].position, (float)map.getPlayer().throwing[i].getWeight() * 400, 2000f, 5f, SoundManager.THROWABLE.GLASS_BREAKING, true);
+                    // SoundManager.playSoundFX(player.throwing[i].position, (float)player.throwing[i].getWeight() * 300);
+                    // SoundManager.playSoundFX(player.throwing[i].position, (float)player.throwing[i].getWeight() *300, 1000f, 5f, 1, 2000, glassBreak.CreateInstance(), true);
+                    SoundManager.createSound(map.getPlayer().throwing[i].position, (float)map.getPlayer().throwing[i].getWeight() * 400, 2000f, 5f, SoundManager.THROWABLE.GLASS_BREAKING, true);
                     map.getPlayer().throwing.RemoveAt(i);
                     map.getPlayer().throwCooldown = false;                   
                 }
@@ -85,13 +85,13 @@ namespace Sonar {
                         map.getPlayer().walkieTalkie = new WalkieTalkie(map.getPlayer().throwing[i].position, Game1.contentManager, true, map.getPlayer().throwing[i].getHealth() - 1);
                         throwingObjects.Add(map.getPlayer().walkieTalkie);
                         map.getPlayer().walkieTalkie.collected = false;
-                        SoundManager.GetInstance().playSoundFX(SoundManager.THROWABLE.GLASS_COLLISION);
+                        SoundManager.playSoundFX(SoundManager.THROWABLE.GLASS_COLLISION);
                         //Console.Out.WriteLine("Tossed");
                     }
                     //Any other throwing item.
                     else throwingObjects.Add(new Throwable(Game1.contentManager, map.getPlayer().throwing[i].position, map.getPlayer().throwing[i].getHealth() - 1, map.getPlayer().throwing[i].getWeight(), null));
-                    //SoundManager.GetInstance().playSoundFX(player.throwing[i].position, 200, 200, 1, 1, 2000, glassHit.CreateInstance());
-                    // SoundManager.GetInstance().playSoundFX(player.throwing[i].position, (float)player.throwing[i].getWeight() * 300);
+                    //SoundManager.playSoundFX(player.throwing[i].position, 200, 200, 1, 1, 2000, glassHit.CreateInstance());
+                    // SoundManager.playSoundFX(player.throwing[i].position, (float)player.throwing[i].getWeight() * 300);
                     map.getPlayer().throwing.RemoveAt(i);
                     map.getPlayer().throwCooldown = false;                    
                 }

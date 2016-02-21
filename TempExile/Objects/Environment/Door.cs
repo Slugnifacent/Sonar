@@ -13,8 +13,8 @@ namespace Sonar
         public bool isOccupied;
         public bool isBroken;
         private bool playedPasswordSound; // Played sound for opening passworded door
-        private Vector2 index;
-        private Vector2 otherHalfOfDoorIndex;
+        private GameVector2 index;
+        private GameVector2 otherHalfOfDoorIndex;
         private String password;
         public char direction;
         private String stringVal;
@@ -22,33 +22,33 @@ namespace Sonar
         private AnimationCollection animation;
         SpriteFont font;
         private float colorValue;
-        Texture2D floorTexture;
-        Texture2D doorMat;
-        Texture2D lockSymbol;
-        Texture2D outline;
-        public Rectangle doorHitBox;
-        public Rectangle doorThreshold;
+        GameTexture floorTexture;
+        GameTexture doorMat;
+        GameTexture lockSymbol;
+        GameTexture outline;
+        public GameRectangle doorHitBox;
+        public GameRectangle doorThreshold;
 
 
-        public Door(Vector2 init_Pos, Vector2 ind, String pwd, char direction, String strVal, Vector2 otherHalfOfDoorInd)
+        public Door(GameVector2 init_Pos, GameVector2 ind, String pwd, char direction, String strVal, GameVector2 otherHalfOfDoorInd)
         {
             colorValue = 1f;
             font = Game1.contentManager.Load<SpriteFont>(@"Fonts/Skyrim");
             position = init_Pos;
-            floorTexture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Floor/floorTileTest3");
-            doorMat = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Floor/doorMat");
+            floorTexture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Floor/floorTileTest3");
+            doorMat = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Floor/doorMat");
             if (pwd == null)
             {
-                texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/doorBasicC" + direction);
-                outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/Outlines/doorBasicC" + direction + "Outline");
-                lockSymbol = Game1.contentManager.Load<Texture2D>("Textures/Objects/Environment/Door/Outlines/doorPasswordedOutlineC" + direction);
+                texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/doorBasicC" + direction);
+                outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/Outlines/doorBasicC" + direction + "Outline");
+                lockSymbol = Game1.contentManager.Load<GameTexture>("Textures/Objects/Environment/Door/Outlines/doorPasswordedOutlineC" + direction);
                 locked = false;
             }
             else
             {
-                texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/doorPasswordedC" + direction);
-                outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/Outlines/doorBasicC" + direction + "Outline");
-                lockSymbol = Game1.contentManager.Load<Texture2D>("Textures/Objects/Environment/Door/Outlines/doorPasswordedOutlineC" + direction);
+                texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/doorPasswordedC" + direction);
+                outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/Outlines/doorBasicC" + direction + "Outline");
+                lockSymbol = Game1.contentManager.Load<GameTexture>("Textures/Objects/Environment/Door/Outlines/doorPasswordedOutlineC" + direction);
                 locked = true;
             }
             if (direction == 'L' || direction == 'D')
@@ -64,7 +64,7 @@ namespace Sonar
             {
                 position.Y += texture.Height / 2 + 1;
             }
-            boundingBox = new Rectangle((int)init_Pos.X + texture.Width / 2 - 1, (int)init_Pos.Y, texture.Width, texture.Height);
+            boundingBox = new GameRectangle((int)init_Pos.X + texture.Width / 2 - 1, (int)init_Pos.Y, texture.Width, texture.Height);
             InitializeAnimations();
             isOpen = false;
             opening = false;
@@ -77,21 +77,21 @@ namespace Sonar
             otherHalfOfDoorIndex = otherHalfOfDoorInd;
             UpdateBoundingBox();
             if (direction == 'U' || direction == 'D') {
-                doorHitBox = new Rectangle((int)(getBox().X + MapUnit.MAX_SIZE / 2.7),
+                doorHitBox = new GameRectangle((int)(getBox().X + MapUnit.MAX_SIZE / 2.7),
                                               getBox().Y - MapUnit.MAX_SIZE / 2,
                                               (int)(getBox().Width / 1.5),
                                               (int)(getBox().Height + MapUnit.MAX_SIZE));
-                doorThreshold = new Rectangle((int)(getBox().X),
+                doorThreshold = new GameRectangle((int)(getBox().X),
                                               (int)(getBox().Y + MapUnit.MAX_SIZE / 2.5),
                                               (int)(getBox().Width),
                                               (int)(getBox().Height / 8));
             }
             else {
-                doorHitBox = new Rectangle(getBox().X - MapUnit.MAX_SIZE / 2,
+                doorHitBox = new GameRectangle(getBox().X - MapUnit.MAX_SIZE / 2,
                                               (int)(getBox().Y + MapUnit.MAX_SIZE / 2.7),
                                               (int)(getBox().Width + MapUnit.MAX_SIZE),
                                               (int)(getBox().Height / 1.5));
-                doorThreshold = new Rectangle((int)(getBox().X + MapUnit.MAX_SIZE / 2.5),
+                doorThreshold = new GameRectangle((int)(getBox().X + MapUnit.MAX_SIZE / 2.5),
                                               (int)(getBox().Y),
                                               (int)(getBox().Width / 4),
                                               (int)(getBox().Height));
@@ -103,8 +103,8 @@ namespace Sonar
         {
             animationInterval = 200;
             animation = new AnimationCollection(texture, boundingBox);
-            animation.add("Close", 0, spriteColNum, Vector2.Zero, animationInterval, false);
-            animation.add("Open", 0, spriteColNum, new Vector2(0, spriteHeight), animationInterval, false);
+            animation.add("Close", 0, spriteColNum, GameVector2.Zero, animationInterval, false);
+            animation.add("Open", 0, spriteColNum, new GameVector2(0, spriteHeight), animationInterval, false);
             animation.RUN("Close");
         }
 
@@ -113,12 +113,12 @@ namespace Sonar
             //animation.Update(time, position);
         }
 
-        public override void Draw(SpriteBatch spriteBatch)
+        public override void Draw(object spriteBatch)
         {
 
             if (Player.getInstance().GetNoise() > Player.loudness.whispering)
             {
-                Vector2 distance = Player.getInstance().position - this.position;
+                GameVector2 distance = Player.getInstance().position - this.position;
                 float distanceValue = (float)Math.Pow((double)distance.X, 2) + (float)Math.Pow((double)distance.Y, 2);
                 distanceValue = 0.015f - (distanceValue / 10000000f);
 
@@ -131,34 +131,34 @@ namespace Sonar
 
             if (stringVal == "D" || stringVal == "P")
             {
-                /*Texture2D tex = Game1.contentManager.Load<Texture2D>(@"Player/player_down_fast_2");
-                spriteBatch.Draw(tex, new Rectangle(boundingBox.X - boundingBox.Width / 4,
+                /*GameTexture tex = Game1.contentManager.Load<GameTexture>(@"Player/player_down_fast_2");
+                spriteBatch.Draw(tex, new GameRectangle(boundingBox.X - boundingBox.Width / 4,
                                                                   boundingBox.Y - boundingBox.Height / 4,
                                                                   boundingBox.Width + boundingBox.Width / 2,
-                                                                  boundingBox.Height + boundingBox.Height / 2), Color.Yellow);*/
-                spriteBatch.Draw(floorTexture, boundingBox, Color.White);
+                                                                  boundingBox.Height + boundingBox.Height / 2), GameColor.Yellow);*/
+                spriteBatch.Draw(floorTexture, boundingBox, GameColor.White);
                 
-                spriteBatch.Draw(texture, boundingBox, Color.Gray);
+                spriteBatch.Draw(texture, boundingBox, GameColor.Gray);
                 //animation.Draw(spriteBatch);
                 if (password != null) {
                     if (locked)
                     {                                                
                         /*spriteBatch.Draw(lockSymbol, 
-                                        position + new Vector2(-MapUnit.MAX_SIZE/5, 0), 
+                                        position + new GameVector2(-MapUnit.MAX_SIZE/5, 0), 
                                         null, 
-                                        Color.White, 
+                                        GameColor.White, 
                                         0, 
-                                        Vector2.Zero, 
-                                        new Vector2(.75f, .75f), 
+                                        GameVector2.Zero, 
+                                        new GameVector2(.75f, .75f), 
                                         SpriteEffects.None, 
                                         0);*/
-                        //spriteBatch.Draw(lockSymbol, position + new Vector2(-MapUnit.MAX_SIZE, MapUnit.MAX_SIZE / 2), Color.White);
-                        //spriteBatch.DrawString(font, "Say the Password", position + new Vector2(-MapUnit.MAX_SIZE, MapUnit.MAX_SIZE / 2), Color.Red);
+                        //spriteBatch.Draw(lockSymbol, position + new GameVector2(-MapUnit.MAX_SIZE, MapUnit.MAX_SIZE / 2), GameColor.White);
+                        //spriteBatch.DrawString(font, "Say the Password", position + new GameVector2(-MapUnit.MAX_SIZE, MapUnit.MAX_SIZE / 2), GameColor.Red);
                     }
                     // Play sound for when a Passworded Door is Open
                     else if (!playedPasswordSound)
                     {
-                        SoundManager.GetInstance().createSound(position, 100, 100, 2, SoundManager.ENVIRONMENT.DOOR_OPEN, false);
+                        SoundManager.createSound(position, 100, 100, 2, SoundManager.ENVIRONMENT.DOOR_OPEN, false);
                         playedPasswordSound = true;
                         Interact();
                     }
@@ -167,13 +167,13 @@ namespace Sonar
 
         }
 
-        public void DrawDoorOnly(SpriteBatch spriteBatch)
+        public void DrawDoorOnly(object spriteBatch)
         {
             if (stringVal == "D" || stringVal == "P")
             {
                 if (!isBroken)
                 {
-                    spriteBatch.Draw(texture, boundingBox, Color.White);
+                    spriteBatch.Draw(texture, boundingBox, GameColor.White);
                 }  
             }
         }
@@ -183,23 +183,23 @@ namespace Sonar
         /// Draw tiles on both entrances to a Door
         /// </summary>
         /// <param name="spriteBatch"></param>
-        public void DrawDoorMats(SpriteBatch spriteBatch)
+        public void DrawDoorMats(object spriteBatch)
         {
             // If Door is a horizontal one, draw doormats above and below door
             if (direction == 'U' || direction == 'D')
             {
-                spriteBatch.Draw(doorMat, new Rectangle((int)(boundingBox.X + MapUnit.MAX_SIZE / 2.7), boundingBox.Y - MapUnit.MAX_SIZE / 2,
-                                                        (int)(boundingBox.Width / 1.5), boundingBox.Height / 2), Color.White);
-                spriteBatch.Draw(doorMat, new Rectangle((int)(boundingBox.X + MapUnit.MAX_SIZE / 2.7), (int)(boundingBox.Y + (1 * MapUnit.MAX_SIZE)),
-                                                          (int)(boundingBox.Width / 1.5), boundingBox.Height / 2), Color.White);
+                spriteBatch.Draw(doorMat, new GameRectangle((int)(boundingBox.X + MapUnit.MAX_SIZE / 2.7), boundingBox.Y - MapUnit.MAX_SIZE / 2,
+                                                        (int)(boundingBox.Width / 1.5), boundingBox.Height / 2), GameColor.White);
+                spriteBatch.Draw(doorMat, new GameRectangle((int)(boundingBox.X + MapUnit.MAX_SIZE / 2.7), (int)(boundingBox.Y + (1 * MapUnit.MAX_SIZE)),
+                                                          (int)(boundingBox.Width / 1.5), boundingBox.Height / 2), GameColor.White);
             }
             // If Door is a vertical one, draw doormats to the left of and right of door
             else if (direction == 'L' || direction == 'R')
             {
-                spriteBatch.Draw(doorMat, new Rectangle(boundingBox.X - MapUnit.MAX_SIZE / 2, (int)(boundingBox.Y + MapUnit.MAX_SIZE / 2.7),
-                                                        boundingBox.Width / 2, (int)(boundingBox.Height / 1.5)), Color.White);
-                spriteBatch.Draw(doorMat, new Rectangle((int)(boundingBox.X + (1 * MapUnit.MAX_SIZE)), (int)(boundingBox.Y + MapUnit.MAX_SIZE / 2.7),
-                                                          boundingBox.Width / 2, (int)(boundingBox.Height / 1.5)), Color.White);
+                spriteBatch.Draw(doorMat, new GameRectangle(boundingBox.X - MapUnit.MAX_SIZE / 2, (int)(boundingBox.Y + MapUnit.MAX_SIZE / 2.7),
+                                                        boundingBox.Width / 2, (int)(boundingBox.Height / 1.5)), GameColor.White);
+                spriteBatch.Draw(doorMat, new GameRectangle((int)(boundingBox.X + (1 * MapUnit.MAX_SIZE)), (int)(boundingBox.Y + MapUnit.MAX_SIZE / 2.7),
+                                                          boundingBox.Width / 2, (int)(boundingBox.Height / 1.5)), GameColor.White);
             }
         }
 
@@ -211,21 +211,21 @@ namespace Sonar
                 if (password == null) {
                     if (isOpen) {
                         //Console.Out.WriteLine("Door was open");
-                        texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/doorBasicC" + direction);
-                        outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/Outlines/doorBasicC" + direction + "Outline");
+                        texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/doorBasicC" + direction);
+                        outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/Outlines/doorBasicC" + direction + "Outline");
                         UpdateBoundingBox();
                         isOpen = false;
                         animation.RUN("Close");
-                        SoundManager.GetInstance().createSound(position, 100, 100, 2, SoundManager.ENVIRONMENT.DOOR_CLOSE, false);
+                        SoundManager.createSound(position, 100, 100, 2, SoundManager.ENVIRONMENT.DOOR_CLOSE, false);
                     }
                     else {
                         //Console.Out.WriteLine("Door was closed");
-                        texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/doorBasicO" + direction);
-                        outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/Outlines/doorBasicO" + direction + "Outline");
+                        texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/doorBasicO" + direction);
+                        outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/Outlines/doorBasicO" + direction + "Outline");
                         UpdateBoundingBox();
                         opening = true;
                         animation.RUN("Open");
-                        SoundManager.GetInstance().createSound(position, 100, 100, 2, SoundManager.ENVIRONMENT.DOOR_OPEN, false);
+                        SoundManager.createSound(position, 100, 100, 2, SoundManager.ENVIRONMENT.DOOR_OPEN, false);
                     }
                 }
                 // Passworded Door
@@ -233,20 +233,20 @@ namespace Sonar
                     //.Out.WriteLine("Other Door");
                     if (isOpen) {
                         //Console.Out.WriteLine("Passworded Door was open");
-                        texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/doorPasswordedC" + direction);
-                        outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/Outlines/doorBasicC" + direction + "Outline");
+                        texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/doorPasswordedC" + direction);
+                        outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/Outlines/doorBasicC" + direction + "Outline");
                         UpdateBoundingBox();
                         isOpen = false;
-                        SoundManager.GetInstance().createSound(position, 100, 100, 2, SoundManager.ENVIRONMENT.DOOR_CLOSE, false);
+                        SoundManager.createSound(position, 100, 100, 2, SoundManager.ENVIRONMENT.DOOR_CLOSE, false);
                     }
                     else {
                         //Console.Out.WriteLine("Passworded Door was closed");
                         if (!locked) {
-                            texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/doorPasswordedO" + direction);
-                            outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/Outlines/doorBasicO" + direction + "Outline");
+                            texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/doorPasswordedO" + direction);
+                            outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/Outlines/doorBasicO" + direction + "Outline");
                             UpdateBoundingBox();
                             opening = true;
-                            SoundManager.GetInstance().createSound(position, 100, 100, 2, SoundManager.ENVIRONMENT.DOOR_OPEN, false);
+                            SoundManager.createSound(position, 100, 100, 2, SoundManager.ENVIRONMENT.DOOR_OPEN, false);
                         }
                     }
                 }
@@ -258,12 +258,12 @@ namespace Sonar
             if (password == null) {
                 if (!isOpen) {
                     //Console.Out.WriteLine("Door was closed");
-                    texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/doorBroken" + direction);
-                    outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/Outlines/doorBroken" + direction + "Outline");
+                    texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/doorBroken" + direction);
+                    outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/Outlines/doorBroken" + direction + "Outline");
                     UpdateBoundingBox();
                     opening = true;
                     isBroken = true;
-                    SoundManager.GetInstance().createSound(position, 100, 100, 2, SoundManager.ENVIRONMENT.DOOR_OPEN, false);
+                    SoundManager.createSound(position, 100, 100, 2, SoundManager.ENVIRONMENT.DOOR_OPEN, false);
                 }
             }
             // Passworded Door doesn't know
@@ -320,7 +320,7 @@ namespace Sonar
         }
 
         // Returns map x/y values for Door
-        public Vector2 getIndex()
+        public GameVector2 getIndex()
         {
             return index;
         }
@@ -335,7 +335,7 @@ namespace Sonar
             return password;
         }
 
-        public Vector2 getOtherHalfOfDoorIndex()
+        public GameVector2 getOtherHalfOfDoorIndex()
         {
             return otherHalfOfDoorIndex;
         }
@@ -352,19 +352,19 @@ namespace Sonar
             isBroken = false;
             playedPasswordSound = false;
             if (password == null) {
-                texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/doorBasicC" + direction);
-                outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/Outlines/doorBasicC" + direction + "Outline");
+                texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/doorBasicC" + direction);
+                outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/Outlines/doorBasicC" + direction + "Outline");
                 locked = false;
             }
             else {
-                texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/doorPasswordedC" + direction);
-                outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/Outlines/doorBasicC" + direction + "Outline");
+                texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/doorPasswordedC" + direction);
+                outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/Outlines/doorBasicC" + direction + "Outline");
                 locked = true;
             }
             UpdateBoundingBox();
         }
 
-        public void DrawOutline(SpriteBatch spriteBatch, Color color)
+        public void DrawOutline(object spriteBatch, GameColor color)
         {
             if (!isBroken)
             {
@@ -374,19 +374,19 @@ namespace Sonar
                 {
                     if (Player.getInstance().carriedPassword == null)
                     {
-                        spriteBatch.Draw(outline, boundingBox, Color.Red);
-                        spriteBatch.Draw(lockSymbol, boundingBox, Color.Red);
+                        spriteBatch.Draw(outline, boundingBox, GameColor.Red);
+                        spriteBatch.Draw(lockSymbol, boundingBox, GameColor.Red);
                     }
                     else
                     {
-                        spriteBatch.Draw(outline, boundingBox, new Color(200, 110, 0, 255));
-                        spriteBatch.Draw(lockSymbol, boundingBox, new Color(200, 100, 0, 255));
+                        spriteBatch.Draw(outline, boundingBox, new GameColor(200, 110, 0, 255));
+                        spriteBatch.Draw(lockSymbol, boundingBox, new GameColor(200, 100, 0, 255));
                     }
                 }
             }
         }
 
-        public void DrawLock(SpriteBatch spriteBatch)
+        public void DrawLock(object spriteBatch)
         {
 
         }

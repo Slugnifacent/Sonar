@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
+
+
 
 
 namespace Sonar
@@ -13,14 +13,14 @@ namespace Sonar
         string password;
         public bool taken;
 
-        public Janitor(Vector2 Position, Sonar.Landmark.Type type)
+        public Janitor(GameVector2 Position, Sonar.Landmark.Type type)
             : base (Position, type) 
         {
         }
 
-        public override void Draw(SpriteBatch batch)
+        public override void Draw(object batch)
         {
-            batch.Draw(sprite, position, null, Color.White, 0, Vector2.Zero, scale, SpriteEffects.None, 1);
+            batch.Draw(sprite, position, null, GameColor.White, 0, GameVector2.Zero, scale, SpriteEffects.None, 1);
         }
 
         public string GetPassword()

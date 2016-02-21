@@ -10,7 +10,7 @@ namespace Sonar
         public Dumb(MapUnit[,] map, List<MapUnit> path, List<Door> doors, Player p, int id)
             : base(map, path, doors, p)
         {
-            texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Spectres/Dumb/dumbSheet");
+            texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Spectres/Dumb/dumbSheet");
             spriteWidth = 90;
             spriteHeight = 90;
             spriteRowSize = 4;
@@ -21,11 +21,11 @@ namespace Sonar
             hearingRange = 500;
             hearingSphere = new BoundingSphere(new Vector3(position, 0), hearingRange);
 
-            grunt = SoundManager.GetInstance().getCue(SoundManager.DUMB.GRUNT);
-            roar = SoundManager.GetInstance().getCue(SoundManager.DUMB.ROAR);
-            walk = SoundManager.GetInstance().getCue(SoundManager.DUMB.FOOTSTEP);
-            excorcismCue = SoundManager.GetInstance().getCue(SoundManager.DUMB.EXCORCISED);
-            InvestigateCue = SoundManager.GetInstance().getCue(SoundManager.DUMB.ALERT);
+            grunt = SoundManager.getCue(unityGameObject,SoundType.DUMB.DUMB_GRUNT.ToString());
+            roar = SoundManager.getCue(unityGameObject,SoundType.DUMB.DUMB_ROAR.ToString());
+            walk = SoundManager.getCue(unityGameObject,SoundType.DUMB.DUMB_FOOTSTEP.ToString());
+            excorcismCue = SoundManager.getCue(unityGameObject,SoundType.DUMB.DUMB_EXCORCISED.ToString());
+            InvestigateCue = SoundManager.getCue(unityGameObject,SoundType.DUMB.DUMB_ALERT.ToString());
 
             this.id = id;
             soundTimer = id * 3;
@@ -95,22 +95,22 @@ namespace Sonar
 
         public override void playAlertCue()
         {
-            SoundManager.GetInstance().createSound(position, 500, 500, 1, SoundManager.DUMB.ROAR, true, this);
+            SoundManager.createSound(position, 500, 500, 1, SoundType.DUMB.DUMB_ROAR.ToString(), true, this);
             base.playAlertCue();
         }
 
         public override void Draw(object batch, object graphics)
         {
-            //batch.Draw(Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Player/temp"), boundingBox, Color.White); // bounding box debug
-            //batch.Draw(Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Player/temp"), new Rectangle((int)position.X, (int)position.Y, 5, 5), Color.Red); //Debugging for spectre positon
+            //batch.Draw(Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Player/temp"), boundingBox, GameColor.White); // bounding box debug
+            //batch.Draw(Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Player/temp"), new GameRectangle((int)position.X, (int)position.Y, 5, 5), GameColor.Red); //Debugging for spectre positon
             if (isChasing || playerVisible)
             {
-                animation.texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Spectres/Dumb/dumb_run_spritesheet");
-               //this. texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Spectres/Wrath/wrath_walk_spritesheet");
+                animation.texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Spectres/Dumb/dumb_run_spritesheet");
+               //this. texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Spectres/Wrath/wrath_walk_spritesheet");
             }
             else
             {
-                animation.texture = Game1.contentManager.Load<Texture2D> (@"Textures/Objects/Entity/Spectres/Dumb/dumbSheet");
+                animation.texture = Game1.contentManager.Load<GameTexture> (@"Textures/Objects/Entity/Spectres/Dumb/dumbSheet");
             }
 
             SetSprite();

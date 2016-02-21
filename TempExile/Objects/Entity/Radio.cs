@@ -3,12 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Media;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.Graphics;
 
 
 namespace Sonar
@@ -24,7 +18,7 @@ namespace Sonar
 
         #region Fields
 
-        Cue radioCue;
+        Sound radioCue;
         public int radioNum;
         float volume = 1;
         AudioEmitter emitter;
@@ -34,7 +28,7 @@ namespace Sonar
         bool startOn;
         bool visible;
 
-        Texture2D outline;
+        GameTexture outline;
 
         public bool lastHeardState;
 
@@ -42,11 +36,11 @@ namespace Sonar
 
         #region Constructor 
 
-        public Radio(Vector2 Position)
+        public Radio(GameVector2 Position)
         {
 
             position = Position;
-            color = Color.White;
+            color = GameColor.White;
 
             String version = "Textures/Objects/Entity/Radio/desk_radio"; // Variation of radio to display
             String outlineVersion = "Textures/Objects/Entity/Radio/desk_radio_outline";
@@ -55,12 +49,12 @@ namespace Sonar
             version += radioNum;
             outlineVersion += radioNum;
 
-            texture = Game1.contentManager.Load<Texture2D>(@"" + version);
-            outline = Game1.contentManager.Load<Texture2D>(@"" + outlineVersion);
-            //texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Radio/radio");
-            boundingBox = new Rectangle((int)position.X, (int)position.Y, MapUnit.MAX_SIZE, MapUnit.MAX_SIZE);
+            texture = Game1.contentManager.Load<GameTexture>(@"" + version);
+            outline = Game1.contentManager.Load<GameTexture>(@"" + outlineVersion);
+            //texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Radio/radio");
+            boundingBox = new GameRectangle((int)position.X, (int)position.Y, MapUnit.MAX_SIZE, MapUnit.MAX_SIZE);
  
-            radioCue = SoundManager.GetInstance().getCue(SoundManager.RADIO.RADIO);
+            radioCue = SoundManager.getCue(SoundManager.RADIO.RADIO);
             emitter = new AudioEmitter();
             soundDelay = 0;
             lastHeardState = false;
@@ -74,13 +68,13 @@ namespace Sonar
 
         public void Play()
         {
-            SoundManager.GetInstance().Play3D(ref radioCue, emitter, SoundManager.RADIO.RADIO);
+            SoundManager.Play3D(ref radioCue, emitter, SoundManager.RADIO.RADIO);
         }
 
         public void Pause()
         {
             if (radioCue != null)
-                SoundManager.GetInstance().Puase(ref radioCue);
+                SoundManager.Puase(ref radioCue);
         }
 
         public void unPause()
@@ -88,13 +82,13 @@ namespace Sonar
             if (radioCue != null)
             {
                 if (radioCue.IsPaused)
-                    SoundManager.GetInstance().Play3D(ref radioCue, emitter, SoundManager.RADIO.RADIO);
+                    SoundManager.Play3D(ref radioCue, emitter, SoundManager.RADIO.RADIO);
             }
         }
 
         public void Stop()
         {
-            SoundManager.GetInstance().Stop(ref radioCue);
+            SoundManager.Stop(ref radioCue);
         }
 
         public void decreaseVolume(float value)
@@ -106,19 +100,19 @@ namespace Sonar
         {
             volume = MathHelper.Clamp(volume + value, 0, 1);
             string cool = SoundManager.AudioCategory.RADIO.ToString();
-            AudioCategory temp = SoundManager.GetInstance().Engine().GetCategory(cool);
+            AudioCategory temp = SoundManager.Engine().GetCategory(cool);
             temp.SetVolume(volume);
         }
        
         public void Toggle() {
             if (radioCue.IsPlaying)
             {
-                SoundManager.GetInstance().playSoundFX(SoundManager.RADIO.BUTTON_OFF);
+                SoundManager.playSoundFX(SoundManager.RADIO.BUTTON_OFF);
                 Stop();
             }
             else
             {
-                SoundManager.GetInstance().playSoundFX(SoundManager.RADIO.BUTTON_ON);
+                SoundManager.playSoundFX(SoundManager.RADIO.BUTTON_ON);
                 Play();
             }
         }
@@ -135,13 +129,13 @@ namespace Sonar
                 {
                     if (isPlaying())
                         VisionManager.addVisionPoint(position, (float)Game1.random.Next((int)(400 * volume), (int)(600 * volume)), false);
-                    SoundManager.GetInstance().createSound(position, (float)Game1.random.Next((int)(400 * volume), (int)(600 * volume)), (float)Game1.random.Next((int)(400 * volume), (int)(600 * volume)), 5f, null, true, this);
+                    SoundManager.createSound(position, (float)Game1.random.Next((int)(400 * volume), (int)(600 * volume)), (float)Game1.random.Next((int)(400 * volume), (int)(600 * volume)), 5f, null, true, this);
                     soundDelay = soundDelayReset;
                 }
             }
 
             emitter.Position = new Vector3(position.X, 0, position.Y);
-            SoundManager.GetInstance().cueUpdate(ref radioCue, emitter);
+            SoundManager.cueUpdate(ref radioCue, emitter);
             if (soundDelay > 0) soundDelay--;
             if (startOn)
             {
@@ -178,9 +172,9 @@ namespace Sonar
         /// </summary>
         /// <param name="rect"></param>
         /// <returns></returns>
-        public bool Collide(Rectangle rect)
+        public bool Collide(GameRectangle rect)
         {
-            if (boundingBox.Intersects(new Rectangle(rect.X - rect.Width / 4,
+            if (boundingBox.Intersects(new GameRectangle(rect.X - rect.Width / 4,
                                                      rect.Y - rect.Height / 4,
                                                (int)(rect.Width + rect.Width / 2),
                                                (int)(rect.Height + rect.Height / 2))))
@@ -208,14 +202,14 @@ namespace Sonar
 
         #region Draw
 
-        public override void Draw(SpriteBatch spriteBatch)
+        public override void Draw(object spriteBatch)
         {
             spriteBatch.Draw(texture, boundingBox, color);
         }
 
         #endregion Draw
 
-        public void DrawOutline(SpriteBatch spriteBatch, Color color)
+        public void DrawOutline(object spriteBatch, GameColor color)
         {
             if (visible)
             {

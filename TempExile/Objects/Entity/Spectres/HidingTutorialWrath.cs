@@ -10,7 +10,7 @@ namespace Sonar
         public HidingTutorialWrath(MapUnit[,] map, List<MapUnit> path, List<Door> doors, Player player, int id)
             : base(map, path, doors, player)
         {
-            texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Spectres/Wrath/wrath_walk_spritesheet");
+            texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Spectres/Wrath/wrath_walk_spritesheet");
             hearingRange = 500;
             hearingSphere = new BoundingSphere(new Vector3(position, 0), hearingRange);
 
@@ -21,15 +21,15 @@ namespace Sonar
             InitializeAnimations();
             updateBoundingBox(spriteWidth / 2, spriteHeight / 2);
 
-            homePosition = new Vector2(3 * MapUnit.MAX_SIZE, 2 * MapUnit.MAX_SIZE);
+            homePosition = new GameVector2(3 * MapUnit.MAX_SIZE, 2 * MapUnit.MAX_SIZE);
 
 
-            grunt = SoundManager.GetInstance().getCue(SoundManager.DUMB.GRUNT);
-            roar = SoundManager.GetInstance().getCue(SoundManager.WRATH.ROAR);
-            walk = SoundManager.GetInstance().getCue(SoundManager.DUMB.FOOTSTEP);
-            excorcismCue = SoundManager.GetInstance().getCue(SoundManager.DUMB.EXCORCISED);
-            InvestigateCue = SoundManager.GetInstance().getCue(SoundManager.DUMB.ALERT);
-            orientation = new Vector2(-1, 0);
+            grunt = SoundManager.getCue(SoundManager.DUMB.GRUNT);
+            roar = SoundManager.getCue(SoundManager.WRATH.ROAR);
+            walk = SoundManager.getCue(SoundManager.DUMB.FOOTSTEP);
+            excorcismCue = SoundManager.getCue(SoundManager.DUMB.EXCORCISED);
+            InvestigateCue = SoundManager.getCue(SoundManager.DUMB.ALERT);
+            orientation = new GameVector2(-1, 0);
             active = false;
             this.id = id;
             this.initializeFootstepTimer(id * 5);

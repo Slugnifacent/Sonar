@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
+
+
+
+
+
+
+
 
 namespace Sonar
 {
@@ -21,7 +21,7 @@ namespace Sonar
         {
             position = init_Pos;
             isCracked = crackVal;
-            //texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Wall/wallConcrete");
+            //texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Wall/wallConcrete");
             boundingBox = new GameRectangle((int)init_Pos.X, (int)init_Pos.Y, MapUnit.MAX_SIZE, MapUnit.MAX_SIZE);
             colorValue = 1;
         }
@@ -31,10 +31,10 @@ namespace Sonar
 
         }
 
-        public override void Draw(SpriteBatch spriteBatch)
+        public override void Draw(object spriteBatch)
         {
-            //spriteBatch.Draw(texture, position, null, Color.White, 0, new Vector2(0, 0), 1, SpriteEffects.None, 0);
-            //spriteBatch.Draw(texture, boundingBox, new Color(colorValue, colorValue, colorValue, 255f));
+            //spriteBatch.Draw(texture, position, null, GameColor.White, 0, new GameVector2(0, 0), 1, SpriteEffects.None, 0);
+            //spriteBatch.Draw(texture, boundingBox, new GameColor(colorValue, colorValue, colorValue, 255f));
         }
 
         #region Testing

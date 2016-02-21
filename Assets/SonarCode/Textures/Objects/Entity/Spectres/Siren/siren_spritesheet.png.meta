@@ -1,9 +1,57 @@
 fileFormatVersion: 2
 guid: 588946631a982e645b1946ded1d92310
-timeCreated: 1455761581
+timeCreated: 1456030789
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: siren_spritesheet_0
+    21300002: siren_spritesheet_1
+    21300004: siren_spritesheet_2
+    21300006: siren_spritesheet_3
+    21300008: siren_spritesheet_4
+    21300010: siren_spritesheet_5
+    21300012: siren_spritesheet_6
+    21300014: siren_spritesheet_7
+    21300016: siren_spritesheet_8
+    21300018: siren_spritesheet_9
+    21300020: siren_spritesheet_10
+    21300022: siren_spritesheet_11
+    21300024: siren_spritesheet_12
+    21300026: siren_spritesheet_13
+    21300028: siren_spritesheet_14
+    21300030: siren_spritesheet_15
+    21300032: siren_spritesheet_16
+    21300034: siren_spritesheet_17
+    21300036: siren_spritesheet_18
+    21300038: siren_spritesheet_19
+    21300040: siren_spritesheet_20
+    21300042: siren_spritesheet_21
+    21300044: siren_spritesheet_22
+    21300046: siren_spritesheet_23
+    21300048: siren_spritesheet_24
+    21300050: siren_spritesheet_25
+    21300052: siren_spritesheet_26
+    21300054: siren_spritesheet_27
+    21300056: siren_spritesheet_28
+    21300058: siren_spritesheet_29
+    21300060: siren_spritesheet_30
+    21300062: siren_spritesheet_31
+    21300064: siren_spritesheet_32
+    21300066: siren_spritesheet_33
+    21300068: siren_spritesheet_34
+    21300070: siren_spritesheet_35
+    21300072: siren_spritesheet_36
+    21300074: siren_spritesheet_37
+    21300076: siren_spritesheet_38
+    21300078: siren_spritesheet_39
+    21300080: siren_spritesheet_40
+    21300082: siren_spritesheet_41
+    21300084: siren_spritesheet_42
+    21300086: siren_spritesheet_43
+    21300088: siren_spritesheet_44
+    21300090: siren_spritesheet_45
+    21300092: siren_spritesheet_46
+    21300094: siren_spritesheet_47
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +78,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +86,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +97,1096 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: siren_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 990
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 2}
+        - {x: -20, y: 0}
+        - {x: -24, y: -5}
+        - {x: -24, y: -32}
+        - {x: -19, y: -45}
+        - {x: 24, y: -45}
+        - {x: 24, y: -1}
+        - {x: 22, y: 2}
+    - name: siren_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 990
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 6}
+        - {x: -23, y: -2}
+        - {x: -23, y: -12}
+        - {x: -22, y: -21}
+        - {x: -19, y: -28}
+        - {x: -16, y: -28}
+        - {x: -18, y: -45}
+        - {x: 23, y: -45}
+        - {x: 23, y: 6}
+    - name: siren_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 990
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 8}
+        - {x: -24, y: 5}
+        - {x: -24, y: -24}
+        - {x: -19, y: -45}
+        - {x: 20, y: -45}
+        - {x: 24, y: -37}
+        - {x: 24, y: 7}
+        - {x: 15, y: 8}
+    - name: siren_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 990
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 11}
+        - {x: -24, y: 5}
+        - {x: -24, y: -23}
+        - {x: -20, y: -24}
+        - {x: -17, y: -23}
+        - {x: -17, y: -20}
+        - {x: -16, y: -45}
+        - {x: 20, y: -45}
+        - {x: 24, y: -43}
+        - {x: 24, y: 8}
+        - {x: 15, y: 11}
+    - name: siren_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 1}
+        - {x: -21, y: -2}
+        - {x: -21, y: -42}
+        - {x: -15, y: -45}
+        - {x: 23, y: -45}
+        - {x: 23, y: -7}
+        - {x: 19, y: 1}
+    - name: siren_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 900
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 1}
+        - {x: -24, y: -44}
+        - {x: -23, y: -45}
+        - {x: 24, y: -45}
+        - {x: 24, y: 1}
+    - name: siren_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 900
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 12}
+        - {x: -23, y: 8}
+        - {x: -25, y: 3}
+        - {x: -25, y: -39}
+        - {x: -21, y: -45}
+        - {x: 20, y: -45}
+        - {x: 25, y: -29}
+        - {x: 25, y: 10}
+        - {x: 9, y: 12}
+    - name: siren_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 900
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 23}
+        - {x: -27, y: 14}
+        - {x: -27, y: -36}
+        - {x: -22, y: -45}
+        - {x: 22, y: -45}
+        - {x: 27, y: -37}
+        - {x: 27, y: 19}
+        - {x: 26, y: 23}
+    - name: siren_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 810
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 39}
+        - {x: 14, y: 30}
+        - {x: 13, y: 41}
+        - {x: 12, y: 42}
+        - {x: -12, y: 42}
+        - {x: -30, y: 34}
+        - {x: -30, y: -43}
+        - {x: -23, y: -45}
+        - {x: 30, y: -45}
+        - {x: 30, y: 40}
+        - {x: 17, y: 41}
+    - name: siren_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 810
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25, y: 40}
+        - {x: 18, y: 43}
+        - {x: 5, y: 43}
+        - {x: 0, y: 30}
+        - {x: 1, y: 26}
+        - {x: -2, y: 40}
+        - {x: -3, y: 43}
+        - {x: -24, y: 43}
+        - {x: -30, y: 27}
+        - {x: -30, y: -41}
+        - {x: -22, y: -45}
+        - {x: 30, y: -45}
+        - {x: 30, y: 32}
+    - name: siren_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 810
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 19}
+        - {x: 26, y: 18}
+        - {x: 30, y: 21}
+        - {x: 30, y: 28}
+        - {x: 25, y: 33}
+        - {x: 25, y: 41}
+        - {x: -30, y: 41}
+        - {x: -30, y: -29}
+        - {x: -16, y: -45}
+        - {x: 22, y: -45}
+        - {x: 30, y: -28}
+        - {x: 30, y: 18}
+    - name: siren_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 810
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: -23}
+        - {x: 29, y: -28}
+        - {x: 30, y: -25}
+        - {x: 30, y: 24}
+        - {x: 20, y: 37}
+        - {x: 17, y: 41}
+        - {x: 12, y: 40}
+        - {x: 8, y: 37}
+        - {x: 6, y: 32}
+        - {x: 6, y: 24}
+        - {x: 4, y: 29}
+        - {x: 8, y: 40}
+        - {x: 8, y: 42}
+        - {x: 0, y: 42}
+        - {x: -30, y: 35}
+        - {x: -30, y: -25}
+        - {x: -14, y: -45}
+        - {x: 18, y: -45}
+        - {x: 20, y: -27}
+        - {x: 20, y: -13}
+        - {x: 20, y: -21}
+    - name: siren_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -1}
+        - {x: 10, y: 1}
+        - {x: -8, y: 1}
+        - {x: -22, y: -12}
+        - {x: -22, y: -40}
+        - {x: -21, y: -45}
+        - {x: 16, y: -45}
+        - {x: 22, y: -34}
+        - {x: 22, y: -15}
+    - name: siren_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 720
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 6}
+        - {x: -19, y: -2}
+        - {x: -22, y: -7}
+        - {x: -22, y: -28}
+        - {x: -19, y: -43}
+        - {x: -16, y: -45}
+        - {x: 21, y: -45}
+        - {x: 22, y: -41}
+        - {x: 22, y: -3}
+        - {x: 14, y: 6}
+    - name: siren_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 720
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 7}
+        - {x: -22, y: -7}
+        - {x: -22, y: -23}
+        - {x: -20, y: -24}
+        - {x: -17, y: -24}
+        - {x: -15, y: -22}
+        - {x: -16, y: -24}
+        - {x: -18, y: -32}
+        - {x: -11, y: -45}
+        - {x: 22, y: -45}
+        - {x: 22, y: -2}
+        - {x: 9, y: 7}
+    - name: siren_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 720
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 10}
+        - {x: -13, y: 10}
+        - {x: -22, y: -4}
+        - {x: -22, y: -43}
+        - {x: -17, y: -45}
+        - {x: 22, y: -45}
+        - {x: 22, y: -10}
+        - {x: 15, y: 8}
+    - name: siren_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 630
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 1}
+        - {x: -23, y: -15}
+        - {x: -23, y: -27}
+        - {x: -22, y: -29}
+        - {x: -18, y: -40}
+        - {x: -17, y: -43}
+        - {x: -15, y: -45}
+        - {x: 21, y: -45}
+        - {x: 24, y: -42}
+        - {x: 24, y: -7}
+        - {x: 11, y: 1}
+    - name: siren_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 630
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 4}
+        - {x: -14, y: 4}
+        - {x: -22, y: -11}
+        - {x: -22, y: -41}
+        - {x: -16, y: -45}
+        - {x: 18, y: -45}
+        - {x: 22, y: -39}
+        - {x: 22, y: -9}
+        - {x: 19, y: 1}
+    - name: siren_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 630
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 6}
+        - {x: 9, y: 4}
+        - {x: 9, y: 1}
+        - {x: 9, y: 3}
+        - {x: 6, y: 7}
+        - {x: -4, y: 16}
+        - {x: -16, y: 16}
+        - {x: -28, y: -2}
+        - {x: -28, y: -39}
+        - {x: -26, y: -45}
+        - {x: 23, y: -45}
+        - {x: 30, y: -26}
+        - {x: 30, y: 1}
+        - {x: 9, y: 10}
+    - name: siren_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 630
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 27}
+        - {x: -29, y: 6}
+        - {x: -29, y: -22}
+        - {x: -24, y: -24}
+        - {x: -21, y: -21}
+        - {x: -17, y: -45}
+        - {x: 29, y: -45}
+        - {x: 29, y: 27}
+    - name: siren_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 42}
+        - {x: -30, y: -30}
+        - {x: -21, y: -45}
+        - {x: 20, y: -45}
+        - {x: 30, y: -34}
+        - {x: 30, y: 42}
+      - - {x: -13, y: 45}
+        - {x: -12, y: 42}
+        - {x: -9, y: 42}
+        - {x: -7, y: 44}
+        - {x: -7, y: 45}
+      - - {x: -4, y: 45}
+        - {x: -3, y: 42}
+        - {x: 11, y: 42}
+        - {x: 13, y: 44}
+        - {x: 13, y: 45}
+    - name: siren_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 540
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 37}
+        - {x: -30, y: 36}
+        - {x: -29, y: 32}
+        - {x: -26, y: 29}
+        - {x: -30, y: 23}
+        - {x: -30, y: -43}
+        - {x: -29, y: -45}
+        - {x: 20, y: -45}
+        - {x: 30, y: -32}
+        - {x: 30, y: 37}
+    - name: siren_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 540
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 37}
+        - {x: -30, y: -29}
+        - {x: -24, y: -45}
+        - {x: 23, y: -45}
+        - {x: 30, y: -25}
+        - {x: 30, y: 36}
+        - {x: 26, y: 37}
+    - name: siren_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 540
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 42}
+        - {x: -30, y: 42}
+        - {x: -30, y: -4}
+        - {x: -26, y: -4}
+        - {x: -25, y: -3}
+        - {x: -23, y: -3}
+        - {x: -25, y: -3}
+        - {x: -30, y: -8}
+        - {x: -30, y: -25}
+        - {x: -20, y: -45}
+        - {x: 14, y: -45}
+        - {x: 17, y: -44}
+        - {x: 30, y: -28}
+        - {x: 30, y: 15}
+    - name: siren_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: -1}
+        - {x: -20, y: -39}
+        - {x: -19, y: -45}
+        - {x: 17, y: -45}
+        - {x: 20, y: -44}
+        - {x: 20, y: -13}
+        - {x: 17, y: -1}
+    - name: siren_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 450
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 0}
+        - {x: -14, y: -1}
+        - {x: -20, y: -8}
+        - {x: -20, y: -35}
+        - {x: -14, y: -45}
+        - {x: 17, y: -45}
+        - {x: 20, y: -44}
+        - {x: 20, y: -10}
+        - {x: 10, y: 0}
+    - name: siren_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 450
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 5}
+        - {x: -20, y: 3}
+        - {x: -20, y: -42}
+        - {x: -11, y: -45}
+        - {x: 16, y: -45}
+        - {x: 20, y: -35}
+        - {x: 20, y: 5}
+    - name: siren_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 450
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 6}
+        - {x: -21, y: -4}
+        - {x: -21, y: -41}
+        - {x: -15, y: -45}
+        - {x: 16, y: -45}
+        - {x: 21, y: -32}
+        - {x: 21, y: 1}
+        - {x: 16, y: 6}
+    - name: siren_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 2}
+        - {x: -23, y: -19}
+        - {x: -23, y: -34}
+        - {x: -6, y: -35}
+        - {x: -3, y: -32}
+        - {x: -2, y: -27}
+        - {x: -3, y: -31}
+        - {x: -3, y: -36}
+        - {x: -2, y: -45}
+        - {x: 22, y: -45}
+        - {x: 26, y: -43}
+        - {x: 26, y: -6}
+        - {x: 23, y: 2}
+    - name: siren_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 360
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 19}
+        - {x: -27, y: -45}
+        - {x: 22, y: -45}
+        - {x: 27, y: -34}
+        - {x: 27, y: 19}
+      - - {x: -7, y: 45}
+        - {x: -6, y: 42}
+        - {x: 2, y: 42}
+        - {x: 4, y: 44}
+        - {x: 4, y: 45}
+    - name: siren_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 360
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 16}
+        - {x: 11, y: 13}
+        - {x: 11, y: 21}
+        - {x: 12, y: 26}
+        - {x: -24, y: 26}
+        - {x: -29, y: 24}
+        - {x: -29, y: -34}
+        - {x: -22, y: -45}
+        - {x: 25, y: -45}
+        - {x: 29, y: -43}
+        - {x: 29, y: 24}
+        - {x: 12, y: 19}
+    - name: siren_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 360
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: 39}
+        - {x: -6, y: 39}
+        - {x: -22, y: 25}
+        - {x: -22, y: 17}
+        - {x: -27, y: 11}
+        - {x: -29, y: 6}
+        - {x: -29, y: 4}
+        - {x: -17, y: 1}
+        - {x: -20, y: -1}
+        - {x: -19, y: -4}
+        - {x: -25, y: 2}
+        - {x: -29, y: 0}
+        - {x: -29, y: -6}
+        - {x: -26, y: -15}
+        - {x: -8, y: -45}
+        - {x: 14, y: -45}
+        - {x: 21, y: -43}
+        - {x: 25, y: -27}
+        - {x: 29, y: -9}
+        - {x: 29, y: 18}
+    - name: siren_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 16}
+        - {x: 11, y: 11}
+        - {x: 12, y: 9}
+        - {x: 11, y: 10}
+        - {x: 11, y: 15}
+        - {x: 8, y: 26}
+        - {x: -1, y: 33}
+        - {x: -9, y: 33}
+        - {x: -10, y: 30}
+        - {x: -20, y: 30}
+        - {x: -29, y: 18}
+        - {x: -29, y: -21}
+        - {x: -16, y: -45}
+        - {x: 20, y: -45}
+        - {x: 29, y: -28}
+        - {x: 29, y: 24}
+        - {x: 22, y: 25}
+      - - {x: -1, y: 45}
+        - {x: 0, y: 42}
+        - {x: 8, y: 42}
+        - {x: 10, y: 44}
+        - {x: 10, y: 45}
+    - name: siren_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 270
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 34}
+        - {x: -15, y: 34}
+        - {x: -27, y: 30}
+        - {x: -29, y: 22}
+        - {x: -29, y: -6}
+        - {x: -28, y: -7}
+        - {x: -4, y: -45}
+        - {x: 14, y: -45}
+        - {x: 29, y: -29}
+    - name: siren_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 270
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 36}
+        - {x: -13, y: 36}
+        - {x: -23, y: 26}
+        - {x: -20, y: 22}
+        - {x: -21, y: 13}
+        - {x: -20, y: 10}
+        - {x: -21, y: 11}
+        - {x: -21, y: 16}
+        - {x: -20, y: 21}
+        - {x: -23, y: 23}
+        - {x: -28, y: 18}
+        - {x: -28, y: 9}
+        - {x: -26, y: 0}
+        - {x: -25, y: 1}
+        - {x: -29, y: -1}
+        - {x: -30, y: -4}
+        - {x: -21, y: -33}
+        - {x: -7, y: -45}
+        - {x: 21, y: -45}
+        - {x: 30, y: -12}
+        - {x: 30, y: 7}
+        - {x: 28, y: 21}
+      - - {x: -2, y: 45}
+        - {x: -1, y: 42}
+        - {x: 7, y: 42}
+        - {x: 9, y: 44}
+        - {x: 9, y: 45}
+    - name: siren_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 270
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 36}
+        - {x: 1, y: 36}
+        - {x: -1, y: 34}
+        - {x: -6, y: 36}
+        - {x: -21, y: 29}
+        - {x: -18, y: 25}
+        - {x: -24, y: 27}
+        - {x: -29, y: 20}
+        - {x: -29, y: 1}
+        - {x: -21, y: -2}
+        - {x: -13, y: -2}
+        - {x: -17, y: -3}
+        - {x: -22, y: -5}
+        - {x: -27, y: -9}
+        - {x: -27, y: -11}
+        - {x: -25, y: -13}
+        - {x: -7, y: -45}
+        - {x: 21, y: -45}
+        - {x: 29, y: -19}
+        - {x: 29, y: 26}
+        - {x: 25, y: 29}
+    - name: siren_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: -10}
+        - {x: 18, y: -2}
+        - {x: -15, y: -2}
+        - {x: -19, y: -10}
+        - {x: -19, y: -35}
+        - {x: -12, y: -45}
+        - {x: 10, y: -45}
+        - {x: 16, y: -42}
+        - {x: 21, y: -30}
+    - name: siren_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 180
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 1}
+        - {x: -21, y: -9}
+        - {x: -21, y: -41}
+        - {x: -17, y: -45}
+        - {x: 15, y: -45}
+        - {x: 19, y: -30}
+        - {x: 19, y: -4}
+        - {x: 13, y: 1}
+    - name: siren_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 180
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 5}
+        - {x: -11, y: 5}
+        - {x: -20, y: -8}
+        - {x: -20, y: -29}
+        - {x: -16, y: -43}
+        - {x: -11, y: -45}
+        - {x: 9, y: -45}
+        - {x: 20, y: -33}
+        - {x: 20, y: -2}
+    - name: siren_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 180
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 6}
+        - {x: -14, y: 6}
+        - {x: -21, y: -6}
+        - {x: -21, y: -35}
+        - {x: -16, y: -45}
+        - {x: 19, y: -45}
+        - {x: 21, y: -44}
+        - {x: 21, y: -1}
+        - {x: 14, y: 4}
+    - name: siren_spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 2}
+        - {x: -15, y: 2}
+        - {x: -22, y: -3}
+        - {x: -22, y: -45}
+        - {x: 8, y: -45}
+        - {x: 27, y: -39}
+        - {x: 27, y: -17}
+        - {x: 23, y: -1}
+      - - {x: -3, y: 45}
+        - {x: -2, y: 42}
+        - {x: 7, y: 42}
+        - {x: 9, y: 44}
+        - {x: 9, y: 45}
+    - name: siren_spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 90
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 19}
+        - {x: -27, y: 14}
+        - {x: -27, y: -45}
+        - {x: 15, y: -45}
+        - {x: 27, y: -37}
+        - {x: 27, y: 15}
+        - {x: 7, y: 19}
+    - name: siren_spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 90
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: -2}
+        - {x: 29, y: 1}
+        - {x: 29, y: 18}
+        - {x: 20, y: 27}
+        - {x: -18, y: 27}
+        - {x: -29, y: 18}
+        - {x: -29, y: -29}
+        - {x: -24, y: -45}
+        - {x: 8, y: -45}
+        - {x: 29, y: -11}
+        - {x: 29, y: -8}
+        - {x: 24, y: -2}
+    - name: siren_spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 90
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 29}
+        - {x: 2, y: 31}
+        - {x: -2, y: 29}
+        - {x: -4, y: 37}
+        - {x: -6, y: 39}
+        - {x: -8, y: 39}
+        - {x: -10, y: 37}
+        - {x: -14, y: 30}
+        - {x: -16, y: 25}
+        - {x: -23, y: 28}
+        - {x: -26, y: 27}
+        - {x: -26, y: 24}
+        - {x: -29, y: 14}
+        - {x: -29, y: -7}
+        - {x: -25, y: -35}
+        - {x: -16, y: -45}
+        - {x: 6, y: -45}
+        - {x: 6, y: -32}
+        - {x: 29, y: -9}
+        - {x: 29, y: 14}
+    - name: siren_spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 33}
+        - {x: -29, y: 27}
+        - {x: -29, y: -27}
+        - {x: -27, y: -43}
+        - {x: -22, y: -45}
+        - {x: 9, y: -45}
+        - {x: 29, y: -18}
+        - {x: 29, y: 23}
+        - {x: 27, y: 33}
+      - - {x: -6, y: 45}
+        - {x: -5, y: 42}
+        - {x: 3, y: 42}
+        - {x: 5, y: 44}
+        - {x: 5, y: 45}
+    - name: siren_spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: 33}
+        - {x: 16, y: 30}
+        - {x: 6, y: 31}
+        - {x: 7, y: 30}
+        - {x: 3, y: 34}
+        - {x: -7, y: 34}
+        - {x: -28, y: 23}
+        - {x: -27, y: 19}
+        - {x: -29, y: 19}
+        - {x: -29, y: -22}
+        - {x: -18, y: -45}
+        - {x: 5, y: -45}
+        - {x: 7, y: -41}
+        - {x: 29, y: -9}
+        - {x: 29, y: 29}
+    - name: siren_spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 16}
+        - {x: 26, y: 27}
+        - {x: 21, y: 21}
+        - {x: 21, y: 19}
+        - {x: 20, y: 22}
+        - {x: 22, y: 24}
+        - {x: 22, y: 25}
+        - {x: 20, y: 33}
+        - {x: 17, y: 36}
+        - {x: -10, y: 36}
+        - {x: -22, y: 31}
+        - {x: -29, y: 8}
+        - {x: -29, y: -18}
+        - {x: -20, y: -38}
+        - {x: -15, y: -45}
+        - {x: 6, y: -45}
+        - {x: 7, y: -31}
+        - {x: 30, y: -7}
+    - name: siren_spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 12}
+        - {x: 12, y: 11}
+        - {x: 26, y: 16}
+        - {x: 29, y: 16}
+        - {x: 29, y: 36}
+        - {x: -26, y: 36}
+        - {x: -29, y: 28}
+        - {x: -29, y: -45}
+        - {x: 16, y: -45}
+        - {x: 29, y: -34}
+        - {x: 29, y: 14}
+        - {x: 26, y: 14}
     outline: []
   spritePackingTag: 
   userData: 

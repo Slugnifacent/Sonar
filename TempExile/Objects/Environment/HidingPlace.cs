@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
+
+
+
+
+
+
+
 
 namespace Sonar
 {
@@ -20,37 +20,37 @@ namespace Sonar
     public class HidingPlace : Environment
     {
         private float scale;
-        private Vector2 position2;
-        private Texture2D outline;
+        private GameVector2 position2;
+        private GameTexture outline;
         private char dir;
         public bool occupied;
         bool visible;
 
-        public HidingPlace(Vector2 init_Pos, char direction)
+        public HidingPlace(GameVector2 init_Pos, char direction)
         {
             position = init_Pos;
-            position2 = new Vector2(position.X - MapUnit.MAX_SIZE / 4, position.Y);
+            position2 = new GameVector2(position.X - MapUnit.MAX_SIZE / 4, position.Y);
             dir = direction;
             occupied = false;
 
             if (direction == 'F')
             {
-                texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard");
-                outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard_open_outline");
+                texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard");
+                outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard_open_outline");
             }
             else if (direction == 'L')
             {
-                texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard_side_left");
-                outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard_open_side_left_outline");
+                texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard_side_left");
+                outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard_open_side_left_outline");
             }
             else if (direction == 'R')
             {
-                texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard_side_right");
-                outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard_open_side_right_outline");
+                texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard_side_right");
+                outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard_open_side_right_outline");
             }
 
-            boundingBox = new Rectangle((int)init_Pos.X, (int)init_Pos.Y, MapUnit.MAX_SIZE * 2, MapUnit.MAX_SIZE * 2);
-            color = Color.White;
+            boundingBox = new GameRectangle((int)init_Pos.X, (int)init_Pos.Y, MapUnit.MAX_SIZE * 2, MapUnit.MAX_SIZE * 2);
+            color = GameColor.White;
             scale = 1.2f;
 
             visible = false;
@@ -73,73 +73,73 @@ namespace Sonar
             }
         }
 
-        public override void Draw(SpriteBatch batch)
+        public override void Draw(object batch)
         {
-            /*batch.Draw(Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Player/temp"), new Rectangle((int)(boundingBox.X - boundingBox.Width / 1.5),
+            /*batch.Draw(Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Player/temp"), new GameRectangle((int)(boundingBox.X - boundingBox.Width / 1.5),
                                                   boundingBox.Y + boundingBox.Height / 4,
                                             (int)(boundingBox.Width / 2),
-                                            (int)(boundingBox.Height / 2)), Color.Red);*/ // Debug for drawing interactable area
+                                            (int)(boundingBox.Height / 2)), GameColor.Red);*/ // Debug for drawing interactable area
 
             if (dir == 'F')
             {
                 if (occupied)
                 {
-                    texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard");
-                    outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard_outline");
+                    texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard");
+                    outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard_outline");
                 }
                 else
                 {
-                    texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard_open");
-                    outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard_open_outline");
+                    texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard_open");
+                    outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard_open_outline");
                 }
             }
             else if (dir == 'L')
             {
                 if (occupied)
                 {
-                    texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard_side_left");
-                    outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard_side_left_outline");
+                    texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard_side_left");
+                    outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard_side_left_outline");
                 }
                 else
                 {
-                    texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard_open_side_left");
-                    outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard_open_side_left_outline");
+                    texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard_open_side_left");
+                    outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard_open_side_left_outline");
                 }
             }
             else if (dir == 'R')
             {
                 if (occupied)
                 {
-                    texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard_side_right");
-                    outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard_side_right_outline");
+                    texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard_side_right");
+                    outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard_side_right_outline");
                 }
                 else
                 {
-                    texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard_open_side_right");
-                    outline = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard_open_side_right_outline");
+                    texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard_open_side_right");
+                    outline = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard_open_side_right_outline");
                 }
             }
 
             if (dir == 'L')
             {
-                batch.Draw(texture, position, null, color, 0, Vector2.Zero, scale, SpriteEffects.None, 1);
+                batch.Draw(texture, position, null, color, 0, GameVector2.Zero, scale, SpriteEffects.None, 1);
             }
             else
             {
-                batch.Draw(texture, position2, null, color, 0, Vector2.Zero, scale, SpriteEffects.None, 1);
+                batch.Draw(texture, position2, null, color, 0, GameVector2.Zero, scale, SpriteEffects.None, 1);
             }
         }
 
-        public void DrawOutline(SpriteBatch batch, Color color)
+        public void DrawOutline(object batch, GameColor color)
         {
             if(visible)
                 if (dir == 'L')
                 {
-                    batch.Draw(outline, position, null, color, 0, Vector2.Zero, scale, SpriteEffects.None, 1);
+                    batch.Draw(outline, position, null, color, 0, GameVector2.Zero, scale, SpriteEffects.None, 1);
                 }
                 else
                 {
-                    batch.Draw(outline, position2, null, color, 0, Vector2.Zero, scale, SpriteEffects.None, 1);
+                    batch.Draw(outline, position2, null, color, 0, GameVector2.Zero, scale, SpriteEffects.None, 1);
                 }
         }
 
@@ -150,12 +150,12 @@ namespace Sonar
         /// </summary>
         /// <param name="rect"></param>
         /// <returns></returns>
-        public bool Collide(Rectangle rect)
+        public bool Collide(GameRectangle rect)
         {           
             // Determines which direction the Cupboard is facing and puts the collision box right in front of it
             if (dir == 'F')
             {
-                if (rect.Intersects(new Rectangle(boundingBox.X + boundingBox.Width / 4,
+                if (rect.Intersects(new GameRectangle(boundingBox.X + boundingBox.Width / 4,
                                                   boundingBox.Y + boundingBox.Height,
                                             (int)(boundingBox.Width / 2),
                                             (int)(boundingBox.Height / 2))))
@@ -164,7 +164,7 @@ namespace Sonar
                     if (Player.getInstance().isHiding)
                     {
                         occupied = true;
-                        Player.getInstance().facing = new Vector2(0, 1);
+                        Player.getInstance().facing = new GameVector2(0, 1);
                     }
                     else
                     {
@@ -176,7 +176,7 @@ namespace Sonar
             }
             else if (dir == 'L')
             {
-                if (rect.Intersects(new Rectangle(boundingBox.X + boundingBox.Width,
+                if (rect.Intersects(new GameRectangle(boundingBox.X + boundingBox.Width,
                                                   boundingBox.Y + boundingBox.Height / 4,
                                             (int)(boundingBox.Width / 2),
                                             (int)(boundingBox.Height / 2))))
@@ -185,7 +185,7 @@ namespace Sonar
                     if (Player.getInstance().isHiding)
                     {
                         occupied = true;
-                        Player.getInstance().facing = new Vector2(-1, 0);
+                        Player.getInstance().facing = new GameVector2(-1, 0);
                     }
                     else
                     {
@@ -197,7 +197,7 @@ namespace Sonar
             }
             else if (dir == 'R')
             {
-                if (rect.Intersects(new Rectangle((int)(boundingBox.X - boundingBox.Width / 1.5),
+                if (rect.Intersects(new GameRectangle((int)(boundingBox.X - boundingBox.Width / 1.5),
                                                   boundingBox.Y + boundingBox.Height / 4,
                                             (int)(boundingBox.Width / 2),
                                             (int)(boundingBox.Height / 2))))
@@ -206,7 +206,7 @@ namespace Sonar
                     if (Player.getInstance().isHiding)
                     {
                         occupied = true;
-                        Player.getInstance().facing = new Vector2(1, 0);
+                        Player.getInstance().facing = new GameVector2(1, 0);
                     }
                     else
                     {

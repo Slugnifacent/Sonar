@@ -2,13 +2,13 @@
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
+
+
+
+
+
+
+
 
 namespace Sonar
 {
@@ -29,13 +29,13 @@ namespace Sonar
         public bool drawPass;
         private possessor possessedBy;
         private SpriteFont font;
-        public Texture2D keyImage;
+        public GameTexture keyImage;
         
         //Confusion and Hallucination fields
         public bool messControls;
         private float soundPotential;
         public bool drawFake;
-        public Texture2D fakeTexture;
+        public GameTexture fakeTexture;
         public float randLocX;
         public float randLocY;
         public int hallucinateWidth;
@@ -53,18 +53,18 @@ namespace Sonar
         public bool isHiding { get; set; } //is the player hiding
         public bool isKnockedBack; // when knocked back by Wrath
         private float knockBackTimer; // timer for knockback effect
-        public Vector2 facing;
+        public GameVector2 facing;
         public ExcorcismPhrase exorcismPhrase;
         public bool pressedLockdown;
         public LockdownSwitch ldSwitch;
-        private Vector2 whereItShouldBe;
-        private Vector2 whereItShouldBeNew;
-        public Vector2 passPosition;
+        private GameVector2 whereItShouldBe;
+        private GameVector2 whereItShouldBeNew;
+        public GameVector2 passPosition;
         private float moveOffsetX;
         private float moveOffsetY;
         public bool stayThere;
         public bool startDrawingPass = false;
-        Cue breath;
+        Sound breath;
         int randomTimer = 0;
         float soundDifference;
 
@@ -74,15 +74,15 @@ namespace Sonar
         {
             this.health = 100f;
 
-            texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Player/playerSheet");
-            keyImage = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Door/KeyIcon");
+            texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Player/playerSheet");
+            keyImage = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Door/KeyIcon");
             font = Game1.contentManager.Load<SpriteFont>("Fonts/Tutorial");
             spriteWidth = 80;
             spriteHeight = 80;
             spriteRowSize = 4;
             spriteColNum = 4;
             InitializeAnimations();
-            boundingBox = new Rectangle((int)position.X, (int)position.Y, spriteWidth / 2, spriteHeight / 2);
+            boundingBox = new GameRectangle((int)position.X, (int)position.Y, spriteWidth / 2, spriteHeight / 2);
             slowDown = false;
             canHide = false;
             isHiding = false;
@@ -95,7 +95,7 @@ namespace Sonar
             //Test additions for now.
             //throwing.Add(new Throwable(Content, position, 20, 5, null));
             //walkieTalkie = new WalkieTalkie();
-            facing = Vector2.Zero;   
+            facing = GameVector2.Zero;   
             exorcismPhrase = new ExcorcismPhrase();
             knockBackTimer = 0;
             pressedLockdown = false;
@@ -104,27 +104,27 @@ namespace Sonar
             this.soundTimer = id * 3;
             soundSphere = new BoundingSphere(new Vector3(position, 0), radius);
             soundPhrase = new Text(VoiceEngine.getInstance().RandomPhrase(), position);
-            soundPhrase.color = Color.White;
-            breath = SoundManager.GetInstance().getCue(SoundManager.PLAYER.BREATHING);
+            soundPhrase.color = GameColor.White;
+            breath = SoundManager.getCue(SoundManager.PLAYER.BREATHING);
         }
 
         protected override void InitializeAnimations()
         {
             animationInterval = 150;
-            animation = new AnimationCollection(texture, new Rectangle(0, 0, spriteWidth, spriteHeight));
-            animation.add("DownWalk", 0, spriteColNum, Vector2.Zero, animationInterval, true);
-            animation.add("UpWalk", 0, spriteColNum, new Vector2(0, spriteHeight * 1), animationInterval, true);
-            animation.add("LeftWalk", 0, spriteColNum, new Vector2(0, spriteHeight * 2), animationInterval, true);
-            animation.add("RightWalk", 0, spriteColNum, new Vector2(0, spriteHeight * 3), animationInterval, true);
-            animation.add("DownRun", 0, spriteColNum, new Vector2(0, spriteHeight * 4), animationInterval, true);
-            animation.add("UpRun", 0, spriteColNum, new Vector2(0, spriteHeight * 5), animationInterval, true);
-            animation.add("LeftRun", 0, spriteColNum, new Vector2(0, spriteHeight * 6), animationInterval, true);
-            animation.add("RightRun", 0, spriteColNum, new Vector2(0, spriteHeight * 7), animationInterval, true);
-            animation.add("Hide", 0, spriteColNum, new Vector2 (0, spriteHeight * 8), animationInterval, true);
-            animation.add("RightStealth", 0, spriteColNum, new Vector2(0, spriteHeight * 9), animationInterval, true);
-            animation.add("LeftStealth", 0, spriteColNum, new Vector2(0, spriteHeight * 10), animationInterval, true);
-            animation.add("UpStealth", 0, spriteColNum, new Vector2(0, spriteHeight * 11), animationInterval, true);
-            animation.add("DownStealth", 0, spriteColNum, new Vector2(0, spriteHeight * 12), animationInterval, true);
+            animation = new AnimationCollection(texture, new GameRectangle(0, 0, spriteWidth, spriteHeight));
+            animation.add("DownWalk", 0, spriteColNum, GameVector2.Zero, animationInterval, true);
+            animation.add("UpWalk", 0, spriteColNum, new GameVector2(0, spriteHeight * 1), animationInterval, true);
+            animation.add("LeftWalk", 0, spriteColNum, new GameVector2(0, spriteHeight * 2), animationInterval, true);
+            animation.add("RightWalk", 0, spriteColNum, new GameVector2(0, spriteHeight * 3), animationInterval, true);
+            animation.add("DownRun", 0, spriteColNum, new GameVector2(0, spriteHeight * 4), animationInterval, true);
+            animation.add("UpRun", 0, spriteColNum, new GameVector2(0, spriteHeight * 5), animationInterval, true);
+            animation.add("LeftRun", 0, spriteColNum, new GameVector2(0, spriteHeight * 6), animationInterval, true);
+            animation.add("RightRun", 0, spriteColNum, new GameVector2(0, spriteHeight * 7), animationInterval, true);
+            animation.add("Hide", 0, spriteColNum, new GameVector2 (0, spriteHeight * 8), animationInterval, true);
+            animation.add("RightStealth", 0, spriteColNum, new GameVector2(0, spriteHeight * 9), animationInterval, true);
+            animation.add("LeftStealth", 0, spriteColNum, new GameVector2(0, spriteHeight * 10), animationInterval, true);
+            animation.add("UpStealth", 0, spriteColNum, new GameVector2(0, spriteHeight * 11), animationInterval, true);
+            animation.add("DownStealth", 0, spriteColNum, new GameVector2(0, spriteHeight * 12), animationInterval, true);
             animation.RUN("RightWalk");
         }
 
@@ -142,7 +142,7 @@ namespace Sonar
         {
             this.health -= i;
             VisionManager.blurEffect.activate();
-            SoundManager.GetInstance().getCue(SoundManager.PLAYER.PLAYER_HIT).Play();
+            SoundManager.getCue(SoundManager.PLAYER.PLAYER_HIT).Play();
         }
 
         public void ResetHealth()
@@ -163,7 +163,7 @@ namespace Sonar
             else return false;
         }
 
-        public void Initialize(Vector2 Position, Vector2 Orientation, float Speed)
+        public void Initialize(GameVector2 Position, GameVector2 Orientation, float Speed)
         {
             rootPos = Position;
             position = Position;
@@ -278,7 +278,7 @@ namespace Sonar
             {
                 string temp = VoiceEngine.getInstance().CalibratedPhrase();
                 exorcismPhrase.initialize(temp, position, VoiceEngine.getInstance().excorcismAudio(temp));
-                VisionManager.setVisionColor(Color.DarkRed);
+                VisionManager.setVisionColor(GameColor.DarkRed);
 
             }
 
@@ -289,7 +289,7 @@ namespace Sonar
                     //exorcismPhrase.ACTIVE = false;
                     noise = loudness.neutralizing;
                     //slowDown = false;
-                    //VisionManager.setVisionColor(Color.CornflowerBlue);
+                    //VisionManager.setVisionColor(GameColor.CornflowerBlue);
                     //VisionManager.addVisionPoint(position, 300f, true);
                     //possessedBy = possessor.none;
                 }
@@ -298,7 +298,7 @@ namespace Sonar
             if (isKnockedBack)
                 KnockBack(gameTime);
 
-            animation.Update(gameTime, new Vector2((int)position.X - spriteWidth / 2, (int)position.Y - spriteHeight / 2));
+            animation.Update(gameTime, new GameVector2((int)position.X - spriteWidth / 2, (int)position.Y - spriteHeight / 2));
             FootstepLightNoise(gameTime);
 
             if (isRunning)
@@ -319,13 +319,13 @@ namespace Sonar
             }
             if (!pooped) breath.SetVariable("Stamina", stamina / 3); // 3 is the max stamina divided by 100
             else breath.SetVariable("Stamina", (stamina / 3) - (stamina/2)/3);
-            SoundManager.GetInstance().Play(ref breath, SoundManager.PLAYER.BREATHING);
+            SoundManager.Play(ref breath, SoundManager.PLAYER.BREATHING);
 
             #region Moving Password
             if (carriedPassword != null) {
                 if (startDrawingPass) {
                     //passPosition = position;
-                    whereItShouldBe = new Vector2(Game1.screenWidth, 0) - new Vector2(Player.getInstance().carriedPassword.Length * 24, 0);
+                    whereItShouldBe = new GameVector2(Game1.screenWidth, 0) - new GameVector2(Player.getInstance().carriedPassword.Length * 24, 0);
                     moveOffsetX = (whereItShouldBe.X - passPosition.X) / 60;
                     moveOffsetY = (whereItShouldBe.Y - passPosition.Y) / 60;
                     //startDrawingPass = false;
@@ -337,7 +337,7 @@ namespace Sonar
                     }
                 }
                 else {
-                    //whereItShouldBeNew = Game1.camera.topRight() - new Vector2(Player.getInstance().carriedPassword.Length * 24, 0);
+                    //whereItShouldBeNew = Game1.camera.topRight() - new GameVector2(Player.getInstance().carriedPassword.Length * 24, 0);
                     if (!stayThere) {
                        // if (whereItShouldBeNew != whereItShouldBe) {
                             //whereItShouldBe = whereItShouldBeNew;
@@ -370,28 +370,28 @@ namespace Sonar
 
         }
 
-        public override void Draw(SpriteBatch spriteBatch)
+        public override void Draw(object spriteBatch)
         {
             SetSprite();
             font = Game1.contentManager.Load<SpriteFont>("Fonts/Gothic");
             /*
             soundPhrase.Draw(spriteBatch);
             //*/
-            // spriteBatch.Draw(texture, position, null, Color.White, 0, new Vector2(0, 21), 1, SpriteEffects.None, 0);
+            // spriteBatch.Draw(texture, position, null, GameColor.White, 0, new GameVector2(0, 21), 1, SpriteEffects.None, 0);
 
             if (drawFake) {
-                spriteBatch.Draw(fakeTexture, new Vector2(randLocX - hallucinateWidth / 2, randLocY - hallucinateHeight / 2),
-                                  new Rectangle(0, 0, hallucinateWidth, hallucinateHeight), Color.White);
+                spriteBatch.Draw(fakeTexture, new GameVector2(randLocX - hallucinateWidth / 2, randLocY - hallucinateHeight / 2),
+                                  new GameRectangle(0, 0, hallucinateWidth, hallucinateHeight), GameColor.White);
             }
             if (!isHiding)
             {
-                //spriteBatch.Draw(Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Player/temp"), boundingBox, Color.White); //Debugging, player bounding box                
-                /*spriteBatch.Draw(texture, new Vector2((int)position.X - spriteWidth / 2, (int)position.Y - spriteHeight / 2),
-                                  new Rectangle((int)currSprite.X * (spriteWidth), (int)currSprite.Y * (spriteHeight), spriteWidth, spriteHeight), Color.CornflowerBlue);*/
+                //spriteBatch.Draw(Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Player/temp"), boundingBox, GameColor.White); //Debugging, player bounding box                
+                /*spriteBatch.Draw(texture, new GameVector2((int)position.X - spriteWidth / 2, (int)position.Y - spriteHeight / 2),
+                                  new GameRectangle((int)currSprite.X * (spriteWidth), (int)currSprite.Y * (spriteHeight), spriteWidth, spriteHeight), GameColor.CornflowerBlue);*/
                 animation.Draw(spriteBatch, 1);
 
 
-                // Used for Sound Testing spriteBatch.Draw(Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Player/temp"), new Rectangle((int)(position.X + radius), (int)position.Y, 5, 5), Color.Red); //Debugging, player position
+                // Used for Sound Testing spriteBatch.Draw(Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Player/temp"), new GameRectangle((int)(position.X + radius), (int)position.Y, 5, 5), GameColor.Red); //Debugging, player position
             }
             //Drawing the throwing items long as there are things.
             if (throwing.Count != 0)
@@ -406,14 +406,14 @@ namespace Sonar
             }
         }
 
-        public void setPos(Vector2 v)
+        public void setPos(GameVector2 v)
         {
             position = v;
             updateBoundingBox(position);
         }
 
         // Animate the sprites
-        public override void updateSprite(Vector2 prepos, Vector2 pos)
+        public override void updateSprite(GameVector2 prepos, GameVector2 pos)
         {
             float dir_x = pos.X - prepos.X;
             float dir_y = pos.Y - prepos.Y;
@@ -527,9 +527,9 @@ namespace Sonar
                         Console.WriteLine("Wrath");
                         randLocY = this.position.Y + (this.facing.Y * randLocX);
                         randLocX = this.position.X + (this.facing.X * randLocX);
-                        fakeTexture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Spectres/Wrath/wrath_walk_spritesheet");
-                        //VisionManager.addVisionPoint(new Vector2(player.position.X + (player.facing.X * randLocX), player.position.Y + (player.facing.Y * randLocY)), 450, false);
-                        SoundManager.GetInstance().createSound(new Vector2(randLocX, randLocY), 400, 400, 1, SoundManager.WRATH.FOOTSTEP, false);
+                        fakeTexture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Spectres/Wrath/wrath_walk_spritesheet");
+                        //VisionManager.addVisionPoint(new GameVector2(player.position.X + (player.facing.X * randLocX), player.position.Y + (player.facing.Y * randLocY)), 450, false);
+                        SoundManager.createSound(new GameVector2(randLocX, randLocY), 400, 400, 1, SoundManager.WRATH.FOOTSTEP, false);
                         hallucinateHeight = 350;
                         hallucinateWidth = 350;
                     }
@@ -538,9 +538,9 @@ namespace Sonar
                         Console.WriteLine("Stalker");
                         randLocY = this.position.Y + (this.facing.Y * randLocX);
                         randLocX = this.position.X + (this.facing.X * randLocX);
-                        fakeTexture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Spectres/Stalker/stalkerSheet");
-                        //VisionManager.addVisionPoint(new Vector2(player.position.X + (player.facing.X * randLocX), player.position.Y + (player.facing.Y * randLocY)), 300, false);
-                        SoundManager.GetInstance().createSound(new Vector2(randLocX, randLocY), 300, 300, 1, SoundManager.WRATH.FOOTSTEP, false);
+                        fakeTexture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Spectres/Stalker/stalkerSheet");
+                        //VisionManager.addVisionPoint(new GameVector2(player.position.X + (player.facing.X * randLocX), player.position.Y + (player.facing.Y * randLocY)), 300, false);
+                        SoundManager.createSound(new GameVector2(randLocX, randLocY), 300, 300, 1, SoundManager.WRATH.FOOTSTEP, false);
                         hallucinateHeight = 100;
                         hallucinateWidth = 100;
                     }
@@ -559,7 +559,7 @@ namespace Sonar
                     randLocY += this.position.Y;
                     hallucinateHeight = MapUnit.MAX_SIZE;
                     hallucinateWidth = MapUnit.MAX_SIZE;
-                    fakeTexture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Environment/Kitchen/cupboard");
+                    fakeTexture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Environment/Kitchen/cupboard");
                 break;
             }
         }
@@ -637,31 +637,31 @@ namespace Sonar
             if (isMoving)
             {
                 int timer = updateFootstepTimer();
-                Cue temp = SoundManager.GetInstance().getCue(SoundManager.PLAYER.FOOTSTEP_TILE);
+                Sound temp = SoundManager.getCue(SoundManager.PLAYER.FOOTSTEP_TILE);
                 temp.SetVariable("Muffled", 0);
                 if (timer == 1)
                 {
                     if (isRunning)
-                        SoundManager.GetInstance().createSound(position + new Vector2(orientation.Y * 10f, orientation.X * 10f) + orientation * 25f, 500, 300, 1, temp, true);
+                        SoundManager.createSound(position + new GameVector2(orientation.Y * 10f, orientation.X * 10f) + orientation * 25f, 500, 300, 1, temp, true);
                     else if (isStealthing)
                     {
                         temp.SetVariable("Muffled", 1);
-                        SoundManager.GetInstance().createSound(position + new Vector2(orientation.Y * 10f, orientation.X * 10f) + orientation * 25f, 150, 75, 1, temp, true);
+                        SoundManager.createSound(position + new GameVector2(orientation.Y * 10f, orientation.X * 10f) + orientation * 25f, 150, 75, 1, temp, true);
                     }
                     else
-                        SoundManager.GetInstance().createSound(position - new Vector2(orientation.Y * 10f, orientation.X * 10f) + orientation * 25f, 300, 150, 1, temp, true);
+                        SoundManager.createSound(position - new GameVector2(orientation.Y * 10f, orientation.X * 10f) + orientation * 25f, 300, 150, 1, temp, true);
                 }
                 else if (timer == 2)
                 {
                     if (isRunning)
-                        SoundManager.GetInstance().createSound(position - new Vector2(orientation.Y * 10f, orientation.X * 10f) + orientation * 25f, 500, 300, 1, temp, true);
+                        SoundManager.createSound(position - new GameVector2(orientation.Y * 10f, orientation.X * 10f) + orientation * 25f, 500, 300, 1, temp, true);
                     else if (isStealthing)
                     {
                         temp.SetVariable("Muffled", 1);
-                        SoundManager.GetInstance().createSound(position - new Vector2(orientation.Y * 10f, orientation.X * 10f) + orientation * 25f, 150, 75, 1, temp, true);
+                        SoundManager.createSound(position - new GameVector2(orientation.Y * 10f, orientation.X * 10f) + orientation * 25f, 150, 75, 1, temp, true);
                     }
                     else
-                        SoundManager.GetInstance().createSound(position - new Vector2(orientation.Y * 10f, orientation.X * 10f) + orientation * 25f, 300, 150, 1, temp, true);
+                        SoundManager.createSound(position - new GameVector2(orientation.Y * 10f, orientation.X * 10f) + orientation * 25f, 300, 150, 1, temp, true);
                 }
             }
             else { footstepTimer = 55; }
@@ -702,7 +702,7 @@ namespace Sonar
                 noise = loudness.exorcising;
             }
         
-            //SoundManager.GetInstance().playSoundFX(position, radius);
+            //SoundManager.playSoundFX(position, radius);
         }
 
         public void setMicSens(int newMicSensitivity)
@@ -713,17 +713,17 @@ namespace Sonar
         #region Sound Controls
         public void stopSounds() {
             exorcismPhrase.ACTIVE = false;
-            SoundManager.GetInstance().Stop(ref breath);
+            SoundManager.Stop(ref breath);
         }
         public void pauseSounds()
         {
             exorcismPhrase.pause();
-            SoundManager.GetInstance().Puase(ref breath);
+            SoundManager.Puase(ref breath);
         }
         public void unpauseSounds()
         {
             exorcismPhrase.unpause();
-            SoundManager.GetInstance().Play(ref breath, SoundManager.PLAYER.BREATHING);
+            SoundManager.Play(ref breath, SoundManager.PLAYER.BREATHING);
         }
         #endregion
        

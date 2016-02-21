@@ -2,25 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
+
 
 namespace Sonar
 {
     class Stalker:Spectre
     {
-        Texture2D runTex;
+        GameTexture runTex;
 
         public Stalker(MapUnit[,] map, List<MapUnit> path, List<Door> doors, Player player, int id)
             : base(map, path, doors, player)
         {
-            texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Spectres/Stalker/stalker_walk_spritesheet");
-            runTex = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Spectres/Stalker/stalker_run_spritesheet");
+            texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Spectres/Stalker/stalker_walk_spritesheet");
+            runTex = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Spectres/Stalker/stalker_run_spritesheet");
 
             hearingRange = 500;
             hearingSphere = new BoundingSphere(new Vector3(position, 0), hearingRange);
@@ -33,11 +27,11 @@ namespace Sonar
             updateBoundingBox(spriteWidth / 2, spriteHeight / 2);
 
 
-            grunt = SoundManager.GetInstance().getCue(SoundManager.DUMB.GRUNT);
-            roar = SoundManager.GetInstance().getCue(SoundManager.WRATH.ROAR);
-            walk = SoundManager.GetInstance().getCue(SoundManager.DUMB.FOOTSTEP);
-            excorcismCue = SoundManager.GetInstance().getCue(SoundManager.DUMB.EXCORCISED);
-            InvestigateCue = SoundManager.GetInstance().getCue(SoundManager.DUMB.ALERT);
+            grunt = SoundManager.getCue(SoundManager.DUMB.GRUNT);
+            roar = SoundManager.getCue(SoundManager.WRATH.ROAR);
+            walk = SoundManager.getCue(SoundManager.DUMB.FOOTSTEP);
+            excorcismCue = SoundManager.getCue(SoundManager.DUMB.EXCORCISED);
+            InvestigateCue = SoundManager.getCue(SoundManager.DUMB.ALERT);
 
 
             this.id = id;
@@ -46,7 +40,7 @@ namespace Sonar
 
         public override void playAlertCue()
         {
-            SoundManager.GetInstance().createSound(position, 500, 500, 1, SoundManager.STALKER.ROAR, true, this);
+            SoundManager.createSound(position, 500, 500, 1, SoundManager.STALKER.ROAR, true, this);
             base.playAlertCue();
         }
 
@@ -114,7 +108,7 @@ namespace Sonar
         /// </summary>
         /// <param name="batch"></param>
         /// <param name="graphics"></param>
-        public override void Draw(SpriteBatch batch, GraphicsDeviceManager graphics)
+        public override void Draw(object batch, object graphics)
         {
             if (isChasing)
             {
@@ -128,11 +122,11 @@ namespace Sonar
             if ((!inPlayer || !possessing) && behaviorMachine.getCurrenState().GetType() != typeof(Sonar.FleeState))
             {
                 animation.Draw(batch, scale);
-                //batch.Draw(texture, boundingBox, Color.Red);
-                //batch.Draw(Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Player/temp"), boundingBox, Color.White); // bounding box debug
-                //batch.Draw(Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Player/temp"), new Rectangle((int)position.X, (int)position.Y, 5, 5), Color.Red); //Debugging for spectre positon
+                //batch.Draw(texture, boundingBox, GameColor.Red);
+                //batch.Draw(Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Player/temp"), boundingBox, GameColor.White); // bounding box debug
+                //batch.Draw(Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Player/temp"), new GameRectangle((int)position.X, (int)position.Y, 5, 5), GameColor.Red); //Debugging for spectre positon
                 //if (target != null)
-                //batch.Draw(Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Player/temp"), new Rectangle((int)target.GetPosition().X - 24, (int)target.GetPosition().Y - 24, MapUnit.MAX_SIZE, MapUnit.MAX_SIZE), Color.Red);
+                //batch.Draw(Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Player/temp"), new GameRectangle((int)target.GetPosition().X - 24, (int)target.GetPosition().Y - 24, MapUnit.MAX_SIZE, MapUnit.MAX_SIZE), GameColor.Red);
             }
         }
     }

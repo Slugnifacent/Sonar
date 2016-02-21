@@ -2,24 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
+
+
+
+
+
+
+
 
 namespace Sonar
 {
     class Wrath:Spectre
     {
-        Texture2D textureAttack = Game1.contentManager.Load<Texture2D>("Textures/Objects/Entity/Spectres/Wrath/wrath_attack_spritesheet");
+        GameTexture textureAttack = Game1.contentManager.Load<GameTexture>("Textures/Objects/Entity/Spectres/Wrath/wrath_attack_spritesheet");
 
         public Wrath(MapUnit[,] map, List<MapUnit> path, List<Door> doors, Player player, int id)
             : base(map, path, doors, player)
         {
-            texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Spectres/Wrath/wrath_walk_spritesheet");
+            texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Spectres/Wrath/wrath_walk_spritesheet");
 
             hearingRange = 500;
             hearingSphere = new BoundingSphere(new Vector3(position, 0), hearingRange);
@@ -38,13 +38,13 @@ namespace Sonar
             boundingBox.X *= (int)(scale + 10);
             boundingBox.Y *= (int)(scale + 10);
 
-            homePosition = new Vector2(getCurrentUnit().x * MapUnit.MAX_SIZE, getCurrentUnit().y * MapUnit.MAX_SIZE);
+            homePosition = new GameVector2(getCurrentUnit().x * MapUnit.MAX_SIZE, getCurrentUnit().y * MapUnit.MAX_SIZE);
 
-            grunt = SoundManager.GetInstance().getCue(SoundManager.DUMB.GRUNT);
-            roar = SoundManager.GetInstance().getCue(SoundManager.WRATH.ROAR);
-            walk = SoundManager.GetInstance().getCue(SoundManager.DUMB.FOOTSTEP);
-            excorcismCue = SoundManager.GetInstance().getCue(SoundManager.DUMB.EXCORCISED);
-            InvestigateCue = SoundManager.GetInstance().getCue(SoundManager.DUMB.ALERT);
+            grunt = SoundManager.getCue(unityGameObject, SoundType.DUMB.DUMB_GRUNT.ToString());
+            roar = SoundManager.getCue(unityGameObject, SoundType.WRATH.WRATH_ROAR.ToString());
+            walk = SoundManager.getCue(unityGameObject, SoundType.DUMB.DUMB_FOOTSTEP.ToString());
+            excorcismCue = SoundManager.getCue(unityGameObject, SoundType.DUMB.DUMB_EXCORCISED.ToString());
+            InvestigateCue = SoundManager.getCue(unityGameObject, SoundType.DUMB.DUMB_ALERT.ToString());
 
             this.id = id;
             this.initializeFootstepTimer(id * 5);
@@ -54,7 +54,7 @@ namespace Sonar
 
         public override void playAlertCue()
         {
-            SoundManager.GetInstance().createSound(position, 500, 500, 1, SoundManager.WRATH.ROAR, true, this);
+            SoundManager.createSound(position, 500, 500, 1, SoundType.WRATH.WRATH_ROAR.ToString(), true, this);
             base.playAlertCue();
         }
 
@@ -101,16 +101,16 @@ namespace Sonar
             behaviorMachine.AddState(tempBreakDoor);
         }
 
-        public override void Draw(SpriteBatch batch, GraphicsDeviceManager graphics)
+        public override void Draw(object batch, object graphics)
         {
 
             SetSprite();
             if (!inPlayer || !possessing)
             {
-                //batch.Draw(Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Player/temp"), boundingBox, Color.White); // bounding box debug                
+                //batch.Draw(Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Player/temp"), boundingBox, GameColor.White); // bounding box debug                
                 animation.Draw(batch, scale);
-                //batch.Draw(Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Player/temp"), new Rectangle((int)position.X, (int)position.Y, 5, 5), Color.Red); //Debugging for spectre positon
-                //batch.Draw(Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Player/temp"), boundingBox, Color.White);
+                //batch.Draw(Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Player/temp"), new GameRectangle((int)position.X, (int)position.Y, 5, 5), GameColor.Red); //Debugging for spectre positon
+                //batch.Draw(Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Player/temp"), boundingBox, GameColor.White);
             }
         }
 
@@ -128,9 +128,9 @@ namespace Sonar
             behaviorMachine.Update(this, player);
             if (this.GetType() != typeof(Siren) && active)
                 move(gameTime);
-            updateBoundingBox(new Vector2 (position.X + (int)(scale * 200), position.Y + (int)(scale * 200)));
+            updateBoundingBox(new GameVector2 (position.X + (int)(scale * 200), position.Y + (int)(scale * 200)));
             UpdateHearingSphere();
-            animation.Update(gameTime, new Vector2((int)position.X - spriteWidth / 2, (int)position.Y - spriteHeight / 2));
+            animation.Update(gameTime, new GameVector2((int)position.X - spriteWidth / 2, (int)position.Y - spriteHeight / 2));
             if (!possessing && this.GetType() != typeof(Stalker) && this.GetType() != typeof(Siren))
             {
                 FootstepLightNoise(gameTime);
@@ -145,15 +145,15 @@ namespace Sonar
 
         protected override void InitializeAnimations()
         {
-            animation = new AnimationCollection(texture, new Rectangle(0, 0, spriteWidth, spriteHeight));
-            animation.add("DownWalk", 0, spriteColNum, Vector2.Zero, animationInterval, true);
-            animation.add("UpWalk", 0, spriteColNum, new Vector2(0, spriteHeight * 1), animationInterval, true);
-            animation.add("LeftWalk", 0, spriteColNum, new Vector2(0, spriteHeight * 2), animationInterval, true);
-            animation.add("RightWalk", 0, spriteColNum, new Vector2(0, spriteHeight * 3), animationInterval, true);
-            animation.add ("DownAttack", 0, spriteColNum, new Vector2 (0, spriteHeight), animationInterval * 15, true);
-            animation.add ("UpAtack", 0, spriteColNum, new Vector2 (0, spriteHeight * 1), animationInterval * 15, true);
-            animation.add ("LeftAttack", 0, spriteColNum, new Vector2 (0, spriteHeight * 2), animationInterval * 15, true);
-            animation.add("RightAttack", 0, spriteColNum, new Vector2(0, spriteHeight * 3), animationInterval * 15, true);
+            animation = new AnimationCollection(texture, new GameRectangle(0, 0, spriteWidth, spriteHeight));
+            animation.add("DownWalk", 0, spriteColNum, GameVector2.Zero, animationInterval, true);
+            animation.add("UpWalk", 0, spriteColNum, new GameVector2(0, spriteHeight * 1), animationInterval, true);
+            animation.add("LeftWalk", 0, spriteColNum, new GameVector2(0, spriteHeight * 2), animationInterval, true);
+            animation.add("RightWalk", 0, spriteColNum, new GameVector2(0, spriteHeight * 3), animationInterval, true);
+            animation.add ("DownAttack", 0, spriteColNum, new GameVector2 (0, spriteHeight), animationInterval * 15, true);
+            animation.add ("UpAtack", 0, spriteColNum, new GameVector2 (0, spriteHeight * 1), animationInterval * 15, true);
+            animation.add ("LeftAttack", 0, spriteColNum, new GameVector2 (0, spriteHeight * 2), animationInterval * 15, true);
+            animation.add("RightAttack", 0, spriteColNum, new GameVector2(0, spriteHeight * 3), animationInterval * 15, true);
             animation.RUN("RightWalk");
         }
 

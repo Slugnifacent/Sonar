@@ -2,20 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
 
 namespace Sonar
 {
     public class Spectre : Entity
     {
-        
+
         #region Fields
+        public object unityGameObject;
+
 
         public List<MapUnit> patrolPaths;
         private List<MapUnit> foundPath;
@@ -35,11 +30,11 @@ namespace Sonar
         public bool brokeADoor;
         public bool nextToDoor;
         public bool neutralized;
-        public Vector2 locationOfNoise;
-        public Vector2 lastLocationOfNoise;
-        public Vector2 homePosition;
+        public GameVector2 locationOfNoise;
+        public GameVector2 lastLocationOfNoise;
+        public GameVector2 homePosition;
         public Sound soundHeard, lastSoundHeard;
-        protected BoundingSphere hearingSphere;
+        protected object/*BoundingSphere*/ hearingSphere;
         bool lastSoundIsSpectre = false;
 
         private float randDist;
@@ -71,11 +66,11 @@ namespace Sonar
 
         protected int gruntTimer;
 
-        protected Cue grunt;
-        protected Cue roar;
-        protected Cue walk;
-        protected Cue InvestigateCue;
-        protected Cue excorcismCue;
+        protected Sound grunt;
+        protected Sound roar;
+        protected Sound walk;
+        protected Sound InvestigateCue;
+        protected Sound excorcismCue;
 
         public float Dampening;
 
@@ -125,9 +120,9 @@ namespace Sonar
                     currentPathIndex = 1;
                 }
             BuildBehaviorMachine();
-            texture = Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Player/temp");
-            boundingBox = new Rectangle((int)position.X, (int)position.Y, MapUnit.MAX_SIZE, MapUnit.MAX_SIZE);
-            color = Color.White;
+            //texture = Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Player/temp");
+            //boundingBox = new GameRectangle((int)position.X, (int)position.Y, MapUnit.MAX_SIZE, MapUnit.MAX_SIZE);
+            //color = GameColor.White;
             inPlayer = false;
             possessing = false;
             finishedSearching = false;
@@ -147,12 +142,12 @@ namespace Sonar
 
         protected override void InitializeAnimations()
         {
-            animation = new AnimationCollection(texture, new Rectangle(0, 0, spriteWidth, spriteHeight));
-            animation.add("DownWalk", 0, spriteColNum, Vector2.Zero, animationInterval, true);
-            animation.add("UpWalk", 0, spriteColNum, new Vector2(0, spriteHeight * 1), animationInterval, true);
-            animation.add("LeftWalk", 0, spriteColNum, new Vector2(0, spriteHeight * 2), animationInterval, true);
-            animation.add("RightWalk", 0, spriteColNum, new Vector2(0, spriteHeight * 3), animationInterval, true);
-            animation.RUN("RightWalk");
+            //animation = new AnimationCollection(texture, new GameRectangle(0, 0, spriteWidth, spriteHeight));
+            //animation.add("DownWalk", 0, spriteColNum, GameVector2.Zero, animationInterval, true);
+            //animation.add("UpWalk", 0, spriteColNum, new GameVector2(0, spriteHeight * 1), animationInterval, true);
+            //animation.add("LeftWalk", 0, spriteColNum, new GameVector2(0, spriteHeight * 2), animationInterval, true);
+            //animation.add("RightWalk", 0, spriteColNum, new GameVector2(0, spriteHeight * 3), animationInterval, true);
+            //animation.RUN("RightWalk");
         }
 
         public virtual void BuildBehaviorMachine()
@@ -559,7 +554,7 @@ namespace Sonar
             float timeInSec = (float)time.ElapsedGameTime.TotalSeconds;
             // check if in the immediate square, and if so update current and path list
             //UpdatePosition(timeInSec);
-            if (immediate != null && Vector2.Distance(immediate.GetPosition(), position) <= speed * timeInSec)/*(Math.Abs(position.X - immediate.GetPosition().X) < timeInSec * speed)
+            if (immediate != null && GameVector2.Distance(immediate.GetPosition(), position) <= speed * timeInSec)/*(Math.Abs(position.X - immediate.GetPosition().X) < timeInSec * speed)
                 && (Math.Abs(position.Y - immediate.GetPosition().Y) < timeInSec * speed))*/
             {
                 
@@ -591,7 +586,7 @@ namespace Sonar
             if (immediate != null)
             {
                 orientation = immediate.GetPosition() - position;// getCurrentUnit().GetPosition();
-                if (orientation == Vector2.Zero)
+                if (orientation == GameVector2.Zero)
                     return;
                 orientation.Normalize();
                 positionPrevious = position;
@@ -608,9 +603,9 @@ namespace Sonar
         /// <param name="playerPos"> Player Position</param>
         public void checkHearing(Sonar.Player.loudness playerNoise) {
             playerBeingHeard = false;
-            color = Color.White;
+            color = GameColor.White;
             float hearingMod = 0;
-            foreach (Sound sound in SoundManager.GetInstance().soundList())
+            foreach (Sound sound in SoundManager.soundList())
             {
                 if (sound.SOURCE == this || (lastSoundTimer <= 30 && lastSoundHeard != null && lastSoundHeard.SOURCE != null &&
                         /*(lastSoundHeard.SOURCE.GetType() == typeof(Wrath) || lastSoundHeard.SOURCE.GetType() == typeof(Dumb) || lastSoundHeard.SOURCE.GetType() == typeof(Siren))*/
@@ -621,21 +616,21 @@ namespace Sonar
                 {
                     // Heard an Object
                     hearingMod = 0;
-                    if (sound.CueName() == SoundManager.PLAYER.FOOTSTEP_CARPET.ToString() ||
-                        sound.CueName() == SoundManager.PLAYER.FOOTSTEP_CONCRETE.ToString() ||
-                        sound.CueName() == SoundManager.PLAYER.FOOTSTEP_HARDWOOD.ToString() ||
-                        sound.CueName() == SoundManager.PLAYER.FOOTSTEP_TILE.ToString())
+                    if (sound.CueName() == SoundType.PLAYER.PLAYER_FOOTSTEP_CARPET.ToString() ||
+                        sound.CueName() == SoundType.PLAYER.PLAYER_FOOTSTEP_CONCRETE.ToString() ||
+                        sound.CueName() == SoundType.PLAYER.PLAYER_FOOTSTEP_HARDWOOD.ToString() ||
+                        sound.CueName() == SoundType.PLAYER.PLAYER_FOOTSTEP_TILE.ToString())
                     {
                         if (Player.getInstance().isStealthing) {
                             hearingMod += hearingRange*.80f;
                         }
                     }
-                    if (sound.CueName() == SoundManager.THROWABLE.GLASS_BREAKING.ToString())
+                    if (sound.CueName() == SoundType.THROWABLE.THROWABLE_GLASS_BREAKING.ToString())
                     {
                             hearingMod += -hearingRange/2;
                     }
                     //if (hearingSphere.Contains(sound.SPHERE) == ContainmentType.Contains || hearingSphere.Contains(sound.SPHERE) == ContainmentType.Intersects)
-                    objectHeard = soundAttentuation(Vector2.Distance(sound.POSITION, position) + hearingMod, sound.RADIUS);
+                    objectHeard = soundAttentuation(GameVector2.Distance(sound.POSITION, position) + hearingMod, sound.RADIUS);
                     if (objectHeard && sound.SOURCE != null && sound.SOURCE.GetType() == typeof(Radio))
                     {
                         Radio temp = (Radio)sound.SOURCE;
@@ -648,7 +643,7 @@ namespace Sonar
                     }
                     if (objectHeard)
                     {
-                        color = Color.Red;
+                        color = GameColor.Red;
                         
                         lastLocationOfNoise = locationOfNoise;
                         locationOfNoise = sound.POSITION;
@@ -690,10 +685,10 @@ namespace Sonar
                         playerBeingHeard = soundAttentuation(Util.getInstance().DistanceToPlayer(position));//, player.radius);
                         if (playerBeingHeard)
                         {
-                            color = Color.Black;
+                            color = GameColor.Black;
 
                             searchRange = player.radius / 5;
-                            Vector2 temp = findValidRandomVal(Player.getInstance().position);
+                            GameVector2 temp = findValidRandomVal(Player.getInstance().position);
 
                             lastLocationOfNoise = locationOfNoise;
                             locationOfNoise = temp;
@@ -708,10 +703,10 @@ namespace Sonar
                     playerBeingHeard = soundAttentuation(distToPlayer);//, player.radius);
                     if (playerBeingHeard)
                     {
-                        color = Color.Black;
+                        color = GameColor.Black;
 
                         searchRange = player.radius / 5;
-                        Vector2 temp = findValidRandomVal(Player.getInstance().position);
+                        GameVector2 temp = findValidRandomVal(Player.getInstance().position);
 
                         lastLocationOfNoise = locationOfNoise;
                         locationOfNoise = temp;
@@ -725,7 +720,7 @@ namespace Sonar
         /// Ensures that the random values chosen are on the map and on walkable terrain
         /// </summary>
         /// <param name="playerPos"></param>
-        public Vector2 findValidRandomVal (Vector2 playerPos) {
+        public GameVector2 findValidRandomVal (GameVector2 playerPos) {
             do
             {
                 do
@@ -735,7 +730,7 @@ namespace Sonar
                 } while ((randX < 0) || (randY < 0) ||
                     (randX >= map.GetUpperBound(0) * MapUnit.MAX_SIZE) || (randY >= map.GetUpperBound(1) * MapUnit.MAX_SIZE));
             } while (!map[(int)randX / MapUnit.MAX_SIZE, (int)randY / MapUnit.MAX_SIZE].isWalkable);
-            return new Vector2(randX, randY);
+            return new GameVector2(randX, randY);
         }
 
         /// <summary>
@@ -744,7 +739,7 @@ namespace Sonar
         /// </summary>
         /// <param name="playerPos"></param>
         /// <param name="range">specified range for random val</param>
-        public Vector2 findValidRandomVal(Vector2 playerPos, int range)
+        public GameVector2 findValidRandomVal(GameVector2 playerPos, int range)
         {
             do
             {
@@ -755,7 +750,7 @@ namespace Sonar
                 } while ((randX < 0) || (randY < 0) ||
                     (randX >= map.GetUpperBound(0) * MapUnit.MAX_SIZE) || (randY >= map.GetUpperBound(1) * MapUnit.MAX_SIZE));
             } while (!map[(int)randX / MapUnit.MAX_SIZE, (int)randY / MapUnit.MAX_SIZE].isWalkable);
-            return new Vector2(randX, randY);
+            return new GameVector2(randX, randY);
         }
 
         /// <summary>
@@ -815,7 +810,7 @@ namespace Sonar
             //currentUnit.isWalkable = false;
             position.Y = currentUnit.y * MapUnit.MAX_SIZE;
             position.X = currentUnit.x * MapUnit.MAX_SIZE;
-            updateBoundingBox(position);
+            //updateBoundingBox(position);
             nextToDoor = false;
             if (patrolPaths.Count > 1)
                 if (patrolPaths[1] != null)
@@ -832,7 +827,7 @@ namespace Sonar
             theDoor = null;
             openThatDoor = false;
             goingToInvestigate = false;
-            locationOfNoise = Vector2.Zero;
+            locationOfNoise = GameVector2.Zero;
             behindDoor = false;
             neutralized = false;
             brokeADoor = false;
@@ -845,11 +840,11 @@ namespace Sonar
 
         public void UpdateHearingSphere()
         {
-            hearingSphere.Center.X = position.X;
-            hearingSphere.Center.Y = position.Y;
+            //hearingSphere.Center.X = position.X;
+            //hearingSphere.Center.Y = position.Y;
         }
 
-        public virtual void Update(GameTime gameTime, Player player)
+        public virtual void Update(object gameTime, object player)
         {
             float elapsedTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
             dmgCooldown += elapsedTime;
@@ -865,7 +860,7 @@ namespace Sonar
                 move(gameTime);
             updateBoundingBox(position);
             UpdateHearingSphere();
-            animation.Update(gameTime, new Vector2((int)position.X - spriteWidth / 2, (int)position.Y - spriteHeight / 2));
+            animation.Update(gameTime, new GameVector2((int)position.X - spriteWidth / 2, (int)position.Y - spriteHeight / 2));
             if (!possessing && this.GetType() != typeof(Stalker) && this.GetType() != typeof(Siren))
             {
                 FootstepLightNoise(gameTime);
@@ -883,16 +878,16 @@ namespace Sonar
                 if (gruntTimer > 4000)
                 {
                     gruntTimer = 0;
-                    SoundManager.GetInstance().createSound(position, 400, 400, 1f, SoundManager.WRATH.GROWL, false);
+                    SoundManager.createSound(position, 400, 400, 1f, SoundManager.WRATH.GROWL, false);
                 }
                 int timer = updateFootstepTimer();
                 if (timer == 1)
                 {
-                    SoundManager.GetInstance().createSound(position + new Vector2(orientation.Y * 10f, orientation.X * 10f), 150, 150, 1, SoundManager.WRATH.FOOTSTEP, false);
+                    SoundManager.createSound(position + new GameVector2(orientation.Y * 10f, orientation.X * 10f), 150, 150, 1, SoundManager.WRATH.FOOTSTEP, false);
                 }
                 else if (timer == 2)
                 {
-                    SoundManager.GetInstance().createSound(position - new Vector2(orientation.Y * 10f, orientation.X * 10f), 150, 150, 1, SoundManager.WRATH.FOOTSTEP, false);
+                    SoundManager.createSound(position - new GameVector2(orientation.Y * 10f, orientation.X * 10f), 150, 150, 1, SoundManager.WRATH.FOOTSTEP, false);
                 }
             }
         }
@@ -905,8 +900,8 @@ namespace Sonar
             int timer = updateFootstepTimer();
             if (timer == 1) {
                 randDist = Game1.random.Next(150, 200);
-                SoundManager.GetInstance().createSound(
-                    new Vector2(player.position.X + (-player.facing.X * randDist), player.position.Y + (-player.facing.Y * randDist)),
+                SoundManager.createSound(
+                    new GameVector2(player.position.X + (-player.facing.X * randDist), player.position.Y + (-player.facing.Y * randDist)),
                     200,
                     200,1,
                     SoundManager.WRATH.FOOTSTEP, 
@@ -914,22 +909,22 @@ namespace Sonar
             }
             else if (timer == 2) {
                 randDist += 10f;
-                SoundManager.GetInstance().createSound(new Vector2(player.position.X + (-player.facing.X * randDist), player.position.Y + (-player.facing.Y * randDist)),
+                SoundManager.createSound(new GameVector2(player.position.X + (-player.facing.X * randDist), player.position.Y + (-player.facing.Y * randDist)),
                     200, 200, 1, SoundManager.WRATH.FOOTSTEP, false);
             }
         }
 
-        public virtual void Draw(SpriteBatch batch, GraphicsDeviceManager graphics)
+        public virtual void Draw(object batch, object graphics)
         {
 
             SetSprite();
             if ((!inPlayer || !possessing || GetType() == typeof(Sonar.Siren)) && behaviorMachine.getCurrenState().GetType() != typeof(Sonar.FleeState)) { 
                animation.Draw(batch, scale);
-               //batch.Draw(texture, boundingBox, Color.Red);
-               //batch.Draw(Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Player/temp"), boundingBox, Color.White); // bounding box debug
-               //batch.Draw(Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Player/temp"), new Rectangle((int)position.X, (int)position.Y, 5, 5), Color.Red); //Debugging for spectre positon
+               //batch.Draw(texture, boundingBox, GameColor.Red);
+               //batch.Draw(Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Player/temp"), boundingBox, GameColor.White); // bounding box debug
+               //batch.Draw(Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Player/temp"), new GameRectangle((int)position.X, (int)position.Y, 5, 5), GameColor.Red); //Debugging for spectre positon
                 //if (target != null)
-               //batch.Draw(Game1.contentManager.Load<Texture2D>(@"Textures/Objects/Entity/Player/temp"), new Rectangle((int)target.GetPosition().X - 24, (int)target.GetPosition().Y - 24, MapUnit.MAX_SIZE, MapUnit.MAX_SIZE), Color.Red);
+               //batch.Draw(Game1.contentManager.Load<GameTexture>(@"Textures/Objects/Entity/Player/temp"), new GameRectangle((int)target.GetPosition().X - 24, (int)target.GetPosition().Y - 24, MapUnit.MAX_SIZE, MapUnit.MAX_SIZE), GameColor.Red);
             }
         }
 
@@ -941,10 +936,10 @@ namespace Sonar
         /// </summary>
         /// <param name="Position"> The Starting Position of the Line </param>
         /// <param name="Destination">The Destination of the Line</param>
-        public List<Vector2> componentIntercept(Vector2 Position, Vector2 Destination)
+        public List<GameVector2> componentIntercept(GameVector2 Position, GameVector2 Destination)
         {
-            List<Vector2> tempList = new List<Vector2>();
-            Vector2 t = Util.getInstance().Slope(Position, Destination);
+            List<GameVector2> tempList = new List<GameVector2>();
+            GameVector2 t = Util.getInstance().Slope(Position, Destination);
             float slope = t.Y / t.X;
             float min = Math.Min(Position.X, Destination.X);
             float max = Math.Max(Position.X, Destination.X);
@@ -958,7 +953,7 @@ namespace Sonar
             // I = X
             while (I <= max)
             {
-                Vector2 temp = new Vector2(0, 0);
+                GameVector2 temp = new GameVector2(0, 0);
                 temp.Y = (slope) * (I - Position.X) + position.Y;
                 temp.X = I;
                 tempList.Add(temp);
@@ -975,7 +970,7 @@ namespace Sonar
             I = I * MapUnit.MAX_SIZE;
             while (I <= max)
             {
-                Vector2 temp = new Vector2(0, 0);
+                GameVector2 temp = new GameVector2(0, 0);
                 temp.X = (I - position.Y) / (slope) + position.X;
                 temp.Y = I;
                 tempList.Add(temp);
@@ -995,7 +990,7 @@ namespace Sonar
             return foundPath;
         }
 
-        public virtual bool Collide(Rectangle rect, Collidable collidingWith)
+        public virtual bool Collide(GameRectangle rect, Collidable collidingWith)
         {
             if (possessing)
             {
@@ -1061,21 +1056,21 @@ namespace Sonar
         public virtual void stopAudio()
         {
             if (grunt != null)
-                SoundManager.GetInstance().Stop(ref grunt);
+                SoundManager.Stop(ref grunt);
             if (roar != null)
-                SoundManager.GetInstance().Stop(ref roar);
+                SoundManager.Stop(ref roar);
             if (walk != null)
-                SoundManager.GetInstance().Stop(ref walk);
+                SoundManager.Stop(ref walk);
         }
 
         public virtual void pauseAudio()
         {
             if (grunt != null)
-                SoundManager.GetInstance().Puase(ref grunt);
+                SoundManager.Puase(ref grunt);
             if (roar != null)
-                SoundManager.GetInstance().Puase(ref roar);
+                SoundManager.Puase(ref roar);
             if (walk != null)
-                SoundManager.GetInstance().Puase(ref walk);
+                SoundManager.Puase(ref walk);
         }
 
         public virtual void unpauseAudio()
@@ -1083,17 +1078,17 @@ namespace Sonar
             if (grunt != null)
             {
                 if (grunt.IsPaused)
-                    SoundManager.GetInstance().Play(ref grunt, SoundManager.DUMB.GROWL);
+                    SoundManager.Play(ref grunt, SoundType.DUMB.DUMB_GROWL);
             }
             if (roar != null)
             {
                 if (roar.IsPaused)
-                    SoundManager.GetInstance().Play(ref roar, SoundManager.WRATH.ROAR);
+                    SoundManager.Play(ref roar, SoundType.WRATH.WRATH_ROAR);
             }
             if (walk != null)
             {
                 if (walk.IsPaused)
-                    SoundManager.GetInstance().Play(ref walk, SoundManager.WRATH.FOOTSTEP);
+                    SoundManager.Play(ref walk, SoundType.WRATH.WRATH_FOOTSTEP);
             }
         }
         #endregion AudioCommands
@@ -1106,11 +1101,11 @@ namespace Sonar
         }
 
         /// <summary>
-        /// The Alert Cue
+        /// The Alert Sound
         /// </summary>
         public virtual void playAlertCue()
         {
-            Game1.camera.Shake(2f, 1f);
+            //Game1.camera.Shake(2f, 1f);
             this.storeSound(500f);
         }
 
@@ -1118,7 +1113,7 @@ namespace Sonar
         /// Played when Excorcised
         /// </summary>
         public virtual void playExcorcismCue() {
-            SoundManager.GetInstance().createSound(position, 500, 500, 1, excorcismCue, true, this);
+            //SoundManager.createSound(position, 500, 500, 1, excorcismCue, true, this);
         }
         
         /// <summary>
@@ -1128,9 +1123,9 @@ namespace Sonar
         {
             if (playerBeingHeard)
             {
-                SoundManager.GetInstance().createSound(position, 500, 500, 1, SoundManager.WRATH.HEAR_PLAYER, true, this);
+                //SoundManager.createSound(position, 500, 500, 1, SoundManager.WRATH.HEAR_PLAYER, true, this);
             }
-            SoundManager.GetInstance().createSound(position, 500, 500, 1, InvestigateCue, true, this);
+            //SoundManager.createSound(position, 500, 500, 1, InvestigateCue, true, this);
         }
 
         /// <summary>
@@ -1138,7 +1133,7 @@ namespace Sonar
         /// </summary>
         public virtual void playHeardCue()
         {
-                SoundManager.GetInstance().createSound(position, 500, 500, 1, SoundManager.WRATH.HEAR_PLAYER, true, this);
+                //SoundManager.createSound(position, 500, 500, 1, SoundManager.WRATH.HEAR_PLAYER, true, this);
         }
 
         /// <summary>
